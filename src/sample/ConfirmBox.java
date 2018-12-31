@@ -1,43 +1,41 @@
 package sample;
 
+import javafx.fxml.FXMLLoader;
 import javafx.stage.*;
 import javafx.scene.*;
 import javafx.scene.layout.*;
 import javafx.scene.control.*;
 import javafx.geometry.*;
 
+import java.io.IOException;
+
 public class ConfirmBox {
 
     static boolean answer;
+    static Button yesButton;
+    static Button noButton;
+    public static Stage window;
+    public static boolean display(String title) throws IOException {
 
-    public static boolean display(String title,String message){
-
-        Stage window = new Stage();
+        window = new Stage();
         window.initModality(Modality.APPLICATION_MODAL);
         window.setTitle(title);
         window.setMinWidth(250);
-
-        Label label = new Label();
-        label.setText(message);
-        Button yesButton = new Button("Yes");
-        Button noButton = new Button("No");
-
-        yesButton.setOnAction(e -> {
-            answer = true;
-            window.close();
-        });
-
-        noButton.setOnAction(e -> {
-            answer = false;
-            window.close();
-        });
-
-        HBox layout = new HBox(10);
-        layout.getChildren().addAll(label,yesButton,noButton);
-        layout.setAlignment(Pos.CENTER);
-        Scene scene = new Scene(layout);
+        Parent root = FXMLLoader.load(ConfirmBox.class.getResource("Scenes/confirmExit.fxml"));
+        Scene scene = new Scene(root);
         window.setScene(scene);
         window.showAndWait();
+
         return answer;
+    }
+
+    public void returnYes(){
+        answer = true;
+        this.window.close();
+    }
+    public void returnNo(){
+        answer = false;
+        this.window.close();
+
     }
 }

@@ -7,6 +7,8 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 import javafx.scene.control.*;
 
+import java.io.IOException;
+
 public class Main extends Application {
     Button button;
     public static Stage window;
@@ -19,7 +21,11 @@ public class Main extends Application {
         window.setTitle("AniWatch");
         window.setOnCloseRequest(e -> {
             e.consume();
-            closeProgram();
+            try {
+                closeProgram();
+            } catch (IOException e1) {
+                e1.printStackTrace();
+            }
         });
         Parent root = FXMLLoader.load(getClass().getResource("Scenes/Load.fxml"));
         Scene load = new Scene(root,1920,1080);
@@ -32,8 +38,8 @@ public class Main extends Application {
         launch(args);
     }
 
-    private void closeProgram() {
-        boolean answer = ConfirmBox.display("Exit Request", "Are you sure you want to exit?");
+    private void closeProgram() throws IOException {
+        boolean answer = ConfirmBox.display("Confirm Exit");
         if (answer) {
             window.close();
         }
