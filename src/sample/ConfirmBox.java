@@ -12,8 +12,6 @@ import java.io.IOException;
 public class ConfirmBox {
 
     static boolean answer;
-    static Button yesButton;
-    static Button noButton;
     public static Stage window;
     public static boolean display(String title) throws IOException {
 
@@ -23,6 +21,8 @@ public class ConfirmBox {
         window.setMinWidth(250);
         Parent root = FXMLLoader.load(ConfirmBox.class.getResource("Scenes/confirmExit.fxml"));
         Scene scene = new Scene(root);
+        scene.getStylesheets().add("viper.css");
+
         window.setScene(scene);
         window.showAndWait();
 

@@ -4,14 +4,32 @@
     -fx-font-size: 10pt;
 
 }
+
 .button{
-    -fx-background-color: #ab4642;
+    -fx-background-color: #AB4642;
     -fx-text-fill: #E8E8E8;
     -fx-background-radius: 4;
 
 }
 .label {
--fx-text-fill: #e8e8e8;
+    -fx-text-fill: #e8e8e8;
+    -fx-font-size: 15pt;
+}
+
+#yesButton {
+    -fx-background-color: #AB4642;
+    -fx-background-radius: 3;
+
+}
+
+#noButton {
+    -fx-background-color: #6A9FB5;
+    -fx-background-radius: 4;
+
+}
+
+ #exitLabel {
+-fx-text-fill: #E8E8E8;
 -fx-font-size: 15pt;
 
 }
