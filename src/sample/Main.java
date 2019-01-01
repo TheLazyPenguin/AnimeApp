@@ -17,6 +17,8 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
+        scrapeData scrape = new scrapeData();
+        scrape.fetch();
         window = primaryStage;
         window.setTitle("AniWatch");
         window.setOnCloseRequest(e -> {
