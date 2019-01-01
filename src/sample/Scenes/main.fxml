@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.web.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
 <?import javafx.scene.image.*?>
 <?import javafx.geometry.*?>
 <?import java.lang.*?>
@@ -8,18 +11,100 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<BorderPane prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.mainController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.mainController">
    <center>
-      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+      <VBox prefHeight="1080.0" prefWidth="1920.0" style="-fx-background-color: #505050;" BorderPane.alignment="CENTER">
          <children>
-            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+            <HBox prefHeight="360.0" prefWidth="1920.0" style="-fx-background-color: #303030;">
                <children>
-                  <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                  <Label id="ani_label" text="New &amp; Hot">
+                     <HBox.margin>
+                        <Insets left="20.0" right="-70.0" top="20.0" />
+                     </HBox.margin>
+                  </Label>
+                  <ImageView fx:id="imageView" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <HBox.margin>
+                        <Insets right="20.0" top="100.0" />
+                     </HBox.margin>
                   </ImageView>
-                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="870.0" layoutY="475.0" pickOnBounds="true" preserveRatio="true" />
-                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="970.0" layoutY="475.0" pickOnBounds="true" preserveRatio="true" />
-                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="1070.0" layoutY="475.0" pickOnBounds="true" preserveRatio="true" />
-                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="1170.0" layoutY="475.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="imageView2" fitHeight="150.0" fitWidth="200.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+
+                     <HBox.margin>
+                        <Insets left="20.0" right="20.0" top="100.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <ImageView fx:id="imageView3" fitHeight="150.0" fitWidth="200.0" layoutX="133.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                     <HBox.margin>
+                        <Insets left="20.0" right="20.0" top="100.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <ImageView fx:id="imageView4" fitHeight="150.0" fitWidth="200.0" layoutX="256.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                     <HBox.margin>
+                        <Insets left="20.0" right="20.0" top="100.0" />
+                     </HBox.margin>
+                  </ImageView>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="10.0" prefHeight="360.0" prefWidth="1920.0" style="-fx-background-color: #303030;">
+               <children>
+                  <Label id="ani_label" text="Recent">
+                     <HBox.margin>
+                        <Insets left="20.0" right="-20.0" top="20.0" />
+                     </HBox.margin>
+                  </Label>
+                  <ImageView fx:id="imageView5" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+
+                     <HBox.margin>
+                        <Insets right="20.0" top="100.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <ImageView fx:id="imageView6" fitHeight="150.0" fitWidth="200.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                     <HBox.margin>
+                        <Insets left="20.0" right="20.0" top="100.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <ImageView fx:id="imageView7" fitHeight="150.0" fitWidth="200.0" layoutX="133.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                     <HBox.margin>
+                        <Insets left="20.0" right="20.0" top="100.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <ImageView fx:id="imageView8" fitHeight="150.0" fitWidth="200.0" layoutX="256.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                     <HBox.margin>
+                        <Insets left="20.0" right="20.0" top="100.0" />
+                     </HBox.margin>
+                  </ImageView>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="370.0" prefHeight="360.0" prefWidth="1920.0" style="-fx-background-color: #303030;">
+               <children>
+                  <Label id="ani_label" text="Most Popular">
+                     <HBox.margin>
+                        <Insets left="20.0" right="-95.0" top="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <ImageView fx:id="imageView9" fitHeight="150.0" fitWidth="200.0" layoutX="256.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets right="20.0" top="100.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <ImageView fx:id="imageView10" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <HBox.margin>
+                        <Insets left="20.0" right="20.0" top="100.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <ImageView fx:id="imageView11" fitHeight="150.0" fitWidth="200.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                     <HBox.margin>
+                        <Insets left="20.0" right="20.0" top="100.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <ImageView fx:id="imageView12" fitHeight="150.0" fitWidth="200.0" layoutX="133.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                     <HBox.margin>
+                        <Insets left="20.0" right="20.0" top="100.0" />
+                     </HBox.margin>
+                  </ImageView>
                </children>
             </HBox>
          </children>

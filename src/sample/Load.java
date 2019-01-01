@@ -24,6 +24,8 @@ public class Load implements Initializable{
                        Parent root = FXMLLoader.load(getClass().getResource("Scenes/Main.fxml"));
                         Scene main = new Scene(root,1920,1080);
                         Main.changeWindow(main);
+                        Main.window.setFullScreen(false);
+                        Main.window.setFullScreen(true);
                     } catch (IOException e1) {
                         e1.printStackTrace();
                     }

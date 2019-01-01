@@ -29,6 +29,7 @@ public class Main extends Application {
         });
         Parent root = FXMLLoader.load(getClass().getResource("Scenes/Load.fxml"));
         Scene load = new Scene(root,1920,1080);
+        window.setFullScreen(true);
         load.getStylesheets().add("viper.css");
         window.setScene(load);
         window.show();
@@ -39,7 +40,7 @@ public class Main extends Application {
     }
 
     private void closeProgram() throws IOException {
-        boolean answer = ConfirmBox.display("Confirm Exit");
+        boolean answer = confirmBox.display("Confirm Exit");
         if (answer) {
             window.close();
         }
@@ -47,6 +48,5 @@ public class Main extends Application {
     public static void changeWindow(Scene scene){
         scene.getStylesheets().add("viper.css");
         window.setScene(scene);
-
     }
 }
