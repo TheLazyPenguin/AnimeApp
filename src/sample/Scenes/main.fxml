@@ -43,6 +43,40 @@
                         <Insets left="20.0" right="20.0" top="100.0" />
                      </HBox.margin>
                   </ImageView>
+                  <ImageView fx:id="imageView5" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+
+                     <HBox.margin>
+                        <Insets right="20.0" top="100.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <ImageView fx:id="imageView6" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <HBox.margin>
+                        <Insets left="20.0" right="20.0" top="100.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <ImageView fx:id="imageView7" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <HBox.margin>
+                        <Insets left="20.0" right="20.0" top="100.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <ImageView fx:id="imageView8" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <HBox.margin>
+                        <Insets left="20.0" right="20.0" top="100.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <ImageView fx:id="imageView9" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets right="20.0" top="100.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <ImageView fx:id="imageView10" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
+                     </image>
+                  </ImageView>
                </children>
             </HBox>
             <HBox layoutX="10.0" layoutY="10.0" prefHeight="360.0" prefWidth="1920.0" style="-fx-background-color: #303030;">
@@ -52,27 +86,6 @@
                         <Insets left="20.0" right="-20.0" top="20.0" />
                      </HBox.margin>
                   </Label>
-                  <ImageView fx:id="imageView5" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
-
-                     <HBox.margin>
-                        <Insets right="20.0" top="100.0" />
-                     </HBox.margin>
-                  </ImageView>
-                  <ImageView fx:id="imageView6" fitHeight="150.0" fitWidth="200.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
-                     <HBox.margin>
-                        <Insets left="20.0" right="20.0" top="100.0" />
-                     </HBox.margin>
-                  </ImageView>
-                  <ImageView fx:id="imageView7" fitHeight="150.0" fitWidth="200.0" layoutX="133.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
-                     <HBox.margin>
-                        <Insets left="20.0" right="20.0" top="100.0" />
-                     </HBox.margin>
-                  </ImageView>
-                  <ImageView fx:id="imageView8" fitHeight="150.0" fitWidth="200.0" layoutX="256.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
-                     <HBox.margin>
-                        <Insets left="20.0" right="20.0" top="100.0" />
-                     </HBox.margin>
-                  </ImageView>
                </children>
             </HBox>
             <HBox layoutX="10.0" layoutY="370.0" prefHeight="360.0" prefWidth="1920.0" style="-fx-background-color: #303030;">
@@ -82,19 +95,6 @@
                         <Insets left="20.0" right="-95.0" top="10.0" />
                      </HBox.margin>
                   </Label>
-                  <ImageView fx:id="imageView9" fitHeight="150.0" fitWidth="200.0" layoutX="256.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
-                     </image>
-                     <HBox.margin>
-                        <Insets right="20.0" top="100.0" />
-                     </HBox.margin>
-                  </ImageView>
-                  <ImageView fx:id="imageView10" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
-                     <HBox.margin>
-                        <Insets left="20.0" right="20.0" top="100.0" />
-                     </HBox.margin>
-                  </ImageView>
                   <ImageView fx:id="imageView11" fitHeight="150.0" fitWidth="200.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
                      <HBox.margin>
                         <Insets left="20.0" right="20.0" top="100.0" />

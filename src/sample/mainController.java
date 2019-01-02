@@ -9,9 +9,12 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.net.URL;
 import java.net.URLConnection;
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.ResourceBundle;
 
 public class mainController implements Initializable {
+    private ArrayList<ImageView> imagevw;
     @FXML
     private ImageView imageView;
     @FXML
@@ -24,27 +27,49 @@ public class mainController implements Initializable {
     private ImageView imageView5;
     @FXML
     private ImageView imageView6;
+    @FXML
+    private ImageView imageView7;
+    @FXML
+    private ImageView imageView8;
+    @FXML
+    private ImageView imageView9;
+    @FXML
+    private ImageView imageView10;
 
+
+    public ArrayList<ImageView> trending(){
+        ArrayList<ImageView> imagevw = new ArrayList<ImageView>();
+        imagevw.add(imageView);
+        imagevw.add(imageView2);
+        imagevw.add(imageView3);
+        imagevw.add(imageView4);
+        imagevw.add(imageView5);
+        imagevw.add(imageView6);
+        imagevw.add(imageView7);
+        imagevw.add(imageView8);
+        imagevw.add(imageView9);
+        imagevw.add(imageView10);
+        return imagevw;
+    }
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        String url = "https://static.akacdn.ru/static/images/2018/08/6967cb71e0d219e5b913aed894ba9c16.jpg";
-        try {
-            URLConnection urlcon = new URL(url).openConnection();
-            urlcon.addRequestProperty("User-Agent", "Mozilla/5.0");
-            InputStream input = urlcon.getInputStream();
-            Image img = new Image(input);
 
-            imageView.setImage(img);
-            imageView2.setImage(img);
-            imageView3.setImage(img);
-            imageView4.setImage(img);
-            imageView5.setImage(img);
-            imageView6.setImage(img);
+        scrapeData scrape = new scrapeData();
+        int i = 0;
+        imagevw = trending();
+        try {
+           HashMap<String,Image> trendingimg = scrape.fetch();
+           for (Image img : trendingimg.values()) {
+               if (i <= 10) {
+                   imagevw.get(i).setImage(img);
+               }
+               i++;
+           }
+
+
         } catch (IOException e) {
             e.printStackTrace();
         }
-
-
     }
 }
