@@ -82,38 +82,180 @@
                               <Insets right="20.0" top="100.0" />
                            </HBox.margin>
                         </ImageView>
+                        <ImageView fx:id="imageView11" fitHeight="200.0" fitWidth="144.0" layoutX="1689.0" layoutY="110.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true">
+                           <image>
+                              <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets right="20.0" top="100.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <ImageView fx:id="imageView12" fitHeight="200.0" fitWidth="144.0" layoutX="1525.0" layoutY="110.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true">
+                           <image>
+                              <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets right="20.0" top="100.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <ImageView fx:id="imageView13" fitHeight="200.0" fitWidth="144.0" layoutX="2017.0" layoutY="110.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true">
+                           <image>
+                              <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets right="20.0" top="100.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <ImageView fx:id="imageView14" fitHeight="200.0" fitWidth="144.0" layoutX="2181.0" layoutY="10.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true">
+                           <image>
+                              <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets right="20.0" top="100.0" />
+                           </HBox.margin>
+                        </ImageView>
                      </children>
                   </HBox>
                </content>
             </ScrollPane>
-            <HBox layoutX="10.0" layoutY="10.0" prefHeight="360.0" prefWidth="1920.0" style="-fx-background-color: #303030;">
-               <children>
-                  <Label id="ani_label" text="Recent">
-                     <HBox.margin>
-                        <Insets left="20.0" right="-20.0" top="20.0" />
-                     </HBox.margin>
-                  </Label>
-               </children>
-            </HBox>
-            <HBox layoutX="10.0" layoutY="370.0" prefHeight="360.0" prefWidth="1920.0" style="-fx-background-color: #303030;">
-               <children>
-                  <Label id="ani_label" text="Most Popular">
-                     <HBox.margin>
-                        <Insets left="20.0" right="-95.0" top="10.0" />
-                     </HBox.margin>
-                  </Label>
-                  <ImageView fx:id="imageView11" fitHeight="150.0" fitWidth="200.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
-                     <HBox.margin>
-                        <Insets left="20.0" right="20.0" top="100.0" />
-                     </HBox.margin>
-                  </ImageView>
-                  <ImageView fx:id="imageView12" fitHeight="150.0" fitWidth="200.0" layoutX="133.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
-                     <HBox.margin>
-                        <Insets left="20.0" right="20.0" top="100.0" />
-                     </HBox.margin>
-                  </ImageView>
-               </children>
-            </HBox>
+            <ScrollPane hbarPolicy="NEVER" pannable="true" prefHeight="360.0" prefWidth="1920.0" style="-fx-background-color: #303030;" vbarPolicy="NEVER" vmax="0.0">
+               <content>
+                  <HBox prefHeight="360.0" prefWidth="2560.0" style="-fx-background-color: #303030;">
+                     <children>
+                        <Label id="ani_label" text="New &amp; Hot">
+                           <HBox.margin>
+                              <Insets left="20.0" right="-70.0" top="20.0" />
+                           </HBox.margin>
+                        </Label>
+                        <ImageView fx:id="imageView15" fitHeight="200.0" fitWidth="144.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true">
+                           <HBox.margin>
+                              <Insets right="20.0" top="100.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <ImageView fx:id="imageView21" fitHeight="200.0" fitWidth="144.0" layoutX="10.0" layoutY="10.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true">
+                           <HBox.margin>
+                              <Insets left="20.0" right="20.0" top="100.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <ImageView fx:id="imageView31" fitHeight="200.0" fitWidth="144.0" layoutX="133.0" layoutY="10.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true">
+                           <HBox.margin>
+                              <Insets left="20.0" right="20.0" top="100.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <ImageView fx:id="imageView41" fitHeight="200.0" fitWidth="144.0" layoutX="256.0" layoutY="10.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true">
+                           <HBox.margin>
+                              <Insets left="20.0" right="20.0" top="100.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <ImageView fx:id="imageView51" fitHeight="200.0" fitWidth="144.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true">
+                           <HBox.margin>
+                              <Insets right="20.0" top="100.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <ImageView fx:id="imageView61" fitHeight="200.0" fitWidth="144.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true">
+                           <HBox.margin>
+                              <Insets left="20.0" right="20.0" top="100.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <ImageView fx:id="imageView71" fitHeight="200.0" fitWidth="144.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true">
+                           <HBox.margin>
+                              <Insets left="20.0" right="20.0" top="100.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <ImageView fx:id="imageView81" fitHeight="200.0" fitWidth="144.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true">
+                           <HBox.margin>
+                              <Insets left="20.0" right="20.0" top="100.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <ImageView fx:id="imageView91" fitHeight="200.0" fitWidth="144.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true">
+                           <image>
+                              <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets right="20.0" top="100.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <ImageView fx:id="imageView101" fitHeight="200.0" fitWidth="144.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true">
+                           <image>
+                              <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets right="20.0" top="100.0" />
+                           </HBox.margin>
+                        </ImageView>
+                     </children>
+                  </HBox>
+               </content>
+            </ScrollPane>
+            <ScrollPane hbarPolicy="NEVER" layoutX="10.0" layoutY="10.0" pannable="true" prefHeight="360.0" prefWidth="1920.0" style="-fx-background-color: #303030;" vbarPolicy="NEVER" vmax="0.0">
+               <content>
+                  <HBox prefHeight="360.0" prefWidth="2560.0" style="-fx-background-color: #303030;">
+                     <children>
+                        <Label id="ani_label" text="New &amp; Hot">
+                           <HBox.margin>
+                              <Insets left="20.0" right="-70.0" top="20.0" />
+                           </HBox.margin>
+                        </Label>
+                        <ImageView fx:id="imageView131" fitHeight="200.0" fitWidth="144.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true">
+                           <HBox.margin>
+                              <Insets right="20.0" top="100.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <ImageView fx:id="imageView211" fitHeight="200.0" fitWidth="144.0" layoutX="10.0" layoutY="10.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true">
+                           <HBox.margin>
+                              <Insets left="20.0" right="20.0" top="100.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <ImageView fx:id="imageView311" fitHeight="200.0" fitWidth="144.0" layoutX="133.0" layoutY="10.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true">
+                           <HBox.margin>
+                              <Insets left="20.0" right="20.0" top="100.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <ImageView fx:id="imageView411" fitHeight="200.0" fitWidth="144.0" layoutX="256.0" layoutY="10.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true">
+                           <HBox.margin>
+                              <Insets left="20.0" right="20.0" top="100.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <ImageView fx:id="imageView511" fitHeight="200.0" fitWidth="144.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true">
+                           <HBox.margin>
+                              <Insets right="20.0" top="100.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <ImageView fx:id="imageView611" fitHeight="200.0" fitWidth="144.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true">
+                           <HBox.margin>
+                              <Insets left="20.0" right="20.0" top="100.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <ImageView fx:id="imageView711" fitHeight="200.0" fitWidth="144.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true">
+                           <HBox.margin>
+                              <Insets left="20.0" right="20.0" top="100.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <ImageView fx:id="imageView811" fitHeight="200.0" fitWidth="144.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true">
+                           <HBox.margin>
+                              <Insets left="20.0" right="20.0" top="100.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <ImageView fx:id="imageView911" fitHeight="200.0" fitWidth="144.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true">
+                           <image>
+                              <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets right="20.0" top="100.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <ImageView fx:id="imageView1011" fitHeight="200.0" fitWidth="144.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true">
+                           <image>
+                              <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets right="20.0" top="100.0" />
+                           </HBox.margin>
+                        </ImageView>
+                     </children>
+                  </HBox>
+               </content>
+            </ScrollPane>
          </children>
       </VBox>
    </center>

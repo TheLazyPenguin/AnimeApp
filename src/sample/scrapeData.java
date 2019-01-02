@@ -24,7 +24,7 @@ public class scrapeData {
         trendingurl = new HashMap<String, Image>();
         for (Element src : link) {
 
-            if (i < 10) {
+            if (i < 14) {
                 URLConnection urlcon = new URL(src.attr("abs:src")).openConnection();
                 urlcon.addRequestProperty("User-Agent", "Mozilla/5.0");
                 InputStream input = urlcon.getInputStream();
