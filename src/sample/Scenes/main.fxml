@@ -117,4 +117,25 @@
          </children>
       </VBox>
    </center>
+   <top>
+      <ToolBar prefHeight="50.0" prefWidth="1920.0" scaleShape="false" style="-fx-background-color: #151515;" BorderPane.alignment="CENTER">
+         <items>
+            <BorderPane focusTraversable="true" prefHeight="40.0" prefWidth="2530.0">
+               <left>
+                  <Label id="ani_title" prefHeight="30.0" text="Anime Watch" textFill="WHITE" BorderPane.alignment="CENTER">
+                     <font>
+                        <Font name="Agency FB" size="18.0" />
+                     </font></Label>
+               </left>
+               <right>
+                  <TextField prefHeight="25.0" prefWidth="200.0" promptText="Search..." style="-fx-background-radius: 0; -fx-background-color: #505050;" BorderPane.alignment="CENTER">
+                     <BorderPane.margin>
+                        <Insets />
+                     </BorderPane.margin>
+                  </TextField>
+               </right>
+            </BorderPane>
+         </items>
+      </ToolBar>
+   </top>
 </BorderPane>
