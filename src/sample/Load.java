@@ -12,7 +12,6 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.HashMap;
 import java.util.ResourceBundle;
-import java.util.concurrent.TimeUnit;
 
 
 public class Load implements Initializable{
@@ -31,6 +30,8 @@ public class Load implements Initializable{
                 controller.start(foo,foo2,foo3);
             } catch (IOException e1) {
                 e1.printStackTrace();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
             }
         }).start();
             Timeline timeline = new Timeline(new KeyFrame(

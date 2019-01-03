@@ -17,21 +17,21 @@
          <children>
             <ScrollPane hbarPolicy="NEVER" pannable="true" prefHeight="343.33333" prefWidth="1920.0" style="-fx-background-color: #303030;" vbarPolicy="NEVER" vmax="0.0">
                <content>
-                  <HBox prefHeight="343.33333" prefWidth="2560.0" style="-fx-background-color: #303030;">
+                  <HBox prefHeight="344.0" prefWidth="3000.0" style="-fx-background-color: #303030;">
                      <children>
-                        <Label id="ani_label" ellipsisString="" prefHeight="39.0" prefWidth="212.0" text="Recently Added">
+                        <Label id="ani_label" ellipsisString="" prefHeight="39.0" prefWidth="193.0" text="Recently Added">
                            <HBox.margin>
                               <Insets left="20.0" right="-150.0" top="20.0" />
                            </HBox.margin>
                         </Label>
-                        <AnchorPane fx:id="imageAnchor15" prefHeight="48.0" prefWidth="154.0">
+                        <AnchorPane fx:id="imageAnchor15" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="302.0" prefWidth="163.0">
                            <children>
                               <ImageView fx:id="imageView15" fitHeight="200.0" fitWidth="144.0" focusTraversable="true" layoutX="-18.0" layoutY="90.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true" AnchorPane.topAnchor="100.0">
                                  <image>
                                     <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
                                  </image>
                               </ImageView>
-                              <Label id="img-title" fx:id="imageTitle15" layoutX="126.0" layoutY="94.0" prefHeight="22.0" prefWidth="42.0" text="Title">
+                              <Label id="img-title" fx:id="imageTitle15" layoutX="126.0" layoutY="94.0" prefHeight="30.0" text="Title" visible="false" wrapText="true" AnchorPane.leftAnchor="130.0" AnchorPane.topAnchor="85.0">
                                  <font>
                                     <Font name="Comic Sans MS" size="18.0" />
                                  </font>
@@ -41,14 +41,14 @@
                               <Insets right="10.0" />
                            </HBox.margin>
                         </AnchorPane>
-                        <AnchorPane fx:id="imageAnchor16" layoutX="172.0" layoutY="10.0" prefHeight="48.0" prefWidth="154.0">
+                        <AnchorPane fx:id="imageAnchor16" layoutX="172.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="302.0" prefWidth="163.0">
                            <children>
                               <ImageView fx:id="imageView16" fitHeight="200.0" fitWidth="144.0" focusTraversable="true" layoutX="-18.0" layoutY="90.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true" AnchorPane.topAnchor="100.0">
                                  <image>
                                     <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
                                  </image>
                               </ImageView>
-                              <Label id="img-title" fx:id="imageTitle16" layoutX="126.0" layoutY="94.0" prefHeight="22.0" prefWidth="42.0" text="Title">
+                              <Label id="img-title" fx:id="imageTitle16" layoutX="126.0" layoutY="94.0" prefHeight="30.0" text="Title" visible="false" AnchorPane.leftAnchor="130.0" AnchorPane.topAnchor="85.0">
                                  <font>
                                     <Font name="Comic Sans MS" size="18.0" />
                                  </font>
@@ -58,14 +58,14 @@
                               <Insets right="10.0" />
                            </HBox.margin>
                         </AnchorPane>
-                        <AnchorPane fx:id="imageAnchor17" layoutX="340.0" layoutY="10.0" prefHeight="48.0" prefWidth="154.0">
+                        <AnchorPane fx:id="imageAnchor17" layoutX="340.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="302.0" prefWidth="163.0">
                            <children>
                               <ImageView fx:id="imageView17" fitHeight="200.0" fitWidth="144.0" focusTraversable="true" layoutX="-18.0" layoutY="90.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true" AnchorPane.topAnchor="100.0">
                                  <image>
                                     <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
                                  </image>
                               </ImageView>
-                              <Label id="img-title" fx:id="imageTitle17" layoutX="126.0" layoutY="94.0" prefHeight="22.0" prefWidth="42.0" text="Title">
+                              <Label id="img-title" fx:id="imageTitle17" layoutX="126.0" layoutY="94.0" prefHeight="30.0" text="Title" visible="false" AnchorPane.leftAnchor="130.0" AnchorPane.topAnchor="85.0">
                                  <font>
                                     <Font name="Comic Sans MS" size="18.0" />
                                  </font>
@@ -75,14 +75,14 @@
                               <Insets right="10.0" />
                            </HBox.margin>
                         </AnchorPane>
-                        <AnchorPane fx:id="imageAnchor18" layoutX="508.0" layoutY="10.0" prefHeight="48.0" prefWidth="154.0">
+                        <AnchorPane fx:id="imageAnchor18" layoutX="508.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="302.0" prefWidth="163.0">
                            <children>
                               <ImageView fx:id="imageView18" fitHeight="200.0" fitWidth="144.0" focusTraversable="true" layoutX="-18.0" layoutY="90.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true" AnchorPane.topAnchor="100.0">
                                  <image>
                                     <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
                                  </image>
                               </ImageView>
-                              <Label id="img-title" fx:id="imageTitle18" layoutX="126.0" layoutY="94.0" prefHeight="22.0" prefWidth="42.0" text="Title">
+                              <Label id="img-title" fx:id="imageTitle18" layoutX="126.0" layoutY="94.0" prefHeight="30.0" text="Title" visible="false" AnchorPane.leftAnchor="130.0" AnchorPane.topAnchor="85.0">
                                  <font>
                                     <Font name="Comic Sans MS" size="18.0" />
                                  </font>
@@ -92,14 +92,14 @@
                               <Insets right="10.0" />
                            </HBox.margin>
                         </AnchorPane>
-                        <AnchorPane fx:id="imageAnchor19" layoutX="676.0" layoutY="10.0" prefHeight="48.0" prefWidth="154.0">
+                        <AnchorPane fx:id="imageAnchor19" layoutX="676.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="302.0" prefWidth="163.0">
                            <children>
                               <ImageView fx:id="imageView19" fitHeight="200.0" fitWidth="144.0" focusTraversable="true" layoutX="-18.0" layoutY="90.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true" AnchorPane.topAnchor="100.0">
                                  <image>
                                     <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
                                  </image>
                               </ImageView>
-                              <Label id="img-title" fx:id="imageTitle19" layoutX="126.0" layoutY="94.0" prefHeight="22.0" prefWidth="42.0" text="Title">
+                              <Label id="img-title" fx:id="imageTitle19" layoutX="126.0" layoutY="94.0" prefHeight="30.0" text="Title" visible="false" AnchorPane.leftAnchor="130.0" AnchorPane.topAnchor="85.0">
                                  <font>
                                     <Font name="Comic Sans MS" size="18.0" />
                                  </font>
@@ -109,14 +109,14 @@
                               <Insets right="10.0" />
                            </HBox.margin>
                         </AnchorPane>
-                        <AnchorPane fx:id="imageAnchor20" layoutX="844.0" layoutY="10.0" prefHeight="48.0" prefWidth="154.0">
+                        <AnchorPane fx:id="imageAnchor20" layoutX="844.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="302.0" prefWidth="163.0">
                            <children>
                               <ImageView fx:id="imageView20" fitHeight="200.0" fitWidth="144.0" focusTraversable="true" layoutX="-18.0" layoutY="90.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true" AnchorPane.topAnchor="100.0">
                                  <image>
                                     <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
                                  </image>
                               </ImageView>
-                              <Label id="img-title" fx:id="imageTitle20" layoutX="126.0" layoutY="94.0" prefHeight="22.0" prefWidth="42.0" text="Title">
+                              <Label id="img-title" fx:id="imageTitle20" layoutX="126.0" layoutY="94.0" prefHeight="30.0" text="Title" visible="false" AnchorPane.leftAnchor="130.0" AnchorPane.topAnchor="85.0">
                                  <font>
                                     <Font name="Comic Sans MS" size="18.0" />
                                  </font>
@@ -126,14 +126,14 @@
                               <Insets right="10.0" />
                            </HBox.margin>
                         </AnchorPane>
-                        <AnchorPane fx:id="imageAnchor21" layoutX="1012.0" layoutY="10.0" prefHeight="48.0" prefWidth="154.0">
+                        <AnchorPane fx:id="imageAnchor21" layoutX="1012.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="302.0" prefWidth="163.0">
                            <children>
                               <ImageView fx:id="imageView21" fitHeight="200.0" fitWidth="144.0" focusTraversable="true" layoutX="-18.0" layoutY="90.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true" AnchorPane.topAnchor="100.0">
                                  <image>
                                     <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
                                  </image>
                               </ImageView>
-                              <Label id="img-title" fx:id="imageTitle21" layoutX="126.0" layoutY="94.0" prefHeight="22.0" prefWidth="42.0" text="Title">
+                              <Label id="img-title" fx:id="imageTitle21" layoutX="126.0" layoutY="94.0" prefHeight="30.0" text="Title" visible="false" AnchorPane.leftAnchor="130.0" AnchorPane.topAnchor="85.0">
                                  <font>
                                     <Font name="Comic Sans MS" size="18.0" />
                                  </font>
@@ -143,14 +143,14 @@
                               <Insets right="10.0" />
                            </HBox.margin>
                         </AnchorPane>
-                        <AnchorPane fx:id="imageAnchor22" layoutX="1180.0" layoutY="10.0" prefHeight="48.0" prefWidth="154.0">
+                        <AnchorPane fx:id="imageAnchor22" layoutX="1180.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="302.0" prefWidth="163.0">
                            <children>
                               <ImageView fx:id="imageView22" fitHeight="200.0" fitWidth="144.0" focusTraversable="true" layoutX="-18.0" layoutY="90.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true" AnchorPane.topAnchor="100.0">
                                  <image>
                                     <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
                                  </image>
                               </ImageView>
-                              <Label id="img-title" fx:id="imageTitle22" layoutX="126.0" layoutY="94.0" prefHeight="22.0" prefWidth="42.0" text="Title">
+                              <Label id="img-title" fx:id="imageTitle22" layoutX="126.0" layoutY="94.0" prefHeight="30.0" text="Title" visible="false" AnchorPane.leftAnchor="130.0" AnchorPane.topAnchor="85.0">
                                  <font>
                                     <Font name="Comic Sans MS" size="18.0" />
                                  </font>
@@ -160,14 +160,14 @@
                               <Insets right="10.0" />
                            </HBox.margin>
                         </AnchorPane>
-                        <AnchorPane fx:id="imageAnchor23" layoutX="1348.0" layoutY="10.0" prefHeight="48.0" prefWidth="154.0">
+                        <AnchorPane fx:id="imageAnchor23" layoutX="1348.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="302.0" prefWidth="163.0">
                            <children>
                               <ImageView fx:id="imageView23" fitHeight="200.0" fitWidth="144.0" focusTraversable="true" layoutX="-18.0" layoutY="90.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true" AnchorPane.topAnchor="100.0">
                                  <image>
                                     <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
                                  </image>
                               </ImageView>
-                              <Label id="img-title" fx:id="imageTitle23" layoutX="126.0" layoutY="94.0" prefHeight="22.0" prefWidth="42.0" text="Title">
+                              <Label id="img-title" fx:id="imageTitle23" layoutX="126.0" layoutY="94.0" prefHeight="30.0" text="Title" visible="false" AnchorPane.leftAnchor="130.0" AnchorPane.topAnchor="85.0">
                                  <font>
                                     <Font name="Comic Sans MS" size="18.0" />
                                  </font>
@@ -177,14 +177,14 @@
                               <Insets right="10.0" />
                            </HBox.margin>
                         </AnchorPane>
-                        <AnchorPane fx:id="imageAnchor24" layoutX="1516.0" layoutY="10.0" prefHeight="48.0" prefWidth="154.0">
+                        <AnchorPane fx:id="imageAnchor24" layoutX="1516.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="302.0" prefWidth="163.0">
                            <children>
                               <ImageView fx:id="imageView24" fitHeight="200.0" fitWidth="144.0" focusTraversable="true" layoutX="-18.0" layoutY="90.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true" AnchorPane.topAnchor="100.0">
                                  <image>
                                     <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
                                  </image>
                               </ImageView>
-                              <Label id="img-title" fx:id="imageTitle24" layoutX="126.0" layoutY="94.0" prefHeight="22.0" prefWidth="42.0" text="Title">
+                              <Label id="img-title" fx:id="imageTitle24" layoutX="126.0" layoutY="94.0" prefHeight="30.0" text="Title" visible="false" AnchorPane.leftAnchor="130.0" AnchorPane.topAnchor="85.0">
                                  <font>
                                     <Font name="Comic Sans MS" size="18.0" />
                                  </font>
@@ -194,14 +194,14 @@
                               <Insets right="10.0" />
                            </HBox.margin>
                         </AnchorPane>
-                        <AnchorPane fx:id="imageAnchor25" layoutX="1684.0" layoutY="10.0" prefHeight="48.0" prefWidth="154.0">
+                        <AnchorPane fx:id="imageAnchor25" layoutX="1684.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="302.0" prefWidth="163.0">
                            <children>
                               <ImageView fx:id="imageView25" fitHeight="200.0" fitWidth="144.0" focusTraversable="true" layoutX="-18.0" layoutY="90.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true" AnchorPane.topAnchor="100.0">
                                  <image>
                                     <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
                                  </image>
                               </ImageView>
-                              <Label id="img-title" fx:id="imageTitle25" layoutX="126.0" layoutY="94.0" prefHeight="22.0" prefWidth="42.0" text="Title">
+                              <Label id="img-title" fx:id="imageTitle25" layoutX="126.0" layoutY="94.0" prefHeight="30.0" text="Title" visible="false" AnchorPane.leftAnchor="130.0" AnchorPane.topAnchor="85.0">
                                  <font>
                                     <Font name="Comic Sans MS" size="18.0" />
                                  </font>
@@ -211,14 +211,14 @@
                               <Insets right="10.0" />
                            </HBox.margin>
                         </AnchorPane>
-                        <AnchorPane fx:id="imageAnchor26" layoutX="1852.0" layoutY="10.0" prefHeight="48.0" prefWidth="154.0">
+                        <AnchorPane fx:id="imageAnchor26" layoutX="1852.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="302.0" prefWidth="163.0">
                            <children>
                               <ImageView fx:id="imageView26" fitHeight="200.0" fitWidth="144.0" focusTraversable="true" layoutX="-18.0" layoutY="90.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true" AnchorPane.topAnchor="100.0">
                                  <image>
                                     <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
                                  </image>
                               </ImageView>
-                              <Label id="img-title" fx:id="imageTitle26" layoutX="126.0" layoutY="94.0" prefHeight="22.0" prefWidth="42.0" text="Title">
+                              <Label id="img-title" fx:id="imageTitle26" layoutX="126.0" layoutY="94.0" prefHeight="30.0" text="Title" visible="false" AnchorPane.leftAnchor="130.0" AnchorPane.topAnchor="85.0">
                                  <font>
                                     <Font name="Comic Sans MS" size="18.0" />
                                  </font>
@@ -228,14 +228,14 @@
                               <Insets right="10.0" />
                            </HBox.margin>
                         </AnchorPane>
-                        <AnchorPane fx:id="imageAnchor27" layoutX="2020.0" layoutY="10.0" prefHeight="48.0" prefWidth="154.0">
+                        <AnchorPane fx:id="imageAnchor27" layoutX="2020.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="302.0" prefWidth="163.0">
                            <children>
                               <ImageView fx:id="imageView27" fitHeight="200.0" fitWidth="144.0" focusTraversable="true" layoutX="-18.0" layoutY="90.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true" AnchorPane.topAnchor="100.0">
                                  <image>
                                     <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
                                  </image>
                               </ImageView>
-                              <Label id="img-title" fx:id="imageTitle27" layoutX="126.0" layoutY="94.0" prefHeight="22.0" prefWidth="42.0" text="Title">
+                              <Label id="img-title" fx:id="imageTitle27" layoutX="126.0" layoutY="94.0" prefHeight="30.0" text="Title" visible="false" AnchorPane.leftAnchor="130.0" AnchorPane.topAnchor="85.0">
                                  <font>
                                     <Font name="Comic Sans MS" size="18.0" />
                                  </font>
@@ -245,14 +245,14 @@
                               <Insets right="10.0" />
                            </HBox.margin>
                         </AnchorPane>
-                        <AnchorPane fx:id="imageAnchor28" layoutX="2188.0" layoutY="10.0" prefHeight="48.0" prefWidth="154.0">
+                        <AnchorPane fx:id="imageAnchor28" layoutX="2188.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="302.0" prefWidth="163.0">
                            <children>
                               <ImageView fx:id="imageView28" fitHeight="200.0" fitWidth="144.0" focusTraversable="true" layoutX="-18.0" layoutY="90.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true" AnchorPane.topAnchor="100.0">
                                  <image>
                                     <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
                                  </image>
                               </ImageView>
-                              <Label id="img-title" fx:id="imageTitle28" layoutX="126.0" layoutY="94.0" prefHeight="22.0" prefWidth="42.0" text="Title">
+                              <Label id="img-title" fx:id="imageTitle28" layoutX="126.0" layoutY="94.0" prefHeight="30.0" text="Title" visible="false" AnchorPane.leftAnchor="130.0" AnchorPane.topAnchor="85.0">
                                  <font>
                                     <Font name="Comic Sans MS" size="18.0" />
                                  </font>
@@ -271,21 +271,21 @@
             </ScrollPane>
             <ScrollPane hbarPolicy="NEVER" pannable="true" prefHeight="343.33333333" prefWidth="1920.0" style="-fx-background-color: #303030;" vbarPolicy="NEVER" vmax="0.0">
                <content>
-                  <HBox prefHeight="343.3333" prefWidth="2560.0" style="-fx-background-color: #303030;">
+                  <HBox prefHeight="344.0" prefWidth="3000.0" style="-fx-background-color: #303030;">
                      <children>
                         <Label id="ani_label" prefHeight="39.0" prefWidth="194.0" text="Trending">
                            <HBox.margin>
                               <Insets left="20.0" right="-120.0" top="20.0" />
                            </HBox.margin>
                         </Label>
-                        <AnchorPane fx:id="imageAnchor29" prefHeight="48.0" prefWidth="154.0">
+                        <AnchorPane fx:id="imageAnchor29" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="302.0" prefWidth="163.0">
                            <children>
-                              <ImageView fx:id="imageView29" fitHeight="200.0" fitWidth="144.0" focusTraversable="true" layoutX="-18.0" layoutY="90.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true" AnchorPane.topAnchor="100.0">
+                              <ImageView fx:id="imageView29" fitHeight="200.0" fitWidth="144.0" focusTraversable="true" layoutX="-54.0" layoutY="100.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true" AnchorPane.topAnchor="100.0">
                                  <image>
                                     <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
                                  </image>
                               </ImageView>
-                              <Label id="img-title" fx:id="imageTitle29" layoutX="126.0" layoutY="94.0" prefHeight="22.0" prefWidth="42.0" text="Title">
+                              <Label id="img-title" fx:id="imageTitle29" layoutX="126.0" layoutY="94.0" prefHeight="30.0" text="Title" visible="false" AnchorPane.leftAnchor="100.0" AnchorPane.topAnchor="85.0">
                                  <font>
                                     <Font name="Comic Sans MS" size="18.0" />
                                  </font>
@@ -295,31 +295,31 @@
                               <Insets right="10.0" />
                            </HBox.margin>
                         </AnchorPane>
-                        <AnchorPane fx:id="imageAnchor30" prefHeight="48.0" prefWidth="154.0">
+                        <AnchorPane fx:id="imageAnchor30" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="302.0" prefWidth="163.0">
                            <children>
                               <ImageView fx:id="imageView30" fitHeight="200.0" fitWidth="144.0" focusTraversable="true" layoutX="-18.0" layoutY="90.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true" AnchorPane.topAnchor="100.0">
                                  <image>
                                     <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
                                  </image>
                               </ImageView>
-                              <Label id="img-title" fx:id="imageTitle30" layoutX="126.0" layoutY="94.0" prefHeight="22.0" prefWidth="42.0" text="Title">
+                              <Label id="img-title" fx:id="imageTitle30" layoutX="126.0" layoutY="94.0" prefHeight="30.0" text="Title" visible="false" AnchorPane.leftAnchor="135.0" AnchorPane.topAnchor="85.0">
                                  <font>
                                     <Font name="Comic Sans MS" size="18.0" />
                                  </font>
                               </Label>
                            </children>
                            <HBox.margin>
-                              <Insets right="10.0" />
+                              <Insets left="-30.0" right="10.0" />
                            </HBox.margin>
                         </AnchorPane>
-                        <AnchorPane fx:id="imageAnchor31" prefHeight="48.0" prefWidth="154.0">
+                        <AnchorPane fx:id="imageAnchor31" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="302.0" prefWidth="163.0">
                            <children>
                               <ImageView fx:id="imageView31" fitHeight="200.0" fitWidth="144.0" focusTraversable="true" layoutX="-18.0" layoutY="90.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true" AnchorPane.topAnchor="100.0">
                                  <image>
                                     <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
                                  </image>
                               </ImageView>
-                              <Label id="img-title" fx:id="imageTitle31" layoutX="126.0" layoutY="94.0" prefHeight="22.0" prefWidth="42.0" text="Title">
+                              <Label id="img-title" fx:id="imageTitle31" layoutX="126.0" layoutY="94.0" prefHeight="30.0" text="Title" visible="false" AnchorPane.leftAnchor="130.0" AnchorPane.topAnchor="85.0">
                                  <font>
                                     <Font name="Comic Sans MS" size="18.0" />
                                  </font>
@@ -329,14 +329,14 @@
                               <Insets right="10.0" />
                            </HBox.margin>
                         </AnchorPane>
-                        <AnchorPane fx:id="imageAnchor32" prefHeight="48.0" prefWidth="154.0">
+                        <AnchorPane fx:id="imageAnchor32" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="302.0" prefWidth="163.0">
                            <children>
                               <ImageView fx:id="imageView32" fitHeight="200.0" fitWidth="144.0" focusTraversable="true" layoutX="-18.0" layoutY="90.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true" AnchorPane.topAnchor="100.0">
                                  <image>
                                     <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
                                  </image>
                               </ImageView>
-                              <Label id="img-title" fx:id="imageTitle32" layoutX="126.0" layoutY="94.0" prefHeight="22.0" prefWidth="42.0" text="Title">
+                              <Label id="img-title" fx:id="imageTitle32" layoutX="126.0" layoutY="94.0" prefHeight="30.0" text="Title" visible="false" AnchorPane.leftAnchor="130.0" AnchorPane.topAnchor="85.0">
                                  <font>
                                     <Font name="Comic Sans MS" size="18.0" />
                                  </font>
@@ -346,14 +346,14 @@
                               <Insets right="10.0" />
                            </HBox.margin>
                         </AnchorPane>
-                        <AnchorPane fx:id="imageAnchor33" prefHeight="48.0" prefWidth="154.0">
+                        <AnchorPane fx:id="imageAnchor33" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="302.0" prefWidth="163.0">
                            <children>
                               <ImageView fx:id="imageView33" fitHeight="200.0" fitWidth="144.0" focusTraversable="true" layoutX="-18.0" layoutY="90.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true" AnchorPane.topAnchor="100.0">
                                  <image>
                                     <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
                                  </image>
                               </ImageView>
-                              <Label id="img-title" fx:id="imageTitle33" layoutX="126.0" layoutY="94.0" prefHeight="22.0" prefWidth="42.0" text="Title">
+                              <Label id="img-title" fx:id="imageTitle33" layoutX="126.0" layoutY="94.0" prefHeight="30.0" text="Title" visible="false" AnchorPane.leftAnchor="130.0" AnchorPane.topAnchor="85.0">
                                  <font>
                                     <Font name="Comic Sans MS" size="18.0" />
                                  </font>
@@ -363,14 +363,14 @@
                               <Insets right="10.0" />
                            </HBox.margin>
                         </AnchorPane>
-                        <AnchorPane fx:id="imageAnchor34" prefHeight="48.0" prefWidth="154.0">
+                        <AnchorPane fx:id="imageAnchor34" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="302.0" prefWidth="163.0">
                            <children>
                               <ImageView fx:id="imageView34" fitHeight="200.0" fitWidth="144.0" focusTraversable="true" layoutX="-18.0" layoutY="90.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true" AnchorPane.topAnchor="100.0">
                                  <image>
                                     <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
                                  </image>
                               </ImageView>
-                              <Label id="img-title" fx:id="imageTitle34" layoutX="126.0" layoutY="94.0" prefHeight="22.0" prefWidth="42.0" text="Title">
+                              <Label id="img-title" fx:id="imageTitle34" layoutX="126.0" layoutY="94.0" prefHeight="30.0" text="Title" visible="false" AnchorPane.leftAnchor="130.0" AnchorPane.topAnchor="85.0">
                                  <font>
                                     <Font name="Comic Sans MS" size="18.0" />
                                  </font>
@@ -380,14 +380,14 @@
                               <Insets right="10.0" />
                            </HBox.margin>
                         </AnchorPane>
-                        <AnchorPane fx:id="imageAnchor35" prefHeight="48.0" prefWidth="154.0">
+                        <AnchorPane fx:id="imageAnchor35" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="302.0" prefWidth="163.0">
                            <children>
                               <ImageView fx:id="imageView35" fitHeight="200.0" fitWidth="144.0" focusTraversable="true" layoutX="-18.0" layoutY="90.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true" AnchorPane.topAnchor="100.0">
                                  <image>
                                     <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
                                  </image>
                               </ImageView>
-                              <Label id="img-title" fx:id="imageTitle35" layoutX="126.0" layoutY="94.0" prefHeight="22.0" prefWidth="42.0" text="Title">
+                              <Label id="img-title" fx:id="imageTitle35" layoutX="126.0" layoutY="94.0" prefHeight="30.0" text="Title" visible="false" AnchorPane.leftAnchor="130.0" AnchorPane.topAnchor="85.0">
                                  <font>
                                     <Font name="Comic Sans MS" size="18.0" />
                                  </font>
@@ -397,14 +397,14 @@
                               <Insets right="10.0" />
                            </HBox.margin>
                         </AnchorPane>
-                        <AnchorPane fx:id="imageAnchor36" prefHeight="48.0" prefWidth="154.0">
+                        <AnchorPane fx:id="imageAnchor36" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="302.0" prefWidth="163.0">
                            <children>
                               <ImageView fx:id="imageView36" fitHeight="200.0" fitWidth="144.0" focusTraversable="true" layoutX="-18.0" layoutY="90.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true" AnchorPane.topAnchor="100.0">
                                  <image>
                                     <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
                                  </image>
                               </ImageView>
-                              <Label id="img-title" fx:id="imageTitle36" layoutX="126.0" layoutY="94.0" prefHeight="22.0" prefWidth="42.0" text="Title">
+                              <Label id="img-title" fx:id="imageTitle36" layoutX="126.0" layoutY="94.0" prefHeight="30.0" text="Title" visible="false" AnchorPane.leftAnchor="130.0" AnchorPane.topAnchor="85.0">
                                  <font>
                                     <Font name="Comic Sans MS" size="18.0" />
                                  </font>
@@ -414,14 +414,14 @@
                               <Insets right="10.0" />
                            </HBox.margin>
                         </AnchorPane>
-                        <AnchorPane fx:id="imageAnchor37" prefHeight="48.0" prefWidth="154.0">
+                        <AnchorPane fx:id="imageAnchor37" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="302.0" prefWidth="163.0">
                            <children>
                               <ImageView fx:id="imageView37" fitHeight="200.0" fitWidth="144.0" focusTraversable="true" layoutX="-18.0" layoutY="100.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true" AnchorPane.topAnchor="100.0">
                                  <image>
                                     <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
                                  </image>
                               </ImageView>
-                              <Label id="img-title" fx:id="imageTitle37" layoutX="126.0" layoutY="94.0" prefHeight="22.0" prefWidth="42.0" text="Title">
+                              <Label id="img-title" fx:id="imageTitle37" layoutX="126.0" layoutY="94.0" prefHeight="30.0" text="Title" visible="false" AnchorPane.leftAnchor="130.0" AnchorPane.topAnchor="85.0">
                                  <font>
                                     <Font name="Comic Sans MS" size="18.0" />
                                  </font>
@@ -431,14 +431,14 @@
                               <Insets right="10.0" />
                            </HBox.margin>
                         </AnchorPane>
-                        <AnchorPane fx:id="imageAnchor38" prefHeight="48.0" prefWidth="154.0">
+                        <AnchorPane fx:id="imageAnchor38" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="302.0" prefWidth="163.0">
                            <children>
                               <ImageView fx:id="imageView38" fitHeight="200.0" fitWidth="144.0" focusTraversable="true" layoutX="-18.0" layoutY="90.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true" AnchorPane.topAnchor="100.0">
                                  <image>
                                     <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
                                  </image>
                               </ImageView>
-                              <Label id="img-title" fx:id="imageTitle38" layoutX="126.0" layoutY="94.0" prefHeight="22.0" prefWidth="42.0" text="Title">
+                              <Label id="img-title" fx:id="imageTitle38" layoutX="126.0" layoutY="94.0" prefHeight="30.0" text="Title" visible="false" AnchorPane.leftAnchor="130.0" AnchorPane.topAnchor="85.0">
                                  <font>
                                     <Font name="Comic Sans MS" size="18.0" />
                                  </font>
@@ -448,14 +448,14 @@
                               <Insets right="10.0" />
                            </HBox.margin>
                         </AnchorPane>
-                        <AnchorPane fx:id="imageAnchor39" prefHeight="48.0" prefWidth="154.0">
+                        <AnchorPane fx:id="imageAnchor39" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="302.0" prefWidth="163.0">
                            <children>
                               <ImageView fx:id="imageView39" fitHeight="200.0" fitWidth="144.0" focusTraversable="true" layoutX="-18.0" layoutY="90.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true" AnchorPane.topAnchor="100.0">
                                  <image>
                                     <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
                                  </image>
                               </ImageView>
-                              <Label id="img-title" fx:id="imageTitle39" layoutX="126.0" layoutY="94.0" prefHeight="22.0" prefWidth="42.0" text="Title">
+                              <Label id="img-title" fx:id="imageTitle39" layoutX="126.0" layoutY="94.0" prefHeight="30.0" text="Title" visible="false" AnchorPane.leftAnchor="130.0" AnchorPane.topAnchor="85.0">
                                  <font>
                                     <Font name="Comic Sans MS" size="18.0" />
                                  </font>
@@ -465,14 +465,14 @@
                               <Insets right="10.0" />
                            </HBox.margin>
                         </AnchorPane>
-                        <AnchorPane fx:id="imageAnchor40" prefHeight="48.0" prefWidth="154.0">
+                        <AnchorPane fx:id="imageAnchor40" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="302.0" prefWidth="163.0">
                            <children>
                               <ImageView fx:id="imageView40" fitHeight="200.0" fitWidth="144.0" focusTraversable="true" layoutX="-18.0" layoutY="90.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true" AnchorPane.topAnchor="100.0">
                                  <image>
                                     <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
                                  </image>
                               </ImageView>
-                              <Label id="img-title" fx:id="imageTitle40" layoutX="126.0" layoutY="94.0" prefHeight="22.0" prefWidth="42.0" text="Title">
+                              <Label id="img-title" fx:id="imageTitle40" layoutX="126.0" layoutY="94.0" prefHeight="30.0" text="Title" visible="false" AnchorPane.leftAnchor="130.0" AnchorPane.topAnchor="85.0">
                                  <font>
                                     <Font name="Comic Sans MS" size="18.0" />
                                  </font>
@@ -482,14 +482,14 @@
                               <Insets right="10.0" />
                            </HBox.margin>
                         </AnchorPane>
-                        <AnchorPane fx:id="imageAnchor41" prefHeight="48.0" prefWidth="154.0">
+                        <AnchorPane fx:id="imageAnchor41" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="302.0" prefWidth="163.0">
                            <children>
                               <ImageView fx:id="imageView41" fitHeight="200.0" fitWidth="144.0" focusTraversable="true" layoutX="-18.0" layoutY="90.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true" AnchorPane.topAnchor="100.0">
                                  <image>
                                     <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
                                  </image>
                               </ImageView>
-                              <Label id="img-title" fx:id="imageTitle41" layoutX="126.0" layoutY="94.0" prefHeight="22.0" prefWidth="42.0" text="Title">
+                              <Label id="img-title" fx:id="imageTitle41" layoutX="126.0" layoutY="94.0" prefHeight="30.0" text="Title" visible="false" AnchorPane.leftAnchor="130.0" AnchorPane.topAnchor="85.0">
                                  <font>
                                     <Font name="Comic Sans MS" size="18.0" />
                                  </font>
@@ -499,14 +499,14 @@
                               <Insets right="10.0" />
                            </HBox.margin>
                         </AnchorPane>
-                        <AnchorPane fx:id="imageAnchor42" prefHeight="48.0" prefWidth="154.0">
+                        <AnchorPane fx:id="imageAnchor42" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="302.0" prefWidth="163.0">
                            <children>
                               <ImageView fx:id="imageView42" fitHeight="200.0" fitWidth="144.0" focusTraversable="true" layoutX="-18.0" layoutY="90.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true" AnchorPane.topAnchor="100.0">
                                  <image>
                                     <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
                                  </image>
                               </ImageView>
-                              <Label id="img-title" fx:id="imageTitle42" layoutX="126.0" layoutY="94.0" prefHeight="22.0" prefWidth="42.0" text="Title">
+                              <Label id="img-title" fx:id="imageTitle42" layoutX="126.0" layoutY="94.0" prefHeight="30.0" text="Title" visible="false" AnchorPane.leftAnchor="130.0" AnchorPane.topAnchor="85.0">
                                  <font>
                                     <Font name="Comic Sans MS" size="18.0" />
                                  </font>
@@ -525,249 +525,249 @@
             </ScrollPane>
             <ScrollPane hbarPolicy="NEVER" pannable="true" prefHeight="343.333" prefWidth="1920.0" style="-fx-background-color: #303030;" vbarPolicy="NEVER" vmax="0.0">
                <content>
-                  <HBox prefHeight="343.333333" prefWidth="2560.0" style="-fx-background-color: #303030;">
+                  <HBox prefHeight="345.0" prefWidth="3000.0" style="-fx-background-color: #303030;">
                      <children>
                         <Label id="ani_label" prefHeight="39.0" prefWidth="229.0" text="Most Popular">
                            <HBox.margin>
                               <Insets left="20.0" right="-120.0" top="20.0" />
                            </HBox.margin>
                         </Label>
-                        <AnchorPane fx:id="imageAnchor1" prefHeight="48.0" prefWidth="154.0">
+                        <AnchorPane fx:id="imageAnchor1" minHeight="-Infinity" minWidth="-Infinity" prefHeight="302.0" prefWidth="168.0">
                            <children>
                               <ImageView fx:id="imageView1" fitHeight="200.0" fitWidth="144.0" focusTraversable="true" layoutX="-18.0" layoutY="90.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true" AnchorPane.topAnchor="100.0">
                                  <image>
                                     <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
                                  </image>
                               </ImageView>
-                              <Label id="img-title" fx:id="imageTitle1" layoutX="126.0" layoutY="94.0" prefHeight="22.0" prefWidth="42.0" text="Title">
+                              <Label id="img-title" fx:id="imageTitle1" layoutX="126.0" layoutY="94.0" prefHeight="30.0" text="Title" visible="false" AnchorPane.leftAnchor="130.0">
                                  <font>
                                     <Font name="Comic Sans MS" size="18.0" />
                                  </font>
                               </Label>
                            </children>
                            <HBox.margin>
-                              <Insets right="10.0" />
+                              <Insets left="-75.0" right="10.0" />
                            </HBox.margin>
                         </AnchorPane>
-                        <AnchorPane fx:id="imageAnchor2" prefHeight="48.0" prefWidth="154.0">
+                        <AnchorPane fx:id="imageAnchor2" minHeight="-Infinity" minWidth="-Infinity" prefHeight="302.0" prefWidth="168.0">
                            <children>
                               <ImageView fx:id="imageView2" fitHeight="200.0" fitWidth="144.0" focusTraversable="true" layoutX="-18.0" layoutY="90.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true" AnchorPane.topAnchor="100.0">
                                  <image>
                                     <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
                                  </image>
                               </ImageView>
-                              <Label id="img-title" fx:id="imageTitle2" layoutX="126.0" layoutY="94.0" prefHeight="22.0" prefWidth="42.0" text="Title">
+                              <Label id="img-title" fx:id="imageTitle2" layoutX="126.0" layoutY="94.0" prefHeight="30.0" text="Title" visible="false" AnchorPane.leftAnchor="130.0" AnchorPane.topAnchor="85.0">
                                  <font>
                                     <Font name="Comic Sans MS" size="18.0" />
                                  </font>
                               </Label>
                            </children>
                            <HBox.margin>
-                              <Insets right="10.0" />
+                              <Insets right="5.0" />
                            </HBox.margin>
                         </AnchorPane>
-                        <AnchorPane fx:id="imageAnchor3" prefHeight="48.0" prefWidth="154.0">
+                        <AnchorPane fx:id="imageAnchor3" minHeight="-Infinity" minWidth="-Infinity" prefHeight="302.0" prefWidth="168.0">
                            <children>
                               <ImageView fx:id="imageView3" fitHeight="200.0" fitWidth="144.0" focusTraversable="true" layoutX="-18.0" layoutY="90.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true" AnchorPane.topAnchor="100.0">
                                  <image>
                                     <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
                                  </image>
                               </ImageView>
-                              <Label id="img-title" fx:id="imageTitle3" layoutX="126.0" layoutY="94.0" prefHeight="22.0" prefWidth="42.0" text="Title">
+                              <Label id="img-title" fx:id="imageTitle3" layoutX="126.0" layoutY="94.0" prefHeight="30.0" text="Title" visible="false" AnchorPane.leftAnchor="130.0" AnchorPane.topAnchor="85.0">
                                  <font>
                                     <Font name="Comic Sans MS" size="18.0" />
                                  </font>
                               </Label>
                            </children>
                            <HBox.margin>
-                              <Insets right="10.0" />
+                              <Insets right="5.0" />
                            </HBox.margin>
                         </AnchorPane>
-                        <AnchorPane fx:id="imageAnchor4" prefHeight="48.0" prefWidth="154.0">
+                        <AnchorPane fx:id="imageAnchor4" minHeight="-Infinity" minWidth="-Infinity" prefHeight="302.0" prefWidth="168.0">
                            <children>
                               <ImageView fx:id="imageView4" fitHeight="200.0" fitWidth="144.0" focusTraversable="true" layoutX="-18.0" layoutY="90.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true" AnchorPane.topAnchor="100.0">
                                  <image>
                                     <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
                                  </image>
                               </ImageView>
-                              <Label id="img-title" fx:id="imageTitle4" layoutX="126.0" layoutY="94.0" prefHeight="22.0" prefWidth="42.0" text="Title">
+                              <Label id="img-title" fx:id="imageTitle4" layoutX="126.0" layoutY="94.0" prefHeight="30.0" text="Title" visible="false" AnchorPane.leftAnchor="130.0" AnchorPane.topAnchor="85.0">
                                  <font>
                                     <Font name="Comic Sans MS" size="18.0" />
                                  </font>
                               </Label>
                            </children>
                            <HBox.margin>
-                              <Insets right="10.0" />
+                              <Insets right="5.0" />
                            </HBox.margin>
                         </AnchorPane>
-                        <AnchorPane fx:id="imageAnchor5" prefHeight="48.0" prefWidth="154.0">
+                        <AnchorPane fx:id="imageAnchor5" minHeight="-Infinity" minWidth="-Infinity" prefHeight="302.0" prefWidth="168.0">
                            <children>
                               <ImageView fx:id="imageView5" fitHeight="200.0" fitWidth="144.0" focusTraversable="true" layoutX="-18.0" layoutY="90.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true" AnchorPane.topAnchor="100.0">
                                  <image>
                                     <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
                                  </image>
                               </ImageView>
-                              <Label id="img-title" fx:id="imageTitle5" layoutX="126.0" layoutY="94.0" prefHeight="22.0" prefWidth="42.0" text="Title">
+                              <Label id="img-title" fx:id="imageTitle5" layoutX="126.0" layoutY="94.0" prefHeight="30.0" text="Title" visible="false" AnchorPane.leftAnchor="130.0" AnchorPane.topAnchor="85.0">
                                  <font>
                                     <Font name="Comic Sans MS" size="18.0" />
                                  </font>
                               </Label>
                            </children>
                            <HBox.margin>
-                              <Insets right="10.0" />
+                              <Insets right="5.0" />
                            </HBox.margin>
                         </AnchorPane>
-                        <AnchorPane fx:id="imageAnchor6" prefHeight="48.0" prefWidth="154.0">
+                        <AnchorPane fx:id="imageAnchor6" minHeight="-Infinity" minWidth="-Infinity" prefHeight="302.0" prefWidth="168.0">
                            <children>
                               <ImageView fx:id="imageView6" fitHeight="200.0" fitWidth="144.0" focusTraversable="true" layoutX="-18.0" layoutY="90.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true" AnchorPane.topAnchor="100.0">
                                  <image>
                                     <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
                                  </image>
                               </ImageView>
-                              <Label id="img-title" fx:id="imageTitle6" layoutX="126.0" layoutY="94.0" prefHeight="22.0" prefWidth="42.0" text="Title">
+                              <Label id="img-title" fx:id="imageTitle6" layoutX="126.0" layoutY="94.0" prefHeight="30.0" text="Title" visible="false" AnchorPane.leftAnchor="130.0" AnchorPane.topAnchor="85.0">
                                  <font>
                                     <Font name="Comic Sans MS" size="18.0" />
                                  </font>
                               </Label>
                            </children>
                            <HBox.margin>
-                              <Insets right="10.0" />
+                              <Insets right="5.0" />
                            </HBox.margin>
                         </AnchorPane>
-                        <AnchorPane fx:id="imageAnchor7" prefHeight="48.0" prefWidth="154.0">
+                        <AnchorPane fx:id="imageAnchor7" minHeight="-Infinity" minWidth="-Infinity" prefHeight="302.0" prefWidth="168.0">
                            <children>
                               <ImageView fx:id="imageView7" fitHeight="200.0" fitWidth="144.0" focusTraversable="true" layoutX="-18.0" layoutY="90.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true" AnchorPane.topAnchor="100.0">
                                  <image>
                                     <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
                                  </image>
                               </ImageView>
-                              <Label id="img-title" fx:id="imageTitle7" layoutX="126.0" layoutY="94.0" prefHeight="22.0" prefWidth="42.0" text="Title">
+                              <Label id="img-title" fx:id="imageTitle7" layoutX="126.0" layoutY="94.0" prefHeight="30.0" text="Title" visible="false" AnchorPane.leftAnchor="130.0" AnchorPane.topAnchor="85.0">
                                  <font>
                                     <Font name="Comic Sans MS" size="18.0" />
                                  </font>
                               </Label>
                            </children>
                            <HBox.margin>
-                              <Insets right="10.0" />
+                              <Insets right="5.0" />
                            </HBox.margin>
                         </AnchorPane>
-                        <AnchorPane fx:id="imageAnchor8" prefHeight="48.0" prefWidth="154.0">
+                        <AnchorPane fx:id="imageAnchor8" minHeight="-Infinity" minWidth="-Infinity" prefHeight="302.0" prefWidth="168.0">
                            <children>
                               <ImageView fx:id="imageView8" fitHeight="200.0" fitWidth="144.0" focusTraversable="true" layoutX="-18.0" layoutY="90.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true" AnchorPane.topAnchor="100.0">
                                  <image>
                                     <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
                                  </image>
                               </ImageView>
-                              <Label id="img-title" fx:id="imageTitle8" layoutX="126.0" layoutY="94.0" prefHeight="22.0" prefWidth="42.0" text="Title">
+                              <Label id="img-title" fx:id="imageTitle8" layoutX="126.0" layoutY="94.0" prefHeight="30.0" text="Title" visible="false" AnchorPane.leftAnchor="130.0" AnchorPane.topAnchor="85.0">
                                  <font>
                                     <Font name="Comic Sans MS" size="18.0" />
                                  </font>
                               </Label>
                            </children>
                            <HBox.margin>
-                              <Insets right="10.0" />
+                              <Insets right="5.0" />
                            </HBox.margin>
                         </AnchorPane>
-                        <AnchorPane fx:id="imageAnchor9" prefHeight="48.0" prefWidth="154.0">
+                        <AnchorPane fx:id="imageAnchor9" minHeight="-Infinity" minWidth="-Infinity" prefHeight="302.0" prefWidth="168.0">
                            <children>
                               <ImageView fx:id="imageView9" fitHeight="200.0" fitWidth="144.0" focusTraversable="true" layoutX="-18.0" layoutY="90.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true" AnchorPane.topAnchor="100.0">
                                  <image>
                                     <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
                                  </image>
                               </ImageView>
-                              <Label id="img-title" fx:id="imageTitle9" layoutX="126.0" layoutY="94.0" prefHeight="22.0" prefWidth="42.0" text="Title">
+                              <Label id="img-title" fx:id="imageTitle9" layoutX="126.0" layoutY="94.0" prefHeight="30.0" text="Title" visible="false" AnchorPane.leftAnchor="130.0" AnchorPane.topAnchor="85.0">
                                  <font>
                                     <Font name="Comic Sans MS" size="18.0" />
                                  </font>
                               </Label>
                            </children>
                            <HBox.margin>
-                              <Insets right="10.0" />
+                              <Insets right="5.0" />
                            </HBox.margin>
                         </AnchorPane>
-                        <AnchorPane fx:id="imageAnchor10" prefHeight="48.0" prefWidth="154.0">
+                        <AnchorPane fx:id="imageAnchor10" minHeight="-Infinity" minWidth="-Infinity" prefHeight="302.0" prefWidth="168.0">
                            <children>
                               <ImageView fx:id="imageView10" fitHeight="200.0" fitWidth="144.0" focusTraversable="true" layoutX="-18.0" layoutY="90.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true" AnchorPane.topAnchor="100.0">
                                  <image>
                                     <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
                                  </image>
                               </ImageView>
-                              <Label id="img-title" fx:id="imageTitle10" layoutX="126.0" layoutY="94.0" prefHeight="22.0" prefWidth="42.0" text="Title">
+                              <Label id="img-title" fx:id="imageTitle10" layoutX="126.0" layoutY="94.0" prefHeight="30.0" text="Title" visible="false" AnchorPane.leftAnchor="130.0" AnchorPane.topAnchor="85.0">
                                  <font>
                                     <Font name="Comic Sans MS" size="18.0" />
                                  </font>
                               </Label>
                            </children>
                            <HBox.margin>
-                              <Insets right="10.0" />
+                              <Insets right="5.0" />
                            </HBox.margin>
                         </AnchorPane>
-                        <AnchorPane fx:id="imageAnchor11" prefHeight="48.0" prefWidth="154.0">
+                        <AnchorPane fx:id="imageAnchor11" minHeight="-Infinity" minWidth="-Infinity" prefHeight="302.0" prefWidth="168.0">
                            <children>
                               <ImageView fx:id="imageView11" fitHeight="200.0" fitWidth="144.0" focusTraversable="true" layoutX="-18.0" layoutY="90.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true" AnchorPane.topAnchor="100.0">
                                  <image>
                                     <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
                                  </image>
                               </ImageView>
-                              <Label id="img-title" fx:id="imageTitle11" layoutX="126.0" layoutY="94.0" prefHeight="22.0" prefWidth="42.0" text="Title">
+                              <Label id="img-title" fx:id="imageTitle11" layoutX="126.0" layoutY="94.0" prefHeight="30.0" text="Title" visible="false" AnchorPane.leftAnchor="130.0" AnchorPane.topAnchor="85.0">
                                  <font>
                                     <Font name="Comic Sans MS" size="18.0" />
                                  </font>
                               </Label>
                            </children>
                            <HBox.margin>
-                              <Insets right="10.0" />
+                              <Insets right="5.0" />
                            </HBox.margin>
                         </AnchorPane>
-                        <AnchorPane fx:id="imageAnchor12" prefHeight="48.0" prefWidth="154.0">
+                        <AnchorPane fx:id="imageAnchor12" minHeight="-Infinity" minWidth="-Infinity" prefHeight="302.0" prefWidth="168.0">
                            <children>
                               <ImageView fx:id="imageView12" fitHeight="200.0" fitWidth="144.0" focusTraversable="true" layoutX="-18.0" layoutY="90.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true" AnchorPane.topAnchor="100.0">
                                  <image>
                                     <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
                                  </image>
                               </ImageView>
-                              <Label id="img-title" fx:id="imageTitle12" layoutX="126.0" layoutY="94.0" prefHeight="22.0" prefWidth="42.0" text="Title">
+                              <Label id="img-title" fx:id="imageTitle12" layoutX="126.0" layoutY="94.0" prefHeight="30.0" text="Title" visible="false" AnchorPane.leftAnchor="130.0" AnchorPane.topAnchor="85.0">
                                  <font>
                                     <Font name="Comic Sans MS" size="18.0" />
                                  </font>
                               </Label>
                            </children>
                            <HBox.margin>
-                              <Insets right="10.0" />
+                              <Insets right="5.0" />
                            </HBox.margin>
                         </AnchorPane>
-                        <AnchorPane fx:id="imageAnchor13" prefHeight="48.0" prefWidth="154.0">
+                        <AnchorPane fx:id="imageAnchor13" minHeight="-Infinity" minWidth="-Infinity" prefHeight="302.0" prefWidth="168.0">
                            <children>
                               <ImageView fx:id="imageView13" fitHeight="200.0" fitWidth="144.0" focusTraversable="true" layoutX="-18.0" layoutY="90.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true" AnchorPane.topAnchor="100.0">
                                  <image>
                                     <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
                                  </image>
                               </ImageView>
-                              <Label id="img-title" fx:id="imageTitle13" layoutX="126.0" layoutY="94.0" prefHeight="22.0" prefWidth="42.0" text="Title">
+                              <Label id="img-title" fx:id="imageTitle13" layoutX="126.0" layoutY="94.0" prefHeight="30.0" text="Title" visible="false" AnchorPane.leftAnchor="130.0" AnchorPane.topAnchor="85.0">
                                  <font>
                                     <Font name="Comic Sans MS" size="18.0" />
                                  </font>
                               </Label>
                            </children>
                            <HBox.margin>
-                              <Insets right="10.0" />
+                              <Insets right="5.0" />
                            </HBox.margin>
                         </AnchorPane>
-                        <AnchorPane fx:id="imageAnchor14" prefHeight="48.0" prefWidth="154.0">
+                        <AnchorPane fx:id="imageAnchor14" minHeight="-Infinity" minWidth="-Infinity" prefHeight="302.0" prefWidth="168.0">
                            <children>
                               <ImageView fx:id="imageView14" fitHeight="200.0" fitWidth="144.0" focusTraversable="true" layoutX="-18.0" layoutY="90.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true" AnchorPane.topAnchor="100.0">
                                  <image>
                                     <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
                                  </image>
                               </ImageView>
-                              <Label id="img-title" fx:id="imageTitle14" layoutX="126.0" layoutY="94.0" prefHeight="22.0" prefWidth="42.0" text="Title">
+                              <Label id="img-title" fx:id="imageTitle14" layoutX="126.0" layoutY="94.0" prefHeight="30.0" text="Title" visible="false" AnchorPane.leftAnchor="130.0" AnchorPane.topAnchor="85.0">
                                  <font>
                                     <Font name="Comic Sans MS" size="18.0" />
                                  </font>
                               </Label>
                            </children>
                            <HBox.margin>
-                              <Insets right="10.0" />
+                              <Insets right="5.0" />
                            </HBox.margin>
                         </AnchorPane>
                      </children>

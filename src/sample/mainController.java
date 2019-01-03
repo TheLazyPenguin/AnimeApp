@@ -2,6 +2,7 @@ package sample;
 import javafx.event.Event;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.animation.*;
@@ -12,6 +13,7 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.ResourceBundle;
+import java.util.concurrent.TimeUnit;
 
 public class mainController implements Initializable {
     private static ArrayList<ImageView> trendingiv;
@@ -20,6 +22,9 @@ public class mainController implements Initializable {
     private static ArrayList<AnchorPane> recAnchor;
     private static ArrayList<AnchorPane> trendAnchor;
     private static ArrayList<AnchorPane> mPopAnchor;
+    private static ArrayList<Label> recTitle;
+    private static ArrayList<Label> trendTitle;
+    private static ArrayList<Label> mPopTitle;
 
     @FXML
     private ImageView imageView1;
@@ -190,11 +195,97 @@ public class mainController implements Initializable {
     private AnchorPane imageAnchor41;
     @FXML
     private AnchorPane imageAnchor42;
-
+    //Image Text
+    @FXML
+    private Label imageTitle1;
+    @FXML
+    private Label imageTitle2;
+    @FXML
+    private Label imageTitle3;
+    @FXML
+    private Label imageTitle4;
+    @FXML
+    private Label imageTitle5;
+    @FXML
+    private Label imageTitle6;
+    @FXML
+    private Label imageTitle7;
+    @FXML
+    private Label imageTitle8;
+    @FXML
+    private Label imageTitle9;
+    @FXML
+    private Label imageTitle10;
+    @FXML
+    private Label imageTitle11;
+    @FXML
+    private Label imageTitle12;
+    @FXML
+    private Label imageTitle13;
+    @FXML
+    private Label imageTitle14;
+    @FXML
+    private Label imageTitle15;
+    @FXML
+    private Label imageTitle16;
+    @FXML
+    private Label imageTitle17;
+    @FXML
+    private Label imageTitle18;
+    @FXML
+    private Label imageTitle19;
+    @FXML
+    private Label imageTitle20;
+    @FXML
+    private Label imageTitle21;
+    @FXML
+    private Label imageTitle22;
+    @FXML
+    private Label imageTitle23;
+    @FXML
+    private Label imageTitle24;
+    @FXML
+    private Label imageTitle25;
+    @FXML
+    private Label imageTitle26;
+    @FXML
+    private Label imageTitle27;
+    @FXML
+    private Label imageTitle28;
+    @FXML
+    private Label imageTitle29;
+    @FXML
+    private Label imageTitle30;
+    @FXML
+    private Label imageTitle31;
+    @FXML
+    private Label imageTitle32;
+    @FXML
+    private Label imageTitle33;
+    @FXML
+    private Label imageTitle34;
+    @FXML
+    private Label imageTitle35;
+    @FXML
+    private Label imageTitle36;
+    @FXML
+    private Label imageTitle37;
+    @FXML
+    private Label imageTitle38;
+    @FXML
+    private Label imageTitle39;
+    @FXML
+    private Label imageTitle40;
+    @FXML
+    private Label imageTitle41;
+    @FXML
+    private Label imageTitle42;
+    
 
     public static HashMap<String,Image> trendingHash;
     public static HashMap<String,Image> mPopHash;
-    public static HashMap<String,Image> recentHash;
+    public static
+    HashMap<String,Image> recentHash;
     private int imgN;
     private int imgN2;
     private static boolean fetched = false;
@@ -300,7 +391,7 @@ public class mainController implements Initializable {
         return trendAnchor;
     }
 
-    private ArrayList<AnchorPane> mPopAnchor(){
+    private ArrayList<AnchorPane> mPopAnchor() {
         ArrayList<AnchorPane> mPopAnchor = new ArrayList<>();
         mPopAnchor.add(imageAnchor29);
         mPopAnchor.add(imageAnchor30);
@@ -318,6 +409,83 @@ public class mainController implements Initializable {
         mPopAnchor.add(imageAnchor42);
         return mPopAnchor;
     }
+        private ArrayList<Label> mPopTitle() {
+            ArrayList<Label> mPopTitle = new ArrayList<>();
+            mPopTitle.add(imageTitle29);
+            mPopTitle.add(imageTitle30);
+            mPopTitle.add(imageTitle31);
+            mPopTitle.add(imageTitle32);
+            mPopTitle.add(imageTitle33);
+            mPopTitle.add(imageTitle34);
+            mPopTitle.add(imageTitle35);
+            mPopTitle.add(imageTitle36);
+            mPopTitle.add(imageTitle37);
+            mPopTitle.add(imageTitle38);
+            mPopTitle.add(imageTitle39);
+            mPopTitle.add(imageTitle40);
+            mPopTitle.add(imageTitle41);
+            mPopTitle.add(imageTitle42);
+            if (fetched == true) {
+            int i = 0;
+            for (String title : mPopHash.keySet()) {
+                mPopTitle.get(i).setText(title);
+                i++;
+            }}
+
+            return mPopTitle;
+
+        }
+    private ArrayList<Label> trendTitle(){
+        ArrayList<Label> trendTitle = new ArrayList<>();
+        trendTitle.add(imageTitle1);
+        trendTitle.add(imageTitle2);
+        trendTitle.add(imageTitle3);
+        trendTitle.add(imageTitle4);
+        trendTitle.add(imageTitle5);
+        trendTitle.add(imageTitle6);
+        trendTitle.add(imageTitle7);
+        trendTitle.add(imageTitle8);
+        trendTitle.add(imageTitle9);
+        trendTitle.add(imageTitle10);
+        trendTitle.add(imageTitle11);
+        trendTitle.add(imageTitle12);
+        trendTitle.add(imageTitle13);
+        trendTitle.add(imageTitle14);
+        if (fetched == true) {
+        int i = 0;
+        for (String title : trendingHash.keySet()) {
+            trendTitle.get(i).setText(title);
+            i++;
+        }}
+        return trendTitle;
+    }
+
+    private ArrayList<Label> recTitle() {
+        ArrayList<Label> recTitle = new ArrayList<>();
+        recTitle.add(imageTitle15);
+        recTitle.add(imageTitle16);
+        recTitle.add(imageTitle17);
+        recTitle.add(imageTitle18);
+        recTitle.add(imageTitle19);
+        recTitle.add(imageTitle20);
+        recTitle.add(imageTitle21);
+        recTitle.add(imageTitle22);
+        recTitle.add(imageTitle23);
+        recTitle.add(imageTitle24);
+        recTitle.add(imageTitle25);
+        recTitle.add(imageTitle26);
+        recTitle.add(imageTitle27);
+        recTitle.add(imageTitle28);
+        if (fetched == true) {
+            int i = 0;
+            for (String title : recentHash.keySet()) {
+                recTitle.get(i).setText(title);
+                i++;
+            }
+
+        } return recTitle;
+    }
+
     @FXML
     private void imageZoom(Event e){
         String foo = e.getSource().toString();
@@ -327,22 +495,42 @@ public class mainController implements Initializable {
         imgN = Integer.parseInt(foo)-1;
         imgN2 = imgN;
         if (imgN <= 13){
+            FadeTransition textFadeIn = new FadeTransition(Duration.seconds(0.5), trendTitle.get(imgN));
+            textFadeIn.setFromValue(0.0);
+            textFadeIn.setToValue(1);
+            textFadeIn.setAutoReverse(false);
             ScaleTransition zoom = new ScaleTransition(Duration.seconds(0.5),trendAnchor.get(imgN));
             zoom.setToX(1.5);
             zoom.setToY(1.5);
-            zoom.play();}
+            zoom.play();
+            trendTitle().get(imgN).setVisible(true);
+            textFadeIn.play();}
         if ( imgN <= 27 && imgN >= 14){
             imgN -= 14;
+            FadeTransition textFadeIn;
+            textFadeIn = new FadeTransition(Duration.seconds(0.5), recTitle.get(imgN));
+            textFadeIn.setFromValue(0.0);
+            textFadeIn.setToValue(1);
+            textFadeIn.setAutoReverse(false);
             ScaleTransition zoom = new ScaleTransition(Duration.seconds(0.5),recAnchor().get(imgN));
             zoom.setToX(1.5);
             zoom.setToY(1.5);
-            zoom.play();}
+            zoom.play();
+            recTitle().get(imgN).setVisible(true);
+            textFadeIn.play();}
         if (imgN <= 41 && imgN >= 28){
             imgN -=28;
+            FadeTransition textFadeIn = new FadeTransition(Duration.seconds(0.5), mPopTitle.get(imgN));
+            textFadeIn.setFromValue(0.0);
+            textFadeIn.setToValue(1);
+            textFadeIn.setAutoReverse(false);
             ScaleTransition zoom = new ScaleTransition(Duration.seconds(0.5),mPopAnchor.get(imgN));
             zoom.setToX(1.5);
             zoom.setToY(1.5);
-            zoom.play();}
+            zoom.play();
+            mPopTitle().get(imgN).setVisible(true);
+            textFadeIn.play();
+        }
 
 
     }
@@ -350,32 +538,49 @@ public class mainController implements Initializable {
     @FXML
     private void imageDzoom(Event e){
         if (imgN2 <= 13){
-        ScaleTransition zoom = new ScaleTransition(Duration.seconds(0.5),trendAnchor.get(imgN2));
-        zoom.setToX(1);
-        zoom.setToY(1);
-        zoom.play();}
+            trendTitle = trendTitle();
+            FadeTransition textFadeIn = new FadeTransition(Duration.seconds(0.5), trendTitle.get(imgN));
+            textFadeIn.setFromValue(1);
+            textFadeIn.setToValue(0);
+            textFadeIn.setAutoReverse(false);
+            ScaleTransition zoom = new ScaleTransition(Duration.seconds(0.5),trendAnchor.get(imgN2));
+            zoom.setToX(1);
+            zoom.setToY(1);
+            zoom.play();
+            textFadeIn.play();}
         if (imgN2 <= 27 && imgN2 >= 14){
             imgN2 -=14;
+            FadeTransition textFadeIn = new FadeTransition(Duration.seconds(0.5), recTitle.get(imgN2));
+            textFadeIn.setFromValue(1.0);
+            textFadeIn.setToValue(0.0);
+            textFadeIn.setAutoReverse(false);
             ScaleTransition zoom = new ScaleTransition(Duration.seconds(0.5),recAnchor.get(imgN2));
             zoom.setToX(1);
             zoom.setToY(1);
-            zoom.play();}
+            zoom.play();
+            textFadeIn.play();}
         if (imgN2 <= 41 && imgN2>= 28){
             imgN2 -=28;
+            FadeTransition textFadeIn = new FadeTransition(Duration.seconds(0.5), mPopTitle.get(imgN2));
+            textFadeIn.setFromValue(1);
+            textFadeIn.setToValue(0.0);
+            textFadeIn.setAutoReverse(false);
             ScaleTransition zoom = new ScaleTransition(Duration.seconds(0.5),mPopAnchor.get(imgN2));
             zoom.setToX(1);
             zoom.setToY(1);
-            zoom.play();}
+            zoom.play();
+            textFadeIn.play();}
 
 
 
     }
 
-    public void start(HashMap<String,Image> foo,HashMap<String,Image> foo2,HashMap<String,Image> foo3){
+    public void start(HashMap<String,Image> foo,HashMap<String,Image> foo2,HashMap<String,Image> foo3) throws InterruptedException {
         this.trendingHash = foo3;
         this.mPopHash =  foo;
         this.recentHash = foo2;
         fetched = true;
+        Thread.sleep(500);
         init();
     }
     public void init() {
@@ -401,9 +606,12 @@ public class mainController implements Initializable {
                     mPopiv.get(c).setImage(img);
                 }
                 c++;
+
             }
+
         }
     }
+
     @Override
     public void initialize(URL location, ResourceBundle resources) {
        trendingiv = trending();
@@ -412,6 +620,11 @@ public class mainController implements Initializable {
        trendAnchor = trendAnchor();
        recAnchor = recAnchor();
        mPopAnchor = mPopAnchor();
+       trendTitle= trendTitle();
+       recTitle = recTitle();
+       mPopTitle = mPopTitle();
+
+
 
     }
 
