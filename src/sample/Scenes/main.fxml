@@ -15,1153 +15,768 @@
    <center>
       <VBox prefHeight="1080.0" prefWidth="1920.0" style="-fx-background-color: #505050;" BorderPane.alignment="CENTER">
          <children>
-            <StackPane>
-               <children>
-                  <ScrollPane hbarPolicy="NEVER" pannable="true" prefHeight="360.0" prefWidth="1920.0" style="-fx-background-color: #303030;" vbarPolicy="NEVER" vmax="0.0">
-                     <content>
-                        <HBox prefHeight="343.3333" prefWidth="2560.0" style="-fx-background-color: #303030;">
+            <ScrollPane hbarPolicy="NEVER" pannable="true" prefHeight="343.33333" prefWidth="1920.0" style="-fx-background-color: #303030;" vbarPolicy="NEVER" vmax="0.0">
+               <content>
+                  <HBox prefHeight="343.33333" prefWidth="2560.0" style="-fx-background-color: #303030;">
+                     <children>
+                        <Label id="ani_label" ellipsisString="" prefHeight="39.0" prefWidth="212.0" text="Recently Added">
+                           <HBox.margin>
+                              <Insets left="20.0" right="-150.0" top="20.0" />
+                           </HBox.margin>
+                        </Label>
+                        <AnchorPane fx:id="imageAnchor15" prefHeight="48.0" prefWidth="154.0">
                            <children>
-                              <Label id="ani_label" text="New &amp; Hot">
-                                 <HBox.margin>
-                                    <Insets left="20.0" right="-70.0" top="20.0" />
-                                 </HBox.margin>
+                              <ImageView fx:id="imageView15" fitHeight="200.0" fitWidth="144.0" focusTraversable="true" layoutX="-18.0" layoutY="90.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true" AnchorPane.topAnchor="100.0">
+                                 <image>
+                                    <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
+                                 </image>
+                              </ImageView>
+                              <Label id="img-title" fx:id="imageTitle15" layoutX="126.0" layoutY="94.0" prefHeight="22.0" prefWidth="42.0" text="Title">
+                                 <font>
+                                    <Font name="Comic Sans MS" size="18.0" />
+                                 </font>
                               </Label>
-                              <BorderPane prefHeight="200.0" prefWidth="200.0">
-                                 <center>
-                                    <StackPane prefHeight="314.0" prefWidth="135.0" BorderPane.alignment="CENTER">
-                                       <children>
-                                          <ImageView fx:id="imageView1" fitHeight="200.0" fitWidth="144.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true">
-                                             <image>
-                                                <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
-                                             </image>
-                                             <StackPane.margin>
-                                                <Insets left="40.0" top="25.0" />
-                                             </StackPane.margin>
-                                          </ImageView>
-                                       </children>
-                                       <BorderPane.margin>
-                                          <Insets />
-                                       </BorderPane.margin>
-                                    </StackPane>
-                                 </center>
-                                 <top>
-                                    <Label id="img-title" text="Title" BorderPane.alignment="CENTER">
-                                       <font>
-                                          <Font name="Comic Sans MS" size="18.0" />
-                                       </font>
-                                    </Label>
-                                 </top>
-                                 <HBox.margin>
-                                    <Insets left="20.0" />
-                                 </HBox.margin>
-                              </BorderPane>
-                              <BorderPane layoutX="113.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0">
-                                 <center>
-                                    <StackPane prefHeight="314.0" prefWidth="135.0" BorderPane.alignment="CENTER">
-                                       <children>
-                                          <ImageView fx:id="imageView2" fitHeight="200.0" fitWidth="144.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true">
-                                             <image>
-                                                <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
-                                             </image>
-                                             <StackPane.margin>
-                                                <Insets left="40.0" top="25.0" />
-                                             </StackPane.margin>
-                                          </ImageView>
-                                       </children>
-                                       <BorderPane.margin>
-                                          <Insets />
-                                       </BorderPane.margin>
-                                    </StackPane>
-                                 </center>
-                                 <top>
-                                    <Label id="img-title" text="Title" BorderPane.alignment="CENTER">
-                                       <font>
-                                          <Font name="Comic Sans MS" size="18.0" />
-                                       </font>
-                                    </Label>
-                                 </top>
-                              </BorderPane>
-                              <BorderPane layoutX="313.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0">
-                                 <center>
-                                    <StackPane prefHeight="314.0" prefWidth="135.0" BorderPane.alignment="CENTER">
-                                       <children>
-                                          <ImageView fx:id="imageView3" fitHeight="200.0" fitWidth="144.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true">
-                                             <image>
-                                                <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
-                                             </image>
-                                             <StackPane.margin>
-                                                <Insets left="40.0" top="25.0" />
-                                             </StackPane.margin>
-                                          </ImageView>
-                                       </children>
-                                       <BorderPane.margin>
-                                          <Insets />
-                                       </BorderPane.margin>
-                                    </StackPane>
-                                 </center>
-                                 <top>
-                                    <Label id="img-title" text="Title" BorderPane.alignment="CENTER">
-                                       <font>
-                                          <Font name="Comic Sans MS" size="18.0" />
-                                       </font>
-                                    </Label>
-                                 </top>
-                              </BorderPane>
-                              <BorderPane layoutX="513.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0">
-                                 <center>
-                                    <StackPane prefHeight="314.0" prefWidth="135.0" BorderPane.alignment="CENTER">
-                                       <children>
-                                          <ImageView fx:id="imageView4" fitHeight="200.0" fitWidth="144.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true">
-                                             <image>
-                                                <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
-                                             </image>
-                                             <StackPane.margin>
-                                                <Insets left="40.0" top="25.0" />
-                                             </StackPane.margin>
-                                          </ImageView>
-                                       </children>
-                                       <BorderPane.margin>
-                                          <Insets />
-                                       </BorderPane.margin>
-                                    </StackPane>
-                                 </center>
-                                 <top>
-                                    <Label id="img-title" text="Title" BorderPane.alignment="CENTER">
-                                       <font>
-                                          <Font name="Comic Sans MS" size="18.0" />
-                                       </font>
-                                    </Label>
-                                 </top>
-                              </BorderPane>
-                              <BorderPane layoutX="713.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0">
-                                 <center>
-                                    <StackPane prefHeight="314.0" prefWidth="135.0" BorderPane.alignment="CENTER">
-                                       <children>
-                                          <ImageView fx:id="imageView5" fitHeight="200.0" fitWidth="144.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true">
-                                             <image>
-                                                <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
-                                             </image>
-                                             <StackPane.margin>
-                                                <Insets left="40.0" top="25.0" />
-                                             </StackPane.margin>
-                                          </ImageView>
-                                       </children>
-                                       <BorderPane.margin>
-                                          <Insets />
-                                       </BorderPane.margin>
-                                    </StackPane>
-                                 </center>
-                                 <top>
-                                    <Label id="img-title" text="Title" BorderPane.alignment="CENTER">
-                                       <font>
-                                          <Font name="Comic Sans MS" size="18.0" />
-                                       </font>
-                                    </Label>
-                                 </top>
-                              </BorderPane>
-                              <BorderPane layoutX="913.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0">
-                                 <center>
-                                    <StackPane prefHeight="314.0" prefWidth="135.0" BorderPane.alignment="CENTER">
-                                       <children>
-                                          <ImageView fx:id="imageView6" fitHeight="200.0" fitWidth="144.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true">
-                                             <image>
-                                                <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
-                                             </image>
-                                             <StackPane.margin>
-                                                <Insets left="40.0" top="25.0" />
-                                             </StackPane.margin>
-                                          </ImageView>
-                                       </children>
-                                       <BorderPane.margin>
-                                          <Insets />
-                                       </BorderPane.margin>
-                                    </StackPane>
-                                 </center>
-                                 <top>
-                                    <Label id="img-title" text="Title" BorderPane.alignment="CENTER">
-                                       <font>
-                                          <Font name="Comic Sans MS" size="18.0" />
-                                       </font>
-                                    </Label>
-                                 </top>
-                              </BorderPane>
-                              <BorderPane layoutX="1113.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0">
-                                 <center>
-                                    <StackPane prefHeight="314.0" prefWidth="135.0" BorderPane.alignment="CENTER">
-                                       <children>
-                                          <ImageView fx:id="imageView7" fitHeight="200.0" fitWidth="144.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true">
-                                             <image>
-                                                <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
-                                             </image>
-                                             <StackPane.margin>
-                                                <Insets left="40.0" top="25.0" />
-                                             </StackPane.margin>
-                                          </ImageView>
-                                       </children>
-                                       <BorderPane.margin>
-                                          <Insets />
-                                       </BorderPane.margin>
-                                    </StackPane>
-                                 </center>
-                                 <top>
-                                    <Label id="img-title" text="Title" BorderPane.alignment="CENTER">
-                                       <font>
-                                          <Font name="Comic Sans MS" size="18.0" />
-                                       </font>
-                                    </Label>
-                                 </top>
-                              </BorderPane>
-                              <BorderPane layoutX="1313.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0">
-                                 <center>
-                                    <StackPane prefHeight="314.0" prefWidth="135.0" BorderPane.alignment="CENTER">
-                                       <children>
-                                          <ImageView fx:id="imageView8" fitHeight="200.0" fitWidth="144.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true">
-                                             <image>
-                                                <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
-                                             </image>
-                                             <StackPane.margin>
-                                                <Insets left="40.0" top="25.0" />
-                                             </StackPane.margin>
-                                          </ImageView>
-                                       </children>
-                                       <BorderPane.margin>
-                                          <Insets />
-                                       </BorderPane.margin>
-                                    </StackPane>
-                                 </center>
-                                 <top>
-                                    <Label id="img-title" text="Title" BorderPane.alignment="CENTER">
-                                       <font>
-                                          <Font name="Comic Sans MS" size="18.0" />
-                                       </font>
-                                    </Label>
-                                 </top>
-                              </BorderPane>
-                              <BorderPane layoutX="1513.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0">
-                                 <center>
-                                    <StackPane prefHeight="314.0" prefWidth="135.0" BorderPane.alignment="CENTER">
-                                       <children>
-                                          <ImageView fx:id="imageView9" fitHeight="200.0" fitWidth="144.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true">
-                                             <image>
-                                                <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
-                                             </image>
-                                             <StackPane.margin>
-                                                <Insets left="40.0" top="25.0" />
-                                             </StackPane.margin>
-                                          </ImageView>
-                                       </children>
-                                       <BorderPane.margin>
-                                          <Insets />
-                                       </BorderPane.margin>
-                                    </StackPane>
-                                 </center>
-                                 <top>
-                                    <Label id="img-title" text="Title" BorderPane.alignment="CENTER">
-                                       <font>
-                                          <Font name="Comic Sans MS" size="18.0" />
-                                       </font>
-                                    </Label>
-                                 </top>
-                              </BorderPane>
-                              <BorderPane layoutX="1713.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0">
-                                 <center>
-                                    <StackPane prefHeight="314.0" prefWidth="135.0" BorderPane.alignment="CENTER">
-                                       <children>
-                                          <ImageView fx:id="imageView10" fitHeight="200.0" fitWidth="144.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true">
-                                             <image>
-                                                <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
-                                             </image>
-                                             <StackPane.margin>
-                                                <Insets left="40.0" top="25.0" />
-                                             </StackPane.margin>
-                                          </ImageView>
-                                       </children>
-                                       <BorderPane.margin>
-                                          <Insets />
-                                       </BorderPane.margin>
-                                    </StackPane>
-                                 </center>
-                                 <top>
-                                    <Label id="img-title" text="Title" BorderPane.alignment="CENTER">
-                                       <font>
-                                          <Font name="Comic Sans MS" size="18.0" />
-                                       </font>
-                                    </Label>
-                                 </top>
-                              </BorderPane>
-                              <BorderPane layoutX="1913.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0">
-                                 <center>
-                                    <StackPane prefHeight="314.0" prefWidth="135.0" BorderPane.alignment="CENTER">
-                                       <children>
-                                          <ImageView fx:id="imageView11" fitHeight="200.0" fitWidth="144.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true">
-                                             <image>
-                                                <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
-                                             </image>
-                                             <StackPane.margin>
-                                                <Insets left="40.0" top="25.0" />
-                                             </StackPane.margin>
-                                          </ImageView>
-                                       </children>
-                                       <BorderPane.margin>
-                                          <Insets />
-                                       </BorderPane.margin>
-                                    </StackPane>
-                                 </center>
-                                 <top>
-                                    <Label id="img-title" text="Title" BorderPane.alignment="CENTER">
-                                       <font>
-                                          <Font name="Comic Sans MS" size="18.0" />
-                                       </font>
-                                    </Label>
-                                 </top>
-                              </BorderPane>
-                              <BorderPane layoutX="2113.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0">
-                                 <center>
-                                    <StackPane prefHeight="314.0" prefWidth="135.0" BorderPane.alignment="CENTER">
-                                       <children>
-                                          <ImageView fx:id="imageView12" fitHeight="200.0" fitWidth="144.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true">
-                                             <image>
-                                                <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
-                                             </image>
-                                             <StackPane.margin>
-                                                <Insets left="40.0" top="25.0" />
-                                             </StackPane.margin>
-                                          </ImageView>
-                                       </children>
-                                       <BorderPane.margin>
-                                          <Insets />
-                                       </BorderPane.margin>
-                                    </StackPane>
-                                 </center>
-                                 <top>
-                                    <Label id="img-title" text="Title" BorderPane.alignment="CENTER">
-                                       <font>
-                                          <Font name="Comic Sans MS" size="18.0" />
-                                       </font>
-                                    </Label>
-                                 </top>
-                              </BorderPane>
-                              <BorderPane layoutX="2313.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0">
-                                 <center>
-                                    <StackPane prefHeight="314.0" prefWidth="135.0" BorderPane.alignment="CENTER">
-                                       <children>
-                                          <ImageView fx:id="imageView13" fitHeight="200.0" fitWidth="144.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true">
-                                             <image>
-                                                <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
-                                             </image>
-                                             <StackPane.margin>
-                                                <Insets left="40.0" top="25.0" />
-                                             </StackPane.margin>
-                                          </ImageView>
-                                       </children>
-                                       <BorderPane.margin>
-                                          <Insets />
-                                       </BorderPane.margin>
-                                    </StackPane>
-                                 </center>
-                                 <top>
-                                    <Label id="img-title" text="Title" BorderPane.alignment="CENTER">
-                                       <font>
-                                          <Font name="Comic Sans MS" size="18.0" />
-                                       </font>
-                                    </Label>
-                                 </top>
-                              </BorderPane>
-                              <BorderPane layoutX="2380.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0">
-                                 <center>
-                                    <StackPane prefHeight="314.0" prefWidth="135.0" BorderPane.alignment="CENTER">
-                                       <children>
-                                          <ImageView fx:id="imageView14" fitHeight="200.0" fitWidth="144.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true">
-                                             <image>
-                                                <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
-                                             </image>
-                                             <StackPane.margin>
-                                                <Insets left="40.0" top="25.0" />
-                                             </StackPane.margin>
-                                          </ImageView>
-                                       </children>
-                                       <BorderPane.margin>
-                                          <Insets />
-                                       </BorderPane.margin>
-                                    </StackPane>
-                                 </center>
-                                 <top>
-                                    <Label id="img-title" text="Title" BorderPane.alignment="CENTER">
-                                       <font>
-                                          <Font name="Comic Sans MS" size="18.0" />
-                                       </font>
-                                    </Label>
-                                 </top>
-                              </BorderPane>
                            </children>
-                        </HBox>
-                     </content>
-                     <StackPane.margin>
-                        <Insets />
-                     </StackPane.margin>
-                  </ScrollPane>
-                  <ScrollPane hbarPolicy="NEVER" pannable="true" prefHeight="343.33333" prefWidth="1920.0" style="-fx-background-color: #303030;" vbarPolicy="NEVER" vmax="0.0">
-                     <content>
-                        <HBox prefHeight="360.0" prefWidth="2560.0" style="-fx-background-color: #303030;">
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </AnchorPane>
+                        <AnchorPane fx:id="imageAnchor16" layoutX="172.0" layoutY="10.0" prefHeight="48.0" prefWidth="154.0">
                            <children>
-                              <Label id="ani_label" text="New &amp; Hot">
-                                 <HBox.margin>
-                                    <Insets left="20.0" right="-70.0" top="20.0" />
-                                 </HBox.margin>
+                              <ImageView fx:id="imageView16" fitHeight="200.0" fitWidth="144.0" focusTraversable="true" layoutX="-18.0" layoutY="90.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true" AnchorPane.topAnchor="100.0">
+                                 <image>
+                                    <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
+                                 </image>
+                              </ImageView>
+                              <Label id="img-title" fx:id="imageTitle16" layoutX="126.0" layoutY="94.0" prefHeight="22.0" prefWidth="42.0" text="Title">
+                                 <font>
+                                    <Font name="Comic Sans MS" size="18.0" />
+                                 </font>
                               </Label>
-                              <BorderPane prefHeight="200.0" prefWidth="200.0">
-                                 <center>
-                                    <StackPane prefHeight="314.0" prefWidth="135.0" BorderPane.alignment="CENTER">
-                                       <children>
-                                          <ImageView fx:id="imageView15" fitHeight="200.0" fitWidth="144.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true">
-                                             <image>
-                                                <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
-                                             </image>
-                                             <StackPane.margin>
-                                                <Insets left="40.0" top="25.0" />
-                                             </StackPane.margin>
-                                          </ImageView>
-                                       </children>
-                                       <BorderPane.margin>
-                                          <Insets />
-                                       </BorderPane.margin>
-                                    </StackPane>
-                                 </center>
-                                 <top>
-                                    <Label id="img-title" text="Title" BorderPane.alignment="CENTER">
-                                       <font>
-                                          <Font name="Comic Sans MS" size="18.0" />
-                                       </font>
-                                    </Label>
-                                 </top>
-                              </BorderPane>
-                              <BorderPane prefHeight="200.0" prefWidth="200.0">
-                                 <center>
-                                    <StackPane prefHeight="314.0" prefWidth="135.0" BorderPane.alignment="CENTER">
-                                       <children>
-                                          <ImageView fx:id="imageView16" fitHeight="200.0" fitWidth="144.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true">
-                                             <image>
-                                                <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
-                                             </image>
-                                             <StackPane.margin>
-                                                <Insets left="40.0" top="25.0" />
-                                             </StackPane.margin>
-                                          </ImageView>
-                                       </children>
-                                       <BorderPane.margin>
-                                          <Insets />
-                                       </BorderPane.margin>
-                                    </StackPane>
-                                 </center>
-                                 <top>
-                                    <Label id="img-title" text="Title" BorderPane.alignment="CENTER">
-                                       <font>
-                                          <Font name="Comic Sans MS" size="18.0" />
-                                       </font>
-                                    </Label>
-                                 </top>
-                              </BorderPane>
-                              <BorderPane prefHeight="200.0" prefWidth="200.0">
-                                 <center>
-                                    <StackPane prefHeight="314.0" prefWidth="135.0" BorderPane.alignment="CENTER">
-                                       <children>
-                                          <ImageView fx:id="imageView17" fitHeight="200.0" fitWidth="144.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true">
-                                             <image>
-                                                <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
-                                             </image>
-                                             <StackPane.margin>
-                                                <Insets left="40.0" top="25.0" />
-                                             </StackPane.margin>
-                                          </ImageView>
-                                       </children>
-                                       <BorderPane.margin>
-                                          <Insets />
-                                       </BorderPane.margin>
-                                    </StackPane>
-                                 </center>
-                                 <top>
-                                    <Label id="img-title" text="Title" BorderPane.alignment="CENTER">
-                                       <font>
-                                          <Font name="Comic Sans MS" size="18.0" />
-                                       </font>
-                                    </Label>
-                                 </top>
-                              </BorderPane>
-                              <BorderPane prefHeight="200.0" prefWidth="200.0">
-                                 <center>
-                                    <StackPane prefHeight="314.0" prefWidth="135.0" BorderPane.alignment="CENTER">
-                                       <children>
-                                          <ImageView fx:id="imageView18" fitHeight="200.0" fitWidth="144.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true">
-                                             <image>
-                                                <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
-                                             </image>
-                                             <StackPane.margin>
-                                                <Insets left="40.0" top="25.0" />
-                                             </StackPane.margin>
-                                          </ImageView>
-                                       </children>
-                                       <BorderPane.margin>
-                                          <Insets />
-                                       </BorderPane.margin>
-                                    </StackPane>
-                                 </center>
-                                 <top>
-                                    <Label id="img-title" text="Title" BorderPane.alignment="CENTER">
-                                       <font>
-                                          <Font name="Comic Sans MS" size="18.0" />
-                                       </font>
-                                    </Label>
-                                 </top>
-                              </BorderPane>
-                              <BorderPane prefHeight="200.0" prefWidth="200.0">
-                                 <center>
-                                    <StackPane prefHeight="314.0" prefWidth="135.0" BorderPane.alignment="CENTER">
-                                       <children>
-                                          <ImageView fx:id="imageView19" fitHeight="200.0" fitWidth="144.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true">
-                                             <image>
-                                                <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
-                                             </image>
-                                             <StackPane.margin>
-                                                <Insets left="40.0" top="25.0" />
-                                             </StackPane.margin>
-                                          </ImageView>
-                                       </children>
-                                       <BorderPane.margin>
-                                          <Insets />
-                                       </BorderPane.margin>
-                                    </StackPane>
-                                 </center>
-                                 <top>
-                                    <Label id="img-title" text="Title" BorderPane.alignment="CENTER">
-                                       <font>
-                                          <Font name="Comic Sans MS" size="18.0" />
-                                       </font>
-                                    </Label>
-                                 </top>
-                              </BorderPane>
-                              <BorderPane prefHeight="200.0" prefWidth="200.0">
-                                 <center>
-                                    <StackPane prefHeight="314.0" prefWidth="135.0" BorderPane.alignment="CENTER">
-                                       <children>
-                                          <ImageView fx:id="imageView20" fitHeight="200.0" fitWidth="144.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true">
-                                             <image>
-                                                <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
-                                             </image>
-                                             <StackPane.margin>
-                                                <Insets left="40.0" top="25.0" />
-                                             </StackPane.margin>
-                                          </ImageView>
-                                       </children>
-                                       <BorderPane.margin>
-                                          <Insets />
-                                       </BorderPane.margin>
-                                    </StackPane>
-                                 </center>
-                                 <top>
-                                    <Label id="img-title" text="Title" BorderPane.alignment="CENTER">
-                                       <font>
-                                          <Font name="Comic Sans MS" size="18.0" />
-                                       </font>
-                                    </Label>
-                                 </top>
-                              </BorderPane>
-                              <BorderPane prefHeight="200.0" prefWidth="200.0">
-                                 <center>
-                                    <StackPane prefHeight="314.0" prefWidth="135.0" BorderPane.alignment="CENTER">
-                                       <children>
-                                          <ImageView fx:id="imageView21" fitHeight="200.0" fitWidth="144.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true">
-                                             <image>
-                                                <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
-                                             </image>
-                                             <StackPane.margin>
-                                                <Insets left="40.0" top="25.0" />
-                                             </StackPane.margin>
-                                          </ImageView>
-                                       </children>
-                                       <BorderPane.margin>
-                                          <Insets />
-                                       </BorderPane.margin>
-                                    </StackPane>
-                                 </center>
-                                 <top>
-                                    <Label id="img-title" text="Title" BorderPane.alignment="CENTER">
-                                       <font>
-                                          <Font name="Comic Sans MS" size="18.0" />
-                                       </font>
-                                    </Label>
-                                 </top>
-                              </BorderPane>
-                              <BorderPane prefHeight="200.0" prefWidth="200.0">
-                                 <center>
-                                    <StackPane prefHeight="314.0" prefWidth="135.0" BorderPane.alignment="CENTER">
-                                       <children>
-                                          <ImageView fx:id="imageView22" fitHeight="200.0" fitWidth="144.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true">
-                                             <image>
-                                                <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
-                                             </image>
-                                             <StackPane.margin>
-                                                <Insets left="40.0" top="25.0" />
-                                             </StackPane.margin>
-                                          </ImageView>
-                                       </children>
-                                       <BorderPane.margin>
-                                          <Insets />
-                                       </BorderPane.margin>
-                                    </StackPane>
-                                 </center>
-                                 <top>
-                                    <Label id="img-title" text="Title" BorderPane.alignment="CENTER">
-                                       <font>
-                                          <Font name="Comic Sans MS" size="18.0" />
-                                       </font>
-                                    </Label>
-                                 </top>
-                              </BorderPane>
-                              <BorderPane prefHeight="200.0" prefWidth="200.0">
-                                 <center>
-                                    <StackPane prefHeight="314.0" prefWidth="135.0" BorderPane.alignment="CENTER">
-                                       <children>
-                                          <ImageView fx:id="imageView23" fitHeight="200.0" fitWidth="144.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true">
-                                             <image>
-                                                <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
-                                             </image>
-                                             <StackPane.margin>
-                                                <Insets left="40.0" top="25.0" />
-                                             </StackPane.margin>
-                                          </ImageView>
-                                       </children>
-                                       <BorderPane.margin>
-                                          <Insets />
-                                       </BorderPane.margin>
-                                    </StackPane>
-                                 </center>
-                                 <top>
-                                    <Label id="img-title" text="Title" BorderPane.alignment="CENTER">
-                                       <font>
-                                          <Font name="Comic Sans MS" size="18.0" />
-                                       </font>
-                                    </Label>
-                                 </top>
-                              </BorderPane>
-                              <BorderPane prefHeight="200.0" prefWidth="200.0">
-                                 <center>
-                                    <StackPane prefHeight="314.0" prefWidth="135.0" BorderPane.alignment="CENTER">
-                                       <children>
-                                          <ImageView fx:id="imageView24" fitHeight="200.0" fitWidth="144.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true">
-                                             <image>
-                                                <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
-                                             </image>
-                                             <StackPane.margin>
-                                                <Insets left="40.0" top="25.0" />
-                                             </StackPane.margin>
-                                          </ImageView>
-                                       </children>
-                                       <BorderPane.margin>
-                                          <Insets />
-                                       </BorderPane.margin>
-                                    </StackPane>
-                                 </center>
-                                 <top>
-                                    <Label id="img-title" text="Title" BorderPane.alignment="CENTER">
-                                       <font>
-                                          <Font name="Comic Sans MS" size="18.0" />
-                                       </font>
-                                    </Label>
-                                 </top>
-                              </BorderPane>
-                              <BorderPane prefHeight="200.0" prefWidth="200.0">
-                                 <center>
-                                    <StackPane prefHeight="314.0" prefWidth="135.0" BorderPane.alignment="CENTER">
-                                       <children>
-                                          <ImageView fx:id="imageView25" fitHeight="200.0" fitWidth="144.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true">
-                                             <image>
-                                                <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
-                                             </image>
-                                             <StackPane.margin>
-                                                <Insets left="40.0" top="25.0" />
-                                             </StackPane.margin>
-                                          </ImageView>
-                                       </children>
-                                       <BorderPane.margin>
-                                          <Insets />
-                                       </BorderPane.margin>
-                                    </StackPane>
-                                 </center>
-                                 <top>
-                                    <Label id="img-title" text="Title" BorderPane.alignment="CENTER">
-                                       <font>
-                                          <Font name="Comic Sans MS" size="18.0" />
-                                       </font>
-                                    </Label>
-                                 </top>
-                              </BorderPane>
-                              <BorderPane prefHeight="200.0" prefWidth="200.0">
-                                 <center>
-                                    <StackPane prefHeight="314.0" prefWidth="135.0" BorderPane.alignment="CENTER">
-                                       <children>
-                                          <ImageView fx:id="imageView26" fitHeight="200.0" fitWidth="144.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true">
-                                             <image>
-                                                <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
-                                             </image>
-                                             <StackPane.margin>
-                                                <Insets left="40.0" top="25.0" />
-                                             </StackPane.margin>
-                                          </ImageView>
-                                       </children>
-                                       <BorderPane.margin>
-                                          <Insets />
-                                       </BorderPane.margin>
-                                    </StackPane>
-                                 </center>
-                                 <top>
-                                    <Label id="img-title" text="Title" BorderPane.alignment="CENTER">
-                                       <font>
-                                          <Font name="Comic Sans MS" size="18.0" />
-                                       </font>
-                                    </Label>
-                                 </top>
-                              </BorderPane>
-                              <BorderPane prefHeight="200.0" prefWidth="200.0">
-                                 <center>
-                                    <StackPane prefHeight="314.0" prefWidth="135.0" BorderPane.alignment="CENTER">
-                                       <children>
-                                          <ImageView fx:id="imageView27" fitHeight="200.0" fitWidth="144.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true">
-                                             <image>
-                                                <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
-                                             </image>
-                                             <StackPane.margin>
-                                                <Insets left="40.0" top="25.0" />
-                                             </StackPane.margin>
-                                          </ImageView>
-                                       </children>
-                                       <BorderPane.margin>
-                                          <Insets />
-                                       </BorderPane.margin>
-                                    </StackPane>
-                                 </center>
-                                 <top>
-                                    <Label id="img-title" text="Title" BorderPane.alignment="CENTER">
-                                       <font>
-                                          <Font name="Comic Sans MS" size="18.0" />
-                                       </font>
-                                    </Label>
-                                 </top>
-                              </BorderPane>
-                              <BorderPane prefHeight="200.0" prefWidth="200.0">
-                                 <center>
-                                    <StackPane prefHeight="314.0" prefWidth="135.0" BorderPane.alignment="CENTER">
-                                       <children>
-                                          <ImageView fx:id="imageView28" fitHeight="200.0" fitWidth="144.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true">
-                                             <image>
-                                                <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
-                                             </image>
-                                             <StackPane.margin>
-                                                <Insets left="40.0" top="25.0" />
-                                             </StackPane.margin>
-                                          </ImageView>
-                                       </children>
-                                       <BorderPane.margin>
-                                          <Insets />
-                                       </BorderPane.margin>
-                                    </StackPane>
-                                 </center>
-                                 <top>
-                                    <Label id="img-title" text="Title" BorderPane.alignment="CENTER">
-                                       <font>
-                                          <Font name="Comic Sans MS" size="18.0" />
-                                       </font>
-                                    </Label>
-                                 </top>
-                              </BorderPane>
                            </children>
-                        </HBox>
-                     </content>
-                     <StackPane.margin>
-                        <Insets top="343.3333" />
-                     </StackPane.margin>
-                  </ScrollPane>
-                  <ScrollPane hbarPolicy="NEVER" pannable="true" prefHeight="360.0" prefWidth="1920.0" style="-fx-background-color: #303030;" vbarPolicy="NEVER" vmax="0.0">
-                     <content>
-                        <HBox prefHeight="354.0" prefWidth="2560.0" style="-fx-background-color: #303030;">
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </AnchorPane>
+                        <AnchorPane fx:id="imageAnchor17" layoutX="340.0" layoutY="10.0" prefHeight="48.0" prefWidth="154.0">
                            <children>
-                              <Label id="ani_label" text="New &amp; Hot">
-                                 <HBox.margin>
-                                    <Insets left="20.0" right="-70.0" top="20.0" />
-                                 </HBox.margin>
+                              <ImageView fx:id="imageView17" fitHeight="200.0" fitWidth="144.0" focusTraversable="true" layoutX="-18.0" layoutY="90.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true" AnchorPane.topAnchor="100.0">
+                                 <image>
+                                    <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
+                                 </image>
+                              </ImageView>
+                              <Label id="img-title" fx:id="imageTitle17" layoutX="126.0" layoutY="94.0" prefHeight="22.0" prefWidth="42.0" text="Title">
+                                 <font>
+                                    <Font name="Comic Sans MS" size="18.0" />
+                                 </font>
                               </Label>
-                              <BorderPane prefHeight="200.0" prefWidth="200.0">
-                                 <center>
-                                    <StackPane prefHeight="314.0" prefWidth="135.0" BorderPane.alignment="CENTER">
-                                       <children>
-                                          <ImageView fx:id="imageView29" fitHeight="200.0" fitWidth="144.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true">
-                                             <image>
-                                                <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
-                                             </image>
-                                             <StackPane.margin>
-                                                <Insets left="40.0" top="25.0" />
-                                             </StackPane.margin>
-                                          </ImageView>
-                                       </children>
-                                       <BorderPane.margin>
-                                          <Insets />
-                                       </BorderPane.margin>
-                                    </StackPane>
-                                 </center>
-                                 <top>
-                                    <Label id="img-title" text="Title" BorderPane.alignment="CENTER">
-                                       <font>
-                                          <Font name="Comic Sans MS" size="18.0" />
-                                       </font>
-                                    </Label>
-                                 </top>
-                              </BorderPane>
-                              <BorderPane prefHeight="200.0" prefWidth="200.0">
-                                 <center>
-                                    <StackPane prefHeight="314.0" prefWidth="135.0" BorderPane.alignment="CENTER">
-                                       <children>
-                                          <ImageView fx:id="imageView30" fitHeight="200.0" fitWidth="144.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true">
-                                             <image>
-                                                <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
-                                             </image>
-                                             <StackPane.margin>
-                                                <Insets left="40.0" top="25.0" />
-                                             </StackPane.margin>
-                                          </ImageView>
-                                       </children>
-                                       <BorderPane.margin>
-                                          <Insets />
-                                       </BorderPane.margin>
-                                    </StackPane>
-                                 </center>
-                                 <top>
-                                    <Label id="img-title" text="Title" BorderPane.alignment="CENTER">
-                                       <font>
-                                          <Font name="Comic Sans MS" size="18.0" />
-                                       </font>
-                                    </Label>
-                                 </top>
-                              </BorderPane>
-                              <BorderPane prefHeight="200.0" prefWidth="200.0">
-                                 <center>
-                                    <StackPane prefHeight="314.0" prefWidth="135.0" BorderPane.alignment="CENTER">
-                                       <children>
-                                          <ImageView fx:id="imageView31" fitHeight="200.0" fitWidth="144.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true">
-                                             <image>
-                                                <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
-                                             </image>
-                                             <StackPane.margin>
-                                                <Insets left="40.0" top="25.0" />
-                                             </StackPane.margin>
-                                          </ImageView>
-                                       </children>
-                                       <BorderPane.margin>
-                                          <Insets />
-                                       </BorderPane.margin>
-                                    </StackPane>
-                                 </center>
-                                 <top>
-                                    <Label id="img-title" text="Title" BorderPane.alignment="CENTER">
-                                       <font>
-                                          <Font name="Comic Sans MS" size="18.0" />
-                                       </font>
-                                    </Label>
-                                 </top>
-                              </BorderPane>
-                              <BorderPane prefHeight="200.0" prefWidth="200.0">
-                                 <center>
-                                    <StackPane prefHeight="314.0" prefWidth="135.0" BorderPane.alignment="CENTER">
-                                       <children>
-                                          <ImageView fx:id="imageView32" fitHeight="200.0" fitWidth="144.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true">
-                                             <image>
-                                                <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
-                                             </image>
-                                             <StackPane.margin>
-                                                <Insets left="40.0" top="25.0" />
-                                             </StackPane.margin>
-                                          </ImageView>
-                                       </children>
-                                       <BorderPane.margin>
-                                          <Insets />
-                                       </BorderPane.margin>
-                                    </StackPane>
-                                 </center>
-                                 <top>
-                                    <Label id="img-title" text="Title" BorderPane.alignment="CENTER">
-                                       <font>
-                                          <Font name="Comic Sans MS" size="18.0" />
-                                       </font>
-                                    </Label>
-                                 </top>
-                              </BorderPane>
-                              <BorderPane prefHeight="200.0" prefWidth="200.0">
-                                 <center>
-                                    <StackPane prefHeight="314.0" prefWidth="135.0" BorderPane.alignment="CENTER">
-                                       <children>
-                                          <ImageView fx:id="imageView33" fitHeight="200.0" fitWidth="144.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true">
-                                             <image>
-                                                <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
-                                             </image>
-                                             <StackPane.margin>
-                                                <Insets left="40.0" top="25.0" />
-                                             </StackPane.margin>
-                                          </ImageView>
-                                       </children>
-                                       <BorderPane.margin>
-                                          <Insets />
-                                       </BorderPane.margin>
-                                    </StackPane>
-                                 </center>
-                                 <top>
-                                    <Label id="img-title" text="Title" BorderPane.alignment="CENTER">
-                                       <font>
-                                          <Font name="Comic Sans MS" size="18.0" />
-                                       </font>
-                                    </Label>
-                                 </top>
-                              </BorderPane>
-                              <BorderPane prefHeight="200.0" prefWidth="200.0">
-                                 <center>
-                                    <StackPane prefHeight="314.0" prefWidth="135.0" BorderPane.alignment="CENTER">
-                                       <children>
-                                          <ImageView fx:id="imageView34" fitHeight="200.0" fitWidth="144.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true">
-                                             <image>
-                                                <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
-                                             </image>
-                                             <StackPane.margin>
-                                                <Insets left="40.0" top="25.0" />
-                                             </StackPane.margin>
-                                          </ImageView>
-                                       </children>
-                                       <BorderPane.margin>
-                                          <Insets />
-                                       </BorderPane.margin>
-                                    </StackPane>
-                                 </center>
-                                 <top>
-                                    <Label id="img-title" text="Title" BorderPane.alignment="CENTER">
-                                       <font>
-                                          <Font name="Comic Sans MS" size="18.0" />
-                                       </font>
-                                    </Label>
-                                 </top>
-                              </BorderPane>
-                              <BorderPane prefHeight="200.0" prefWidth="200.0">
-                                 <center>
-                                    <StackPane prefHeight="314.0" prefWidth="135.0" BorderPane.alignment="CENTER">
-                                       <children>
-                                          <ImageView fx:id="imageView35" fitHeight="200.0" fitWidth="144.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true">
-                                             <image>
-                                                <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
-                                             </image>
-                                             <StackPane.margin>
-                                                <Insets left="40.0" top="25.0" />
-                                             </StackPane.margin>
-                                          </ImageView>
-                                       </children>
-                                       <BorderPane.margin>
-                                          <Insets />
-                                       </BorderPane.margin>
-                                    </StackPane>
-                                 </center>
-                                 <top>
-                                    <Label id="img-title" text="Title" BorderPane.alignment="CENTER">
-                                       <font>
-                                          <Font name="Comic Sans MS" size="18.0" />
-                                       </font>
-                                    </Label>
-                                 </top>
-                              </BorderPane>
-                              <BorderPane prefHeight="200.0" prefWidth="200.0">
-                                 <center>
-                                    <StackPane prefHeight="314.0" prefWidth="135.0" BorderPane.alignment="CENTER">
-                                       <children>
-                                          <ImageView fx:id="imageView36" fitHeight="200.0" fitWidth="144.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true">
-                                             <image>
-                                                <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
-                                             </image>
-                                             <StackPane.margin>
-                                                <Insets left="40.0" top="25.0" />
-                                             </StackPane.margin>
-                                          </ImageView>
-                                       </children>
-                                       <BorderPane.margin>
-                                          <Insets />
-                                       </BorderPane.margin>
-                                    </StackPane>
-                                 </center>
-                                 <top>
-                                    <Label id="img-title" text="Title" BorderPane.alignment="CENTER">
-                                       <font>
-                                          <Font name="Comic Sans MS" size="18.0" />
-                                       </font>
-                                    </Label>
-                                 </top>
-                              </BorderPane>
-                              <BorderPane prefHeight="200.0" prefWidth="200.0">
-                                 <center>
-                                    <StackPane prefHeight="314.0" prefWidth="135.0" BorderPane.alignment="CENTER">
-                                       <children>
-                                          <ImageView fx:id="imageView37" fitHeight="200.0" fitWidth="144.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true">
-                                             <image>
-                                                <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
-                                             </image>
-                                             <StackPane.margin>
-                                                <Insets left="40.0" top="25.0" />
-                                             </StackPane.margin>
-                                          </ImageView>
-                                       </children>
-                                       <BorderPane.margin>
-                                          <Insets />
-                                       </BorderPane.margin>
-                                    </StackPane>
-                                 </center>
-                                 <top>
-                                    <Label id="img-title" text="Title" BorderPane.alignment="CENTER">
-                                       <font>
-                                          <Font name="Comic Sans MS" size="18.0" />
-                                       </font>
-                                    </Label>
-                                 </top>
-                              </BorderPane>
-                              <BorderPane prefHeight="200.0" prefWidth="200.0">
-                                 <center>
-                                    <StackPane prefHeight="314.0" prefWidth="135.0" BorderPane.alignment="CENTER">
-                                       <children>
-                                          <ImageView fx:id="imageView38" fitHeight="200.0" fitWidth="144.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true">
-                                             <image>
-                                                <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
-                                             </image>
-                                             <StackPane.margin>
-                                                <Insets left="40.0" top="25.0" />
-                                             </StackPane.margin>
-                                          </ImageView>
-                                       </children>
-                                       <BorderPane.margin>
-                                          <Insets />
-                                       </BorderPane.margin>
-                                    </StackPane>
-                                 </center>
-                                 <top>
-                                    <Label id="img-title" text="Title" BorderPane.alignment="CENTER">
-                                       <font>
-                                          <Font name="Comic Sans MS" size="18.0" />
-                                       </font>
-                                    </Label>
-                                 </top>
-                              </BorderPane>
-                              <BorderPane prefHeight="200.0" prefWidth="200.0">
-                                 <center>
-                                    <StackPane prefHeight="314.0" prefWidth="135.0" BorderPane.alignment="CENTER">
-                                       <children>
-                                          <ImageView fx:id="imageView39" fitHeight="200.0" fitWidth="144.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true">
-                                             <image>
-                                                <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
-                                             </image>
-                                             <StackPane.margin>
-                                                <Insets left="40.0" top="25.0" />
-                                             </StackPane.margin>
-                                          </ImageView>
-                                       </children>
-                                       <BorderPane.margin>
-                                          <Insets />
-                                       </BorderPane.margin>
-                                    </StackPane>
-                                 </center>
-                                 <top>
-                                    <Label id="img-title" text="Title" BorderPane.alignment="CENTER">
-                                       <font>
-                                          <Font name="Comic Sans MS" size="18.0" />
-                                       </font>
-                                    </Label>
-                                 </top>
-                              </BorderPane>
-                              <BorderPane prefHeight="200.0" prefWidth="200.0">
-                                 <center>
-                                    <StackPane prefHeight="314.0" prefWidth="135.0" BorderPane.alignment="CENTER">
-                                       <children>
-                                          <ImageView fx:id="imageView40" fitHeight="200.0" fitWidth="144.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true">
-                                             <image>
-                                                <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
-                                             </image>
-                                             <StackPane.margin>
-                                                <Insets left="40.0" top="25.0" />
-                                             </StackPane.margin>
-                                          </ImageView>
-                                       </children>
-                                       <BorderPane.margin>
-                                          <Insets />
-                                       </BorderPane.margin>
-                                    </StackPane>
-                                 </center>
-                                 <top>
-                                    <Label id="img-title" text="Title" BorderPane.alignment="CENTER">
-                                       <font>
-                                          <Font name="Comic Sans MS" size="18.0" />
-                                       </font>
-                                    </Label>
-                                 </top>
-                              </BorderPane>
-                              <BorderPane prefHeight="200.0" prefWidth="200.0">
-                                 <center>
-                                    <StackPane prefHeight="314.0" prefWidth="135.0" BorderPane.alignment="CENTER">
-                                       <children>
-                                          <ImageView fx:id="imageView41" fitHeight="200.0" fitWidth="144.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true">
-                                             <image>
-                                                <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
-                                             </image>
-                                             <StackPane.margin>
-                                                <Insets left="40.0" top="25.0" />
-                                             </StackPane.margin>
-                                          </ImageView>
-                                       </children>
-                                       <BorderPane.margin>
-                                          <Insets />
-                                       </BorderPane.margin>
-                                    </StackPane>
-                                 </center>
-                                 <top>
-                                    <Label id="img-title" text="Title" BorderPane.alignment="CENTER">
-                                       <font>
-                                          <Font name="Comic Sans MS" size="18.0" />
-                                       </font>
-                                    </Label>
-                                 </top>
-                              </BorderPane>
-                              <BorderPane prefHeight="200.0" prefWidth="200.0">
-                                 <center>
-                                    <StackPane prefHeight="314.0" prefWidth="135.0" BorderPane.alignment="CENTER">
-                                       <children>
-                                          <ImageView fx:id="imageView42" fitHeight="200.0" fitWidth="144.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true">
-                                             <image>
-                                                <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
-                                             </image>
-                                             <StackPane.margin>
-                                                <Insets left="40.0" top="25.0" />
-                                             </StackPane.margin>
-                                          </ImageView>
-                                       </children>
-                                       <BorderPane.margin>
-                                          <Insets />
-                                       </BorderPane.margin>
-                                    </StackPane>
-                                 </center>
-                                 <top>
-                                    <Label id="img-title" text="Title" BorderPane.alignment="CENTER">
-                                       <font>
-                                          <Font name="Comic Sans MS" size="18.0" />
-                                       </font>
-                                    </Label>
-                                 </top>
-                              </BorderPane>
                            </children>
-                        </HBox>
-                     </content>
-                     <StackPane.margin>
-                        <Insets top="686.6666" />
-                     </StackPane.margin>
-                  </ScrollPane>
-               </children>
-            </StackPane>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </AnchorPane>
+                        <AnchorPane fx:id="imageAnchor18" layoutX="508.0" layoutY="10.0" prefHeight="48.0" prefWidth="154.0">
+                           <children>
+                              <ImageView fx:id="imageView18" fitHeight="200.0" fitWidth="144.0" focusTraversable="true" layoutX="-18.0" layoutY="90.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true" AnchorPane.topAnchor="100.0">
+                                 <image>
+                                    <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
+                                 </image>
+                              </ImageView>
+                              <Label id="img-title" fx:id="imageTitle18" layoutX="126.0" layoutY="94.0" prefHeight="22.0" prefWidth="42.0" text="Title">
+                                 <font>
+                                    <Font name="Comic Sans MS" size="18.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </AnchorPane>
+                        <AnchorPane fx:id="imageAnchor19" layoutX="676.0" layoutY="10.0" prefHeight="48.0" prefWidth="154.0">
+                           <children>
+                              <ImageView fx:id="imageView19" fitHeight="200.0" fitWidth="144.0" focusTraversable="true" layoutX="-18.0" layoutY="90.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true" AnchorPane.topAnchor="100.0">
+                                 <image>
+                                    <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
+                                 </image>
+                              </ImageView>
+                              <Label id="img-title" fx:id="imageTitle19" layoutX="126.0" layoutY="94.0" prefHeight="22.0" prefWidth="42.0" text="Title">
+                                 <font>
+                                    <Font name="Comic Sans MS" size="18.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </AnchorPane>
+                        <AnchorPane fx:id="imageAnchor20" layoutX="844.0" layoutY="10.0" prefHeight="48.0" prefWidth="154.0">
+                           <children>
+                              <ImageView fx:id="imageView20" fitHeight="200.0" fitWidth="144.0" focusTraversable="true" layoutX="-18.0" layoutY="90.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true" AnchorPane.topAnchor="100.0">
+                                 <image>
+                                    <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
+                                 </image>
+                              </ImageView>
+                              <Label id="img-title" fx:id="imageTitle20" layoutX="126.0" layoutY="94.0" prefHeight="22.0" prefWidth="42.0" text="Title">
+                                 <font>
+                                    <Font name="Comic Sans MS" size="18.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </AnchorPane>
+                        <AnchorPane fx:id="imageAnchor21" layoutX="1012.0" layoutY="10.0" prefHeight="48.0" prefWidth="154.0">
+                           <children>
+                              <ImageView fx:id="imageView21" fitHeight="200.0" fitWidth="144.0" focusTraversable="true" layoutX="-18.0" layoutY="90.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true" AnchorPane.topAnchor="100.0">
+                                 <image>
+                                    <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
+                                 </image>
+                              </ImageView>
+                              <Label id="img-title" fx:id="imageTitle21" layoutX="126.0" layoutY="94.0" prefHeight="22.0" prefWidth="42.0" text="Title">
+                                 <font>
+                                    <Font name="Comic Sans MS" size="18.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </AnchorPane>
+                        <AnchorPane fx:id="imageAnchor22" layoutX="1180.0" layoutY="10.0" prefHeight="48.0" prefWidth="154.0">
+                           <children>
+                              <ImageView fx:id="imageView22" fitHeight="200.0" fitWidth="144.0" focusTraversable="true" layoutX="-18.0" layoutY="90.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true" AnchorPane.topAnchor="100.0">
+                                 <image>
+                                    <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
+                                 </image>
+                              </ImageView>
+                              <Label id="img-title" fx:id="imageTitle22" layoutX="126.0" layoutY="94.0" prefHeight="22.0" prefWidth="42.0" text="Title">
+                                 <font>
+                                    <Font name="Comic Sans MS" size="18.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </AnchorPane>
+                        <AnchorPane fx:id="imageAnchor23" layoutX="1348.0" layoutY="10.0" prefHeight="48.0" prefWidth="154.0">
+                           <children>
+                              <ImageView fx:id="imageView23" fitHeight="200.0" fitWidth="144.0" focusTraversable="true" layoutX="-18.0" layoutY="90.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true" AnchorPane.topAnchor="100.0">
+                                 <image>
+                                    <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
+                                 </image>
+                              </ImageView>
+                              <Label id="img-title" fx:id="imageTitle23" layoutX="126.0" layoutY="94.0" prefHeight="22.0" prefWidth="42.0" text="Title">
+                                 <font>
+                                    <Font name="Comic Sans MS" size="18.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </AnchorPane>
+                        <AnchorPane fx:id="imageAnchor24" layoutX="1516.0" layoutY="10.0" prefHeight="48.0" prefWidth="154.0">
+                           <children>
+                              <ImageView fx:id="imageView24" fitHeight="200.0" fitWidth="144.0" focusTraversable="true" layoutX="-18.0" layoutY="90.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true" AnchorPane.topAnchor="100.0">
+                                 <image>
+                                    <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
+                                 </image>
+                              </ImageView>
+                              <Label id="img-title" fx:id="imageTitle24" layoutX="126.0" layoutY="94.0" prefHeight="22.0" prefWidth="42.0" text="Title">
+                                 <font>
+                                    <Font name="Comic Sans MS" size="18.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </AnchorPane>
+                        <AnchorPane fx:id="imageAnchor25" layoutX="1684.0" layoutY="10.0" prefHeight="48.0" prefWidth="154.0">
+                           <children>
+                              <ImageView fx:id="imageView25" fitHeight="200.0" fitWidth="144.0" focusTraversable="true" layoutX="-18.0" layoutY="90.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true" AnchorPane.topAnchor="100.0">
+                                 <image>
+                                    <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
+                                 </image>
+                              </ImageView>
+                              <Label id="img-title" fx:id="imageTitle25" layoutX="126.0" layoutY="94.0" prefHeight="22.0" prefWidth="42.0" text="Title">
+                                 <font>
+                                    <Font name="Comic Sans MS" size="18.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </AnchorPane>
+                        <AnchorPane fx:id="imageAnchor26" layoutX="1852.0" layoutY="10.0" prefHeight="48.0" prefWidth="154.0">
+                           <children>
+                              <ImageView fx:id="imageView26" fitHeight="200.0" fitWidth="144.0" focusTraversable="true" layoutX="-18.0" layoutY="90.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true" AnchorPane.topAnchor="100.0">
+                                 <image>
+                                    <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
+                                 </image>
+                              </ImageView>
+                              <Label id="img-title" fx:id="imageTitle26" layoutX="126.0" layoutY="94.0" prefHeight="22.0" prefWidth="42.0" text="Title">
+                                 <font>
+                                    <Font name="Comic Sans MS" size="18.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </AnchorPane>
+                        <AnchorPane fx:id="imageAnchor27" layoutX="2020.0" layoutY="10.0" prefHeight="48.0" prefWidth="154.0">
+                           <children>
+                              <ImageView fx:id="imageView27" fitHeight="200.0" fitWidth="144.0" focusTraversable="true" layoutX="-18.0" layoutY="90.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true" AnchorPane.topAnchor="100.0">
+                                 <image>
+                                    <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
+                                 </image>
+                              </ImageView>
+                              <Label id="img-title" fx:id="imageTitle27" layoutX="126.0" layoutY="94.0" prefHeight="22.0" prefWidth="42.0" text="Title">
+                                 <font>
+                                    <Font name="Comic Sans MS" size="18.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </AnchorPane>
+                        <AnchorPane fx:id="imageAnchor28" layoutX="2188.0" layoutY="10.0" prefHeight="48.0" prefWidth="154.0">
+                           <children>
+                              <ImageView fx:id="imageView28" fitHeight="200.0" fitWidth="144.0" focusTraversable="true" layoutX="-18.0" layoutY="90.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true" AnchorPane.topAnchor="100.0">
+                                 <image>
+                                    <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
+                                 </image>
+                              </ImageView>
+                              <Label id="img-title" fx:id="imageTitle28" layoutX="126.0" layoutY="94.0" prefHeight="22.0" prefWidth="42.0" text="Title">
+                                 <font>
+                                    <Font name="Comic Sans MS" size="18.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </AnchorPane>
+                     </children>
+                  </HBox>
+               </content>
+               <StackPane.margin>
+                  <Insets top="343.3333" />
+               </StackPane.margin>
+            </ScrollPane>
+            <ScrollPane hbarPolicy="NEVER" pannable="true" prefHeight="343.33333333" prefWidth="1920.0" style="-fx-background-color: #303030;" vbarPolicy="NEVER" vmax="0.0">
+               <content>
+                  <HBox prefHeight="343.3333" prefWidth="2560.0" style="-fx-background-color: #303030;">
+                     <children>
+                        <Label id="ani_label" prefHeight="39.0" prefWidth="194.0" text="Trending">
+                           <HBox.margin>
+                              <Insets left="20.0" right="-120.0" top="20.0" />
+                           </HBox.margin>
+                        </Label>
+                        <AnchorPane fx:id="imageAnchor29" prefHeight="48.0" prefWidth="154.0">
+                           <children>
+                              <ImageView fx:id="imageView29" fitHeight="200.0" fitWidth="144.0" focusTraversable="true" layoutX="-18.0" layoutY="90.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true" AnchorPane.topAnchor="100.0">
+                                 <image>
+                                    <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
+                                 </image>
+                              </ImageView>
+                              <Label id="img-title" fx:id="imageTitle29" layoutX="126.0" layoutY="94.0" prefHeight="22.0" prefWidth="42.0" text="Title">
+                                 <font>
+                                    <Font name="Comic Sans MS" size="18.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </AnchorPane>
+                        <AnchorPane fx:id="imageAnchor30" prefHeight="48.0" prefWidth="154.0">
+                           <children>
+                              <ImageView fx:id="imageView30" fitHeight="200.0" fitWidth="144.0" focusTraversable="true" layoutX="-18.0" layoutY="90.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true" AnchorPane.topAnchor="100.0">
+                                 <image>
+                                    <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
+                                 </image>
+                              </ImageView>
+                              <Label id="img-title" fx:id="imageTitle30" layoutX="126.0" layoutY="94.0" prefHeight="22.0" prefWidth="42.0" text="Title">
+                                 <font>
+                                    <Font name="Comic Sans MS" size="18.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </AnchorPane>
+                        <AnchorPane fx:id="imageAnchor31" prefHeight="48.0" prefWidth="154.0">
+                           <children>
+                              <ImageView fx:id="imageView31" fitHeight="200.0" fitWidth="144.0" focusTraversable="true" layoutX="-18.0" layoutY="90.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true" AnchorPane.topAnchor="100.0">
+                                 <image>
+                                    <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
+                                 </image>
+                              </ImageView>
+                              <Label id="img-title" fx:id="imageTitle31" layoutX="126.0" layoutY="94.0" prefHeight="22.0" prefWidth="42.0" text="Title">
+                                 <font>
+                                    <Font name="Comic Sans MS" size="18.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </AnchorPane>
+                        <AnchorPane fx:id="imageAnchor32" prefHeight="48.0" prefWidth="154.0">
+                           <children>
+                              <ImageView fx:id="imageView32" fitHeight="200.0" fitWidth="144.0" focusTraversable="true" layoutX="-18.0" layoutY="90.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true" AnchorPane.topAnchor="100.0">
+                                 <image>
+                                    <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
+                                 </image>
+                              </ImageView>
+                              <Label id="img-title" fx:id="imageTitle32" layoutX="126.0" layoutY="94.0" prefHeight="22.0" prefWidth="42.0" text="Title">
+                                 <font>
+                                    <Font name="Comic Sans MS" size="18.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </AnchorPane>
+                        <AnchorPane fx:id="imageAnchor33" prefHeight="48.0" prefWidth="154.0">
+                           <children>
+                              <ImageView fx:id="imageView33" fitHeight="200.0" fitWidth="144.0" focusTraversable="true" layoutX="-18.0" layoutY="90.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true" AnchorPane.topAnchor="100.0">
+                                 <image>
+                                    <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
+                                 </image>
+                              </ImageView>
+                              <Label id="img-title" fx:id="imageTitle33" layoutX="126.0" layoutY="94.0" prefHeight="22.0" prefWidth="42.0" text="Title">
+                                 <font>
+                                    <Font name="Comic Sans MS" size="18.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </AnchorPane>
+                        <AnchorPane fx:id="imageAnchor34" prefHeight="48.0" prefWidth="154.0">
+                           <children>
+                              <ImageView fx:id="imageView34" fitHeight="200.0" fitWidth="144.0" focusTraversable="true" layoutX="-18.0" layoutY="90.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true" AnchorPane.topAnchor="100.0">
+                                 <image>
+                                    <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
+                                 </image>
+                              </ImageView>
+                              <Label id="img-title" fx:id="imageTitle34" layoutX="126.0" layoutY="94.0" prefHeight="22.0" prefWidth="42.0" text="Title">
+                                 <font>
+                                    <Font name="Comic Sans MS" size="18.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </AnchorPane>
+                        <AnchorPane fx:id="imageAnchor35" prefHeight="48.0" prefWidth="154.0">
+                           <children>
+                              <ImageView fx:id="imageView35" fitHeight="200.0" fitWidth="144.0" focusTraversable="true" layoutX="-18.0" layoutY="90.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true" AnchorPane.topAnchor="100.0">
+                                 <image>
+                                    <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
+                                 </image>
+                              </ImageView>
+                              <Label id="img-title" fx:id="imageTitle35" layoutX="126.0" layoutY="94.0" prefHeight="22.0" prefWidth="42.0" text="Title">
+                                 <font>
+                                    <Font name="Comic Sans MS" size="18.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </AnchorPane>
+                        <AnchorPane fx:id="imageAnchor36" prefHeight="48.0" prefWidth="154.0">
+                           <children>
+                              <ImageView fx:id="imageView36" fitHeight="200.0" fitWidth="144.0" focusTraversable="true" layoutX="-18.0" layoutY="90.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true" AnchorPane.topAnchor="100.0">
+                                 <image>
+                                    <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
+                                 </image>
+                              </ImageView>
+                              <Label id="img-title" fx:id="imageTitle36" layoutX="126.0" layoutY="94.0" prefHeight="22.0" prefWidth="42.0" text="Title">
+                                 <font>
+                                    <Font name="Comic Sans MS" size="18.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </AnchorPane>
+                        <AnchorPane fx:id="imageAnchor37" prefHeight="48.0" prefWidth="154.0">
+                           <children>
+                              <ImageView fx:id="imageView37" fitHeight="200.0" fitWidth="144.0" focusTraversable="true" layoutX="-18.0" layoutY="100.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true" AnchorPane.topAnchor="100.0">
+                                 <image>
+                                    <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
+                                 </image>
+                              </ImageView>
+                              <Label id="img-title" fx:id="imageTitle37" layoutX="126.0" layoutY="94.0" prefHeight="22.0" prefWidth="42.0" text="Title">
+                                 <font>
+                                    <Font name="Comic Sans MS" size="18.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </AnchorPane>
+                        <AnchorPane fx:id="imageAnchor38" prefHeight="48.0" prefWidth="154.0">
+                           <children>
+                              <ImageView fx:id="imageView38" fitHeight="200.0" fitWidth="144.0" focusTraversable="true" layoutX="-18.0" layoutY="90.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true" AnchorPane.topAnchor="100.0">
+                                 <image>
+                                    <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
+                                 </image>
+                              </ImageView>
+                              <Label id="img-title" fx:id="imageTitle38" layoutX="126.0" layoutY="94.0" prefHeight="22.0" prefWidth="42.0" text="Title">
+                                 <font>
+                                    <Font name="Comic Sans MS" size="18.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </AnchorPane>
+                        <AnchorPane fx:id="imageAnchor39" prefHeight="48.0" prefWidth="154.0">
+                           <children>
+                              <ImageView fx:id="imageView39" fitHeight="200.0" fitWidth="144.0" focusTraversable="true" layoutX="-18.0" layoutY="90.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true" AnchorPane.topAnchor="100.0">
+                                 <image>
+                                    <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
+                                 </image>
+                              </ImageView>
+                              <Label id="img-title" fx:id="imageTitle39" layoutX="126.0" layoutY="94.0" prefHeight="22.0" prefWidth="42.0" text="Title">
+                                 <font>
+                                    <Font name="Comic Sans MS" size="18.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </AnchorPane>
+                        <AnchorPane fx:id="imageAnchor40" prefHeight="48.0" prefWidth="154.0">
+                           <children>
+                              <ImageView fx:id="imageView40" fitHeight="200.0" fitWidth="144.0" focusTraversable="true" layoutX="-18.0" layoutY="90.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true" AnchorPane.topAnchor="100.0">
+                                 <image>
+                                    <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
+                                 </image>
+                              </ImageView>
+                              <Label id="img-title" fx:id="imageTitle40" layoutX="126.0" layoutY="94.0" prefHeight="22.0" prefWidth="42.0" text="Title">
+                                 <font>
+                                    <Font name="Comic Sans MS" size="18.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </AnchorPane>
+                        <AnchorPane fx:id="imageAnchor41" prefHeight="48.0" prefWidth="154.0">
+                           <children>
+                              <ImageView fx:id="imageView41" fitHeight="200.0" fitWidth="144.0" focusTraversable="true" layoutX="-18.0" layoutY="90.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true" AnchorPane.topAnchor="100.0">
+                                 <image>
+                                    <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
+                                 </image>
+                              </ImageView>
+                              <Label id="img-title" fx:id="imageTitle41" layoutX="126.0" layoutY="94.0" prefHeight="22.0" prefWidth="42.0" text="Title">
+                                 <font>
+                                    <Font name="Comic Sans MS" size="18.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </AnchorPane>
+                        <AnchorPane fx:id="imageAnchor42" prefHeight="48.0" prefWidth="154.0">
+                           <children>
+                              <ImageView fx:id="imageView42" fitHeight="200.0" fitWidth="144.0" focusTraversable="true" layoutX="-18.0" layoutY="90.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true" AnchorPane.topAnchor="100.0">
+                                 <image>
+                                    <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
+                                 </image>
+                              </ImageView>
+                              <Label id="img-title" fx:id="imageTitle42" layoutX="126.0" layoutY="94.0" prefHeight="22.0" prefWidth="42.0" text="Title">
+                                 <font>
+                                    <Font name="Comic Sans MS" size="18.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </AnchorPane>
+                     </children>
+                  </HBox>
+               </content>
+               <StackPane.margin>
+                  <Insets top="686.6666" />
+               </StackPane.margin>
+            </ScrollPane>
+            <ScrollPane hbarPolicy="NEVER" pannable="true" prefHeight="343.333" prefWidth="1920.0" style="-fx-background-color: #303030;" vbarPolicy="NEVER" vmax="0.0">
+               <content>
+                  <HBox prefHeight="343.333333" prefWidth="2560.0" style="-fx-background-color: #303030;">
+                     <children>
+                        <Label id="ani_label" prefHeight="39.0" prefWidth="229.0" text="Most Popular">
+                           <HBox.margin>
+                              <Insets left="20.0" right="-120.0" top="20.0" />
+                           </HBox.margin>
+                        </Label>
+                        <AnchorPane fx:id="imageAnchor1" prefHeight="48.0" prefWidth="154.0">
+                           <children>
+                              <ImageView fx:id="imageView1" fitHeight="200.0" fitWidth="144.0" focusTraversable="true" layoutX="-18.0" layoutY="90.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true" AnchorPane.topAnchor="100.0">
+                                 <image>
+                                    <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
+                                 </image>
+                              </ImageView>
+                              <Label id="img-title" fx:id="imageTitle1" layoutX="126.0" layoutY="94.0" prefHeight="22.0" prefWidth="42.0" text="Title">
+                                 <font>
+                                    <Font name="Comic Sans MS" size="18.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </AnchorPane>
+                        <AnchorPane fx:id="imageAnchor2" prefHeight="48.0" prefWidth="154.0">
+                           <children>
+                              <ImageView fx:id="imageView2" fitHeight="200.0" fitWidth="144.0" focusTraversable="true" layoutX="-18.0" layoutY="90.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true" AnchorPane.topAnchor="100.0">
+                                 <image>
+                                    <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
+                                 </image>
+                              </ImageView>
+                              <Label id="img-title" fx:id="imageTitle2" layoutX="126.0" layoutY="94.0" prefHeight="22.0" prefWidth="42.0" text="Title">
+                                 <font>
+                                    <Font name="Comic Sans MS" size="18.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </AnchorPane>
+                        <AnchorPane fx:id="imageAnchor3" prefHeight="48.0" prefWidth="154.0">
+                           <children>
+                              <ImageView fx:id="imageView3" fitHeight="200.0" fitWidth="144.0" focusTraversable="true" layoutX="-18.0" layoutY="90.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true" AnchorPane.topAnchor="100.0">
+                                 <image>
+                                    <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
+                                 </image>
+                              </ImageView>
+                              <Label id="img-title" fx:id="imageTitle3" layoutX="126.0" layoutY="94.0" prefHeight="22.0" prefWidth="42.0" text="Title">
+                                 <font>
+                                    <Font name="Comic Sans MS" size="18.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </AnchorPane>
+                        <AnchorPane fx:id="imageAnchor4" prefHeight="48.0" prefWidth="154.0">
+                           <children>
+                              <ImageView fx:id="imageView4" fitHeight="200.0" fitWidth="144.0" focusTraversable="true" layoutX="-18.0" layoutY="90.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true" AnchorPane.topAnchor="100.0">
+                                 <image>
+                                    <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
+                                 </image>
+                              </ImageView>
+                              <Label id="img-title" fx:id="imageTitle4" layoutX="126.0" layoutY="94.0" prefHeight="22.0" prefWidth="42.0" text="Title">
+                                 <font>
+                                    <Font name="Comic Sans MS" size="18.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </AnchorPane>
+                        <AnchorPane fx:id="imageAnchor5" prefHeight="48.0" prefWidth="154.0">
+                           <children>
+                              <ImageView fx:id="imageView5" fitHeight="200.0" fitWidth="144.0" focusTraversable="true" layoutX="-18.0" layoutY="90.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true" AnchorPane.topAnchor="100.0">
+                                 <image>
+                                    <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
+                                 </image>
+                              </ImageView>
+                              <Label id="img-title" fx:id="imageTitle5" layoutX="126.0" layoutY="94.0" prefHeight="22.0" prefWidth="42.0" text="Title">
+                                 <font>
+                                    <Font name="Comic Sans MS" size="18.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </AnchorPane>
+                        <AnchorPane fx:id="imageAnchor6" prefHeight="48.0" prefWidth="154.0">
+                           <children>
+                              <ImageView fx:id="imageView6" fitHeight="200.0" fitWidth="144.0" focusTraversable="true" layoutX="-18.0" layoutY="90.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true" AnchorPane.topAnchor="100.0">
+                                 <image>
+                                    <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
+                                 </image>
+                              </ImageView>
+                              <Label id="img-title" fx:id="imageTitle6" layoutX="126.0" layoutY="94.0" prefHeight="22.0" prefWidth="42.0" text="Title">
+                                 <font>
+                                    <Font name="Comic Sans MS" size="18.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </AnchorPane>
+                        <AnchorPane fx:id="imageAnchor7" prefHeight="48.0" prefWidth="154.0">
+                           <children>
+                              <ImageView fx:id="imageView7" fitHeight="200.0" fitWidth="144.0" focusTraversable="true" layoutX="-18.0" layoutY="90.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true" AnchorPane.topAnchor="100.0">
+                                 <image>
+                                    <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
+                                 </image>
+                              </ImageView>
+                              <Label id="img-title" fx:id="imageTitle7" layoutX="126.0" layoutY="94.0" prefHeight="22.0" prefWidth="42.0" text="Title">
+                                 <font>
+                                    <Font name="Comic Sans MS" size="18.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </AnchorPane>
+                        <AnchorPane fx:id="imageAnchor8" prefHeight="48.0" prefWidth="154.0">
+                           <children>
+                              <ImageView fx:id="imageView8" fitHeight="200.0" fitWidth="144.0" focusTraversable="true" layoutX="-18.0" layoutY="90.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true" AnchorPane.topAnchor="100.0">
+                                 <image>
+                                    <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
+                                 </image>
+                              </ImageView>
+                              <Label id="img-title" fx:id="imageTitle8" layoutX="126.0" layoutY="94.0" prefHeight="22.0" prefWidth="42.0" text="Title">
+                                 <font>
+                                    <Font name="Comic Sans MS" size="18.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </AnchorPane>
+                        <AnchorPane fx:id="imageAnchor9" prefHeight="48.0" prefWidth="154.0">
+                           <children>
+                              <ImageView fx:id="imageView9" fitHeight="200.0" fitWidth="144.0" focusTraversable="true" layoutX="-18.0" layoutY="90.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true" AnchorPane.topAnchor="100.0">
+                                 <image>
+                                    <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
+                                 </image>
+                              </ImageView>
+                              <Label id="img-title" fx:id="imageTitle9" layoutX="126.0" layoutY="94.0" prefHeight="22.0" prefWidth="42.0" text="Title">
+                                 <font>
+                                    <Font name="Comic Sans MS" size="18.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </AnchorPane>
+                        <AnchorPane fx:id="imageAnchor10" prefHeight="48.0" prefWidth="154.0">
+                           <children>
+                              <ImageView fx:id="imageView10" fitHeight="200.0" fitWidth="144.0" focusTraversable="true" layoutX="-18.0" layoutY="90.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true" AnchorPane.topAnchor="100.0">
+                                 <image>
+                                    <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
+                                 </image>
+                              </ImageView>
+                              <Label id="img-title" fx:id="imageTitle10" layoutX="126.0" layoutY="94.0" prefHeight="22.0" prefWidth="42.0" text="Title">
+                                 <font>
+                                    <Font name="Comic Sans MS" size="18.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </AnchorPane>
+                        <AnchorPane fx:id="imageAnchor11" prefHeight="48.0" prefWidth="154.0">
+                           <children>
+                              <ImageView fx:id="imageView11" fitHeight="200.0" fitWidth="144.0" focusTraversable="true" layoutX="-18.0" layoutY="90.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true" AnchorPane.topAnchor="100.0">
+                                 <image>
+                                    <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
+                                 </image>
+                              </ImageView>
+                              <Label id="img-title" fx:id="imageTitle11" layoutX="126.0" layoutY="94.0" prefHeight="22.0" prefWidth="42.0" text="Title">
+                                 <font>
+                                    <Font name="Comic Sans MS" size="18.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </AnchorPane>
+                        <AnchorPane fx:id="imageAnchor12" prefHeight="48.0" prefWidth="154.0">
+                           <children>
+                              <ImageView fx:id="imageView12" fitHeight="200.0" fitWidth="144.0" focusTraversable="true" layoutX="-18.0" layoutY="90.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true" AnchorPane.topAnchor="100.0">
+                                 <image>
+                                    <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
+                                 </image>
+                              </ImageView>
+                              <Label id="img-title" fx:id="imageTitle12" layoutX="126.0" layoutY="94.0" prefHeight="22.0" prefWidth="42.0" text="Title">
+                                 <font>
+                                    <Font name="Comic Sans MS" size="18.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </AnchorPane>
+                        <AnchorPane fx:id="imageAnchor13" prefHeight="48.0" prefWidth="154.0">
+                           <children>
+                              <ImageView fx:id="imageView13" fitHeight="200.0" fitWidth="144.0" focusTraversable="true" layoutX="-18.0" layoutY="90.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true" AnchorPane.topAnchor="100.0">
+                                 <image>
+                                    <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
+                                 </image>
+                              </ImageView>
+                              <Label id="img-title" fx:id="imageTitle13" layoutX="126.0" layoutY="94.0" prefHeight="22.0" prefWidth="42.0" text="Title">
+                                 <font>
+                                    <Font name="Comic Sans MS" size="18.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </AnchorPane>
+                        <AnchorPane fx:id="imageAnchor14" prefHeight="48.0" prefWidth="154.0">
+                           <children>
+                              <ImageView fx:id="imageView14" fitHeight="200.0" fitWidth="144.0" focusTraversable="true" layoutX="-18.0" layoutY="90.0" onMouseEntered="#imageZoom" onMouseExited="#imageDzoom" pickOnBounds="true" AnchorPane.topAnchor="100.0">
+                                 <image>
+                                    <Image url="http://pngimg.com/uploads/cat/cat_PNG50504.png" />
+                                 </image>
+                              </ImageView>
+                              <Label id="img-title" fx:id="imageTitle14" layoutX="126.0" layoutY="94.0" prefHeight="22.0" prefWidth="42.0" text="Title">
+                                 <font>
+                                    <Font name="Comic Sans MS" size="18.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </AnchorPane>
+                     </children>
+                  </HBox>
+               </content>
+               <StackPane.margin>
+                  <Insets />
+               </StackPane.margin>
+            </ScrollPane>
          </children>
       </VBox>
    </center>

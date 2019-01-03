@@ -1,17 +1,14 @@
 package sample;
-import javafx.application.Platform;
 import javafx.event.Event;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.*;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.animation.*;
+import javafx.scene.layout.AnchorPane;
 import javafx.util.Duration;
 
-import java.io.IOException;
 import java.net.URL;
-import java.sql.SQLOutput;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.ResourceBundle;
@@ -20,6 +17,10 @@ public class mainController implements Initializable {
     private static ArrayList<ImageView> trendingiv;
     private static ArrayList<ImageView> recentiv;
     private static ArrayList<ImageView> mPopiv;
+    private static ArrayList<AnchorPane> recAnchor;
+    private static ArrayList<AnchorPane> trendAnchor;
+    private static ArrayList<AnchorPane> mPopAnchor;
+
     @FXML
     private ImageView imageView1;
     @FXML
@@ -104,6 +105,91 @@ public class mainController implements Initializable {
     private ImageView imageView41;
     @FXML
     private ImageView imageView42;
+    //Image Anchors
+    @FXML
+    private AnchorPane imageAnchor1;
+    @FXML
+    private AnchorPane imageAnchor2;
+    @FXML
+    private AnchorPane imageAnchor3;
+    @FXML
+    private AnchorPane imageAnchor4;
+    @FXML
+    private AnchorPane imageAnchor5;
+    @FXML
+    private AnchorPane imageAnchor6;
+    @FXML
+    private AnchorPane imageAnchor7;
+    @FXML
+    private AnchorPane imageAnchor8;
+    @FXML
+    private AnchorPane imageAnchor9;
+    @FXML
+    private AnchorPane imageAnchor10;
+    @FXML
+    private AnchorPane imageAnchor11;
+    @FXML
+    private AnchorPane imageAnchor12;
+    @FXML
+    private AnchorPane imageAnchor13;
+    @FXML
+    private AnchorPane imageAnchor14;
+    @FXML
+    private AnchorPane imageAnchor15;
+    @FXML
+    private AnchorPane imageAnchor16;
+    @FXML
+    private AnchorPane imageAnchor17;
+    @FXML
+    private AnchorPane imageAnchor18;
+    @FXML
+    private AnchorPane imageAnchor19;
+    @FXML
+    private AnchorPane imageAnchor20;
+    @FXML
+    private AnchorPane imageAnchor21;
+    @FXML
+    private AnchorPane imageAnchor22;
+    @FXML
+    private AnchorPane imageAnchor23;
+    @FXML
+    private AnchorPane imageAnchor24;
+    @FXML
+    private AnchorPane imageAnchor25;
+    @FXML
+    private AnchorPane imageAnchor26;
+    @FXML
+    private AnchorPane imageAnchor27;
+    @FXML
+    private AnchorPane imageAnchor28;
+    @FXML
+    private AnchorPane imageAnchor29;
+    @FXML
+    private AnchorPane imageAnchor30;
+    @FXML
+    private AnchorPane imageAnchor31;
+    @FXML
+    private AnchorPane imageAnchor32;
+    @FXML
+    private AnchorPane imageAnchor33;
+    @FXML
+    private AnchorPane imageAnchor34;
+    @FXML
+    private AnchorPane imageAnchor35;
+    @FXML
+    private AnchorPane imageAnchor36;
+    @FXML
+    private AnchorPane imageAnchor37;
+    @FXML
+    private AnchorPane imageAnchor38;
+    @FXML
+    private AnchorPane imageAnchor39;
+    @FXML
+    private AnchorPane imageAnchor40;
+    @FXML
+    private AnchorPane imageAnchor41;
+    @FXML
+    private AnchorPane imageAnchor42;
 
 
     public static HashMap<String,Image> trendingHash;
@@ -172,7 +258,66 @@ public class mainController implements Initializable {
 
         return mPopiv;
     }
+    private ArrayList<AnchorPane> recAnchor(){
+        ArrayList<AnchorPane> recAnchor = new ArrayList<>();
+        recAnchor.add(imageAnchor15);
+        recAnchor.add(imageAnchor16);
+        recAnchor.add(imageAnchor17);
+        recAnchor.add(imageAnchor18);
+        recAnchor.add(imageAnchor19);
+        recAnchor.add(imageAnchor20);
+        recAnchor.add(imageAnchor21);
+        recAnchor.add(imageAnchor22);
+        recAnchor.add(imageAnchor23);
+        recAnchor.add(imageAnchor24);
+        recAnchor.add(imageAnchor25);
+        recAnchor.add(imageAnchor26);
+        recAnchor.add(imageAnchor27);
+        recAnchor.add(imageAnchor28);
 
+
+
+        return recAnchor;
+    }
+
+    private ArrayList<AnchorPane> trendAnchor(){
+        ArrayList<AnchorPane> trendAnchor = new ArrayList<>();
+        trendAnchor.add(imageAnchor1);
+        trendAnchor.add(imageAnchor2);
+        trendAnchor.add(imageAnchor3);
+        trendAnchor.add(imageAnchor4);
+        trendAnchor.add(imageAnchor5);
+        trendAnchor.add(imageAnchor6);
+        trendAnchor.add(imageAnchor7);
+        trendAnchor.add(imageAnchor8);
+        trendAnchor.add(imageAnchor9);
+        trendAnchor.add(imageAnchor10);
+        trendAnchor.add(imageAnchor11);
+        trendAnchor.add(imageAnchor12);
+        trendAnchor.add(imageAnchor13);
+        trendAnchor.add(imageAnchor14);
+
+        return trendAnchor;
+    }
+
+    private ArrayList<AnchorPane> mPopAnchor(){
+        ArrayList<AnchorPane> mPopAnchor = new ArrayList<>();
+        mPopAnchor.add(imageAnchor29);
+        mPopAnchor.add(imageAnchor30);
+        mPopAnchor.add(imageAnchor31);
+        mPopAnchor.add(imageAnchor32);
+        mPopAnchor.add(imageAnchor33);
+        mPopAnchor.add(imageAnchor34);
+        mPopAnchor.add(imageAnchor35);
+        mPopAnchor.add(imageAnchor36);
+        mPopAnchor.add(imageAnchor37);
+        mPopAnchor.add(imageAnchor38);
+        mPopAnchor.add(imageAnchor39);
+        mPopAnchor.add(imageAnchor40);
+        mPopAnchor.add(imageAnchor41);
+        mPopAnchor.add(imageAnchor42);
+        return mPopAnchor;
+    }
     @FXML
     private void imageZoom(Event e){
         String foo = e.getSource().toString();
@@ -182,19 +327,19 @@ public class mainController implements Initializable {
         imgN = Integer.parseInt(foo)-1;
         imgN2 = imgN;
         if (imgN <= 13){
-            ScaleTransition zoom = new ScaleTransition(Duration.seconds(0.5),trendingiv.get(imgN));
+            ScaleTransition zoom = new ScaleTransition(Duration.seconds(0.5),trendAnchor.get(imgN));
             zoom.setToX(1.5);
             zoom.setToY(1.5);
             zoom.play();}
         if ( imgN <= 27 && imgN >= 14){
             imgN -= 14;
-            ScaleTransition zoom = new ScaleTransition(Duration.seconds(0.5),recentiv.get(imgN));
+            ScaleTransition zoom = new ScaleTransition(Duration.seconds(0.5),recAnchor().get(imgN));
             zoom.setToX(1.5);
             zoom.setToY(1.5);
             zoom.play();}
         if (imgN <= 41 && imgN >= 28){
             imgN -=28;
-            ScaleTransition zoom = new ScaleTransition(Duration.seconds(0.5),mPopiv.get(imgN));
+            ScaleTransition zoom = new ScaleTransition(Duration.seconds(0.5),mPopAnchor.get(imgN));
             zoom.setToX(1.5);
             zoom.setToY(1.5);
             zoom.play();}
@@ -205,19 +350,19 @@ public class mainController implements Initializable {
     @FXML
     private void imageDzoom(Event e){
         if (imgN2 <= 13){
-        ScaleTransition zoom = new ScaleTransition(Duration.seconds(0.5),trendingiv.get(imgN2));
+        ScaleTransition zoom = new ScaleTransition(Duration.seconds(0.5),trendAnchor.get(imgN2));
         zoom.setToX(1);
         zoom.setToY(1);
         zoom.play();}
         if (imgN2 <= 27 && imgN2 >= 14){
             imgN2 -=14;
-            ScaleTransition zoom = new ScaleTransition(Duration.seconds(0.5),recentiv.get(imgN2));
+            ScaleTransition zoom = new ScaleTransition(Duration.seconds(0.5),recAnchor.get(imgN2));
             zoom.setToX(1);
             zoom.setToY(1);
             zoom.play();}
         if (imgN2 <= 41 && imgN2>= 28){
             imgN2 -=28;
-            ScaleTransition zoom = new ScaleTransition(Duration.seconds(0.5),mPopiv.get(imgN2));
+            ScaleTransition zoom = new ScaleTransition(Duration.seconds(0.5),mPopAnchor.get(imgN2));
             zoom.setToX(1);
             zoom.setToY(1);
             zoom.play();}
@@ -261,9 +406,12 @@ public class mainController implements Initializable {
     }
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-       trendingiv=trending();
+       trendingiv = trending();
        recentiv = recent();
        mPopiv = mPop();
+       trendAnchor = trendAnchor();
+       recAnchor = recAnchor();
+       mPopAnchor = mPopAnchor();
 
     }
 

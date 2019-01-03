@@ -43,7 +43,6 @@ public class Load implements Initializable{
                         } catch (IOException e1) {
                             e1.printStackTrace();
                         }
-
                         Main.window.getScene().setRoot(root2);
 
 
