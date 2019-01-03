@@ -4,14 +4,17 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.input.KeyCombination;
 import javafx.stage.Stage;
 import javafx.scene.control.*;
+import javafx.stage.StageStyle;
 
 import java.io.IOException;
 
 public class Main extends Application {
     Button button;
     public static Stage window;
+    public static Scene load;
     Scene home;
 
 
@@ -29,7 +32,7 @@ public class Main extends Application {
             }
         });
         Parent root = FXMLLoader.load(getClass().getResource("Scenes/Load.fxml"));
-        Scene load = new Scene(root,1920,1080);
+        load = new Scene(root,1920,1080);
         window.setFullScreen(true);
         load.getStylesheets().add("viper.css");
         window.setScene(load);

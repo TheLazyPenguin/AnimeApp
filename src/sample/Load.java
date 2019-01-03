@@ -17,14 +17,18 @@ import java.util.concurrent.TimeUnit;
 
 public class Load implements Initializable{
    public HashMap<String,Image> foo;
+   public HashMap<String,Image> foo2;
+   public HashMap<String,Image> foo3;
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         scrapeData scrape = new scrapeData();
         mainController controller = new mainController();
         new Thread(() -> {
             try {
-                foo = scrape.fetch();
-                controller.start(foo);
+                foo = scrape.fetch_mPop();
+                foo2 = scrape.fetch_rec();
+                foo3 = scrape.fetch_trend();
+                controller.start(foo,foo2,foo3);
             } catch (IOException e1) {
                 e1.printStackTrace();
             }
@@ -39,11 +43,9 @@ public class Load implements Initializable{
                         } catch (IOException e1) {
                             e1.printStackTrace();
                         }
-                        Scene main = new Scene(root2, 1920, 1080);
 
-                        Main.changeWindow(main);
-                        Main.window.setFullScreen(false);
-                        Main.window.setFullScreen(true);
+                        Main.window.getScene().setRoot(root2);
+
 
                     }));
             timeline.play();

@@ -42,4 +42,7 @@
 -fx-text-fill: #6A9FB5;
 -fx-font-size: 20pt;
 -fx-font-weight: bold;
-}
+}#img-title{
+-fx-text-fill: #e8e8e8;
+-fx-font-size: 15pt;
+-fx-font-weight: bold;}
