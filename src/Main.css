@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 
 .root{
     -fx-background-color: #303030;
@@ -46,3 +48,21 @@
 -fx-text-fill: #e8e8e8;
 -fx-font-size: 15pt;
 -fx-font-weight: bold;}
+
+.split-pane:vertical > .split-pane-divider {
+-fx-background-color: transparent;
+}
+.split-pane:horizontal > .split-pane-divider {
+-fx-background-color: transparent;
+}
+#episodeText{
+-fx-text-fill: white;
+-fx-font-family: 'Open Sans', sans-serif;
+-fx-font-size: 12pt;
+}
+#episodeTitle_Main{
+-fx-text-fill: white;
+-fx-font-family: 'Roboto', sans-serif;
+-fx-font-size: 20pt;
+-fx-font-weight: bold;
+}

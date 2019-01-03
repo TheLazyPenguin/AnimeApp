@@ -18,7 +18,7 @@ public class confirmBox {
         window.setMinWidth(250);
         Parent root = FXMLLoader.load(confirmBox.class.getResource("Scenes/confirmExit.fxml"));
         Scene scene = new Scene(root);
-        scene.getStylesheets().add("viper.css");
+        scene.getStylesheets().add("Main.css");
 
         window.setScene(scene);
         window.showAndWait();

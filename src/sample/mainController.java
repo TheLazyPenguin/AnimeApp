@@ -1,19 +1,28 @@
 package sample;
 import javafx.event.Event;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.animation.*;
 import javafx.scene.layout.AnchorPane;
+import javafx.stage.Modality;
+import javafx.stage.Stage;
 import javafx.util.Duration;
 
+import java.io.UnsupportedEncodingException;
+import java.net.URLEncoder;
+import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.ResourceBundle;
-import java.util.concurrent.TimeUnit;
+
+import static java.lang.Thread.sleep;
 
 public class mainController implements Initializable {
     private static ArrayList<ImageView> trendingiv;
@@ -25,7 +34,9 @@ public class mainController implements Initializable {
     private static ArrayList<Label> recTitle;
     private static ArrayList<Label> trendTitle;
     private static ArrayList<Label> mPopTitle;
-
+    public static Stage epList;
+    public static String malurl;
+    public static String titleS;
     @FXML
     private ImageView imageView1;
     @FXML
@@ -538,7 +549,6 @@ public class mainController implements Initializable {
     @FXML
     private void imageDzoom(Event e){
         if (imgN2 <= 13){
-            trendTitle = trendTitle();
             FadeTransition textFadeIn = new FadeTransition(Duration.seconds(0.5), trendTitle.get(imgN));
             textFadeIn.setFromValue(1);
             textFadeIn.setToValue(0);
@@ -580,14 +590,16 @@ public class mainController implements Initializable {
         this.mPopHash =  foo;
         this.recentHash = foo2;
         fetched = true;
-        Thread.sleep(500);
+        Load.t4.sleep(4000);
         init();
     }
+    @FXML
     public void init() {
         int a = 0;
         int b = 0;
         int c = 0;
         if (fetched == true) {
+
             for (Image img : recentHash.values()) {
                 if (a <= recentHash.size()-1) {
                     recentiv.get(a).setImage(img);
@@ -608,21 +620,58 @@ public class mainController implements Initializable {
                 c++;
 
             }
-
         }
     }
+    @FXML
+    public void imageClick(Event e) throws UnsupportedEncodingException {
+        Parent root = null;
+        String foo = e.getSource().toString();
+        foo = foo.substring(foo.indexOf("=")+1);
+        foo = foo.substring(0,foo.indexOf(","));
+        foo = foo.substring(foo.indexOf("w")+1);
+        int i = Integer.parseInt(foo)-1;
+        if (i <= 13) {
+            titleS = trendTitle.get(i).getText();
+            malurl = URLEncoder.encode(trendTitle.get(i).getText(), "UTF-8");
+        }
+        else if (i >= 14 && i <= 27){
+             i -= 14;
+            titleS = recTitle.get(i).getText();
+            malurl = URLEncoder.encode(recTitle.get(i).getText(), "UTF-8");
+        }
+         else if (i >= 28 && i <= 41) {
+            i -= 28;
+            titleS = mPopTitle.get(i).getText();
+            malurl = URLEncoder.encode(mPopTitle.get(i).getText(), "UTF-8");
+        }
+        try {
+            epList = new Stage();
+            root = FXMLLoader.load(getClass().getResource("Scenes/episode-list.fxml"));
+            Scene epiScene = new Scene(root,1920,1080);
+            epList.setScene(epiScene);
+            epiScene.getStylesheets().add("Main.css");
+            epList.setFullScreen(true);
+            epList.initModality(Modality.APPLICATION_MODAL);
+            epList.show();
+        } catch (IOException e1) {
+            e1.printStackTrace();
+        }
+
+
+    }
+
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-       trendingiv = trending();
-       recentiv = recent();
-       mPopiv = mPop();
-       trendAnchor = trendAnchor();
-       recAnchor = recAnchor();
-       mPopAnchor = mPopAnchor();
-       trendTitle= trendTitle();
-       recTitle = recTitle();
-       mPopTitle = mPopTitle();
+            trendingiv = trending();
+            recentiv = recent();
+            mPopiv = mPop();
+            trendAnchor = trendAnchor();
+            recAnchor = recAnchor();
+            mPopAnchor = mPopAnchor();
+            trendTitle = trendTitle();
+            recTitle = recTitle();
+            mPopTitle = mPopTitle();
 
 
 

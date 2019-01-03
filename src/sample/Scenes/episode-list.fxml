@@ -1,14 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="sample.Scenes.EpisodeList"
-            prefHeight="400.0" prefWidth="600.0">
-
-</AnchorPane>
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#escPress" prefHeight="1080.0" prefWidth="1920.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.episodeList">
+   <left>
+      <AnchorPane minWidth="-Infinity" prefHeight="1080.0" prefWidth="774.0" style="-fx-background-color: #303030;" BorderPane.alignment="CENTER">
+         <children>
+            <ToolBar layoutX="88.0" layoutY="14.0" prefHeight="64.0" prefWidth="516.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <items>
+                <Button mnemonicParsing="false" onMouseClicked="#goBack" prefHeight="41.0" prefWidth="79.0" text="Back" />
+              </items>
+            </ToolBar>
+            <ImageView fitHeight="288.0" fitWidth="500.0" layoutX="2.0" layoutY="182.0" pickOnBounds="true" preserveRatio="true" />
+            <Label id="episodeText" fx:id="animeSummary" layoutX="28.0" layoutY="354.0" prefHeight="627.0" prefWidth="500.0" text="Summary" textFill="WHITE" wrapText="true" />
+            <Label id="episodeTitle_Main" fx:id="animeTitle" layoutX="13.0" layoutY="71.0" prefHeight="111.0" prefWidth="478.0" text="Anime Title" textAlignment="CENTER" />
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="1082.0" prefWidth="1268.0" style="-fx-background-color: #303030;" BorderPane.alignment="CENTER">
+         <children>
+            <ListView fixedCellSize="1.0" layoutX="174.0" layoutY="-2.0" prefHeight="1082.0" prefWidth="1998.0" style="-fx-background-color: #303030;" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

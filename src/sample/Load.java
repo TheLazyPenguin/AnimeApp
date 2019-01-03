@@ -18,11 +18,14 @@ public class Load implements Initializable{
    public HashMap<String,Image> foo;
    public HashMap<String,Image> foo2;
    public HashMap<String,Image> foo3;
+   public static Thread t4;
+
+
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         scrapeData scrape = new scrapeData();
         mainController controller = new mainController();
-        new Thread(() -> {
+        t4 = new Thread(() -> {
             try {
                 foo = scrape.fetch_mPop();
                 foo2 = scrape.fetch_rec();
@@ -33,9 +36,10 @@ public class Load implements Initializable{
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-        }).start();
+        });
+        t4.start();
             Timeline timeline = new Timeline(new KeyFrame(
-                    Duration.millis(2000),
+                    Duration.millis(5000),
                     e -> {
                         Parent root2 = null;
                         try {
