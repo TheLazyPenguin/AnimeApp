@@ -2,6 +2,10 @@ package sample;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.core.JsonEncoding;
+import com.fasterxml.jackson.core.JsonFactory;
+import com.fasterxml.jackson.core.JsonGenerator;
+import com.fasterxml.jackson.core.JsonParser;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
@@ -10,10 +14,7 @@ import javafx.fxml.Initializable;
 import java.net.URLEncoder;
 import java.io.IOException;
 import java.net.URL;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.ResourceBundle;
+import java.util.*;
 
 import javafx.scene.control.Label;
 import javafx.scene.image.ImageView;
@@ -49,26 +50,37 @@ public class episodeList implements Initializable {
     private void getContent() throws IOException {
 
         ObjectMapper objMap = new ObjectMapper();
-        Anime anime = objMap.readValue(new URL("https://api.jikan.moe/v3/anime/1/"),Anime.class);
-        Anime_Episodes ep = objMap.readValue(new URL("https://api.jikan.moe/v3/anime/1/episodes"), Anime_Episodes.class);
-        animeSummary.setText(anime.synopsis);
+        objMap.configure(JsonParser.Feature.ALLOW_UNQUOTED_FIELD_NAMES,true);
+        get_Ani anime = objMap.readValue(new URL("https://api.jikan.moe/v3/search/anime?q="+mainController.malurl +"&limit=1"),get_Ani.class);
         animeTitle.setText(mainController.titleS);
-        System.out.println(ep.episodes);
+        Map<String, Object> map = objMap.readValue(objMap.writeValueAsString(anime.results.get(0)), new TypeReference<Map<String,Object>>(){});
+        Anime aniSummary = objMap.readValue(new URL("https://api.jikan.moe/v3/anime/" + String.valueOf(map.get("mal_id"))), Anime.class);
+        animeSummary.setText(aniSummary.synopsis);
         setImage();
 
 
     }
     @JsonIgnoreProperties(ignoreUnknown = true)
     private static class Anime{
-        private String synopsis = null;
+        private String synopsis;
         public String getSynopsis(){return this.synopsis;}
-        public void setSynopsis(String synopsis){this.synopsis = synopsis;}
+        public void setSynopsis(String mal_id) {
+            this.synopsis = mal_id;
+        }
     }
     @JsonIgnoreProperties(ignoreUnknown = true)
     private static class Anime_Episodes{
         private List episodes = null;
         public List getEpisodes(){return this.episodes;}
         public void setEpisodes(List episodes){this.episodes = episodes;}
+
+
+    }
+    @JsonIgnoreProperties(ignoreUnknown = true)
+    private static class get_Ani{
+        private List results = null;
+        public List getResults(){return this.results;}
+        public void setResults(List results){this.results = results;}
 
 
     }
