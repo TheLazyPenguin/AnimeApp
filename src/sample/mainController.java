@@ -25,9 +25,9 @@ import java.util.ResourceBundle;
 import static java.lang.Thread.sleep;
 
 public class mainController implements Initializable {
-    private static ArrayList<ImageView> trendingiv;
-    private static ArrayList<ImageView> recentiv;
-    private static ArrayList<ImageView> mPopiv;
+    public static ArrayList<ImageView> trendingiv;
+    public static ArrayList<ImageView> recentiv;
+    public static ArrayList<ImageView> mPopiv;
     private static ArrayList<AnchorPane> recAnchor;
     private static ArrayList<AnchorPane> trendAnchor;
     private static ArrayList<AnchorPane> mPopAnchor;
@@ -37,6 +37,7 @@ public class mainController implements Initializable {
     public static Stage epList;
     public static String malurl;
     public static String titleS;
+    public static int N;
     @FXML
     private ImageView imageView1;
     @FXML
@@ -630,19 +631,23 @@ public class mainController implements Initializable {
         foo = foo.substring(0,foo.indexOf(","));
         foo = foo.substring(foo.indexOf("w")+1);
         int i = Integer.parseInt(foo)-1;
+        N = i;
         if (i <= 13) {
             titleS = trendTitle.get(i).getText();
             malurl = URLEncoder.encode(trendTitle.get(i).getText(), "UTF-8");
+
         }
         else if (i >= 14 && i <= 27){
              i -= 14;
             titleS = recTitle.get(i).getText();
             malurl = URLEncoder.encode(recTitle.get(i).getText(), "UTF-8");
+
         }
          else if (i >= 28 && i <= 41) {
             i -= 28;
             titleS = mPopTitle.get(i).getText();
             malurl = URLEncoder.encode(mPopTitle.get(i).getText(), "UTF-8");
+
         }
         try {
             epList = new Stage();
