@@ -18,7 +18,7 @@
               </items>
             </ToolBar>
             <ImageView fx:id="episodeImage" fitHeight="261.0" fitWidth="232.0" layoutX="14.0" layoutY="182.0" pickOnBounds="true" preserveRatio="true" />
-            <Label id="episodeText" fx:id="animeSummary" alignment="TOP_LEFT" layoutX="25.0" layoutY="453.0" lineSpacing="4.0" prefHeight="627.0" prefWidth="500.0" text="SummaryAs the Fourth Holy Grail War rages on with no clear victor in sight, the remaining Servants and their Masters are called upon by Church supervisor Risei Kotomine, in order to band together and confron...&quot;" textFill="WHITE" wrapText="true" />
+            <Label id="episodeText" fx:id="animeSummary" alignment="TOP_LEFT" layoutX="25.0" layoutY="453.0" lineSpacing="4.0" prefHeight="627.0" prefWidth="500.0" text="Summary" textFill="WHITE" wrapText="true" />
             <Label id="episodeTitle_Main" fx:id="animeTitle" layoutX="13.0" layoutY="71.0" prefHeight="111.0" prefWidth="478.0" text="Anime Title" textAlignment="CENTER" />
          </children>
       </AnchorPane>
@@ -26,7 +26,7 @@
    <center>
       <AnchorPane prefHeight="1082.0" prefWidth="1268.0" style="-fx-background-color: #303030;" BorderPane.alignment="CENTER">
          <children>
-            <ListView fixedCellSize="1.0" layoutX="174.0" layoutY="-2.0" prefHeight="1082.0" prefWidth="1998.0" style="-fx-background-color: #303030;" />
+            <ListView fx:id="episodeListView" fixedCellSize="1.0" layoutX="174.0" layoutY="-2.0" prefHeight="1082.0" prefWidth="1998.0" style="-fx-background-color: #e8e8e8;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
          </children>
       </AnchorPane>
    </center>
