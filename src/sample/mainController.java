@@ -13,6 +13,9 @@ import javafx.scene.layout.AnchorPane;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 import javafx.util.Duration;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
@@ -40,6 +43,7 @@ public class mainController implements Initializable {
     public static int N;
     public static boolean check;
     public static Parent root = null;
+    public static WebDriver driver;
     @FXML
     private ImageView imageView1;
     @FXML
@@ -672,7 +676,11 @@ public class mainController implements Initializable {
             trendTitle = trendTitle();
             recTitle = recTitle();
             mPopTitle = mPopTitle();
-
+            String chrome = "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chromedriver.exe";
+            System.setProperty("webdriver.chrome.driver",chrome);
+            ChromeOptions chrome_options=new ChromeOptions();
+            chrome_options.addArguments("--headless", "--disable-gpu", "--window-size=1920,1200","--ignore-certificate-errors");
+            driver = new ChromeDriver(chrome_options);
 
 
     }

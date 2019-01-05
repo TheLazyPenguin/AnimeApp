@@ -30,10 +30,7 @@ import org.jsoup.Jsoup;
 import org.jsoup.nodes.*;
 import org.jsoup.select.*;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 
 public class episodeList implements Initializable {
     @FXML
@@ -124,20 +121,20 @@ public class episodeList implements Initializable {
     }
     public void fetchEpisodeData() throws IOException {
         String searchUrl = "https://9anime.ru/search?keyword=" + mainController.titleS;
-        String chrome = "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chromedriver.exe";
-        System.setProperty("webdriver.chrome.driver",chrome);
-        ChromeOptions chrome_options=new ChromeOptions();
-        chrome_options.addArguments("--headless", "--disable-gpu", "--window-size=1920,1200","--ignore-certificate-errors");
-        WebDriver driver = new ChromeDriver(chrome_options);
         Document search_doc = Jsoup.connect(searchUrl).get();
         Elements options = search_doc.getElementsByClass("name");
         for (Element title : options) {
             String name = title.text();
             if (mainController.titleS.equals(name)) {
-            driver.navigate().to(title.attr("href"));
-                System.out.println(title.attr("href"));
-            WebElement l = driver.findElement(By.className("active"));
-                System.out.println(l);
+                mainController.driver.navigate().to(title.attr("href"));
+                WebElement ul = mainController.driver.findElement(By.xpath("//ul[@data-range-id=0]"));
+                List<WebElement> a  = ul.findElements(By.tagName("a"));
+                for (WebElement k : a) {
+                    if (eps.get("episode_id").equals(Integer.parseInt(k.getAttribute("data-base")))){
+                        String epUrl = k.getAttribute("href");
+                    }
+                }
+
             }
         }
             }
