@@ -158,7 +158,7 @@ public class episodeList implements Initializable {
             Main.window.setFullScreen(true);
         }
     }
-         
+
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
