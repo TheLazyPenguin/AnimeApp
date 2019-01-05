@@ -8,27 +8,31 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<BorderPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Load">
-   <center>
-      <VBox alignment="CENTER" prefHeight="1080.0" prefWidth="1920.0" BorderPane.alignment="CENTER">
-         <children>
-            <ProgressIndicator prefHeight="100.0" prefWidth="1920.0">
-               <effect>
-                  <Bloom />
-               </effect>
-               <padding>
-                  <Insets bottom="10.0" />
-               </padding>
-            </ProgressIndicator>
-            <Label text="Fetching cats... Please wait.">
-               <opaqueInsets>
-                  <Insets />
-               </opaqueInsets>
-               <effect>
-                  <Bloom threshold="0.12" />
-               </effect>
-            </Label>
-         </children>
-      </VBox>
-   </center>
-</BorderPane>
+<StackPane fx:id="loadStack" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Load">
+   <children>
+      <BorderPane>
+         <center>
+            <VBox alignment="CENTER" prefHeight="1080.0" prefWidth="1920.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ProgressIndicator prefHeight="100.0" prefWidth="1920.0">
+                     <effect>
+                        <Bloom />
+                     </effect>
+                     <padding>
+                        <Insets bottom="10.0" />
+                     </padding>
+                  </ProgressIndicator>
+                  <Label text="Fetching cats... Please wait.">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <effect>
+                        <Bloom threshold="0.12" />
+                     </effect>
+                  </Label>
+               </children>
+            </VBox>
+         </center>
+      </BorderPane>
+   </children>
+</StackPane>

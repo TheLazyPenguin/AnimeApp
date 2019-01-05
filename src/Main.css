@@ -49,19 +49,22 @@
 -fx-font-size: 15pt;
 -fx-font-weight: bold;}
 
-.split-pane:vertical > .split-pane-divider {
--fx-background-color: transparent;
-}
-.split-pane:horizontal > .split-pane-divider {
--fx-background-color: transparent;
-}
 #episodeText{
 -fx-text-fill: white;
 -fx-font-family: 'Open Sans', sans-serif;
 -fx-font-size: 12pt;
-}#episodeTitle_Main{
+-fx-font-align: justify;
+-fx-font-weight: bold;
+}
+#episodeTitle_Main{
 -fx-text-fill: white;
 -fx-font-family: 'Roboto', sans-serif;
 -fx-font-size: 20pt;
 -fx-font-weight: bold;
+}.scroll-pane .scroll-bar:vertical {
+     -fx-unit-increment: 500 ;
+     -fx-block-increment: 500 ;
+ }#episodeTitleBox{
+ -fx-background-repeat: stretch;
+ -fx-background-position: top left;
 }

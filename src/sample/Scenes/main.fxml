@@ -13,11 +13,11 @@
 
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.mainController">
    <center>
-      <VBox prefHeight="1080.0" prefWidth="1920.0" style="-fx-background-color: #505050;" BorderPane.alignment="CENTER">
+      <VBox cache="true" prefHeight="1080.0" prefWidth="1920.0" style="-fx-background-color: #505050;" BorderPane.alignment="CENTER">
          <children>
-            <ScrollPane hbarPolicy="NEVER" pannable="true" prefHeight="343.33333" prefWidth="1920.0" style="-fx-background-color: #303030;" vbarPolicy="NEVER" vmax="0.0">
+            <ScrollPane hbarPolicy="NEVER" maxHeight="-Infinity" pannable="true" prefHeight="343.33333" prefWidth="1920.0" style="-fx-background-color: #303030;" vbarPolicy="NEVER" vmax="0.0">
                <content>
-                  <HBox prefHeight="344.0" prefWidth="3000.0" style="-fx-background-color: #303030;">
+                  <HBox cache="true" prefHeight="344.0" prefWidth="3000.0" style="-fx-background-color: #303030;">
                      <children>
                         <Label id="ani_label" ellipsisString="" prefHeight="39.0" prefWidth="193.0" text="Recently Added">
                            <HBox.margin>
@@ -266,14 +266,17 @@
                   </HBox>
                </content>
                <StackPane.margin>
-                  <Insets top="343.3333" />
+                  <Insets top="686.66666666" />
                </StackPane.margin>
+               <VBox.margin>
+                  <Insets top="686.6666" />
+               </VBox.margin>
             </ScrollPane>
-            <ScrollPane hbarPolicy="NEVER" pannable="true" prefHeight="343.33333333" prefWidth="1920.0" style="-fx-background-color: #303030;" vbarPolicy="NEVER" vmax="0.0">
+            <ScrollPane hbarPolicy="NEVER" maxHeight="-Infinity" pannable="true" prefHeight="343.3333333" prefWidth="1920.0" style="-fx-background-color: #303030;" vbarPolicy="NEVER" vmax="0.0">
                <content>
-                  <HBox prefHeight="344.0" prefWidth="3000.0" style="-fx-background-color: #303030;">
+                  <HBox cache="true" prefHeight="344.0" prefWidth="3000.0" style="-fx-background-color: #303030;">
                      <children>
-                        <Label id="ani_label" prefHeight="39.0" prefWidth="194.0" text="Trending">
+                        <Label id="ani_label" prefHeight="39.0" prefWidth="194.0" text="Most Popular">
                            <HBox.margin>
                               <Insets left="20.0" right="-120.0" top="20.0" />
                            </HBox.margin>
@@ -520,14 +523,17 @@
                   </HBox>
                </content>
                <StackPane.margin>
-                  <Insets top="686.6666" />
+                  <Insets />
                </StackPane.margin>
+               <VBox.margin>
+                  <Insets top="-686.66666" />
+               </VBox.margin>
             </ScrollPane>
-            <ScrollPane hbarPolicy="NEVER" pannable="true" prefHeight="343.333" prefWidth="1920.0" style="-fx-background-color: #303030;" vbarPolicy="NEVER" vmax="0.0">
+            <ScrollPane hbarPolicy="NEVER" maxHeight="-Infinity" pannable="true" prefHeight="343.3333" prefWidth="1920.0" style="-fx-background-color: #303030;" vbarPolicy="NEVER" vmax="0.0">
                <content>
-                  <HBox prefHeight="345.0" prefWidth="3000.0" style="-fx-background-color: #303030;">
+                  <HBox blendMode="SRC_ATOP" cache="true" prefHeight="345.0" prefWidth="3000.0" style="-fx-background-color: #303030;">
                      <children>
-                        <Label id="ani_label" prefHeight="39.0" prefWidth="229.0" text="Most Popular">
+                        <Label id="ani_label" prefHeight="39.0" prefWidth="229.0" text="Trending">
                            <HBox.margin>
                               <Insets left="20.0" right="-120.0" top="20.0" />
                            </HBox.margin>
@@ -774,8 +780,11 @@
                   </HBox>
                </content>
                <StackPane.margin>
-                  <Insets />
+                  <Insets top="-686.666666" />
                </StackPane.margin>
+               <VBox.margin>
+                  <Insets top="-686.666" />
+               </VBox.margin>
             </ScrollPane>
          </children>
       </VBox>

@@ -38,6 +38,8 @@ public class mainController implements Initializable {
     public static String malurl;
     public static String titleS;
     public static int N;
+    public static boolean check;
+    public static Parent root = null;
     @FXML
     private ImageView imageView1;
     @FXML
@@ -300,7 +302,7 @@ public class mainController implements Initializable {
     HashMap<String,Image> recentHash;
     private int imgN;
     private int imgN2;
-    private static boolean fetched = false;
+    public static boolean fetched = false;
 
     public  ArrayList<ImageView> trending(){
         ArrayList<ImageView> trendingiv = new ArrayList<>();
@@ -625,7 +627,6 @@ public class mainController implements Initializable {
     }
     @FXML
     public void imageClick(Event e) throws UnsupportedEncodingException {
-        Parent root = null;
         String foo = e.getSource().toString();
         foo = foo.substring(foo.indexOf("=")+1);
         foo = foo.substring(0,foo.indexOf(","));
@@ -650,14 +651,8 @@ public class mainController implements Initializable {
 
         }
         try {
-            epList = new Stage();
             root = FXMLLoader.load(getClass().getResource("Scenes/episode-list.fxml"));
-            Scene epiScene = new Scene(root,1920,1080);
-            epList.setScene(epiScene);
-            epiScene.getStylesheets().add("Main.css");
-            epList.setFullScreen(true);
-            epList.initModality(Modality.APPLICATION_MODAL);
-            epList.show();
+            check = true;
         } catch (IOException e1) {
             e1.printStackTrace();
         }
