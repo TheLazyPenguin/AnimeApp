@@ -5,34 +5,30 @@ import com.fasterxml.jackson.core.JsonParser;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-import javafx.animation.FadeTransition;
 import javafx.application.Platform;
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
+import javafx.event.ActionEvent;
+import javafx.event.Event;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import java.io.IOException;
 import java.net.URL;
 import java.util.*;
-
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Hyperlink;
 import javafx.scene.control.Label;
-import javafx.scene.control.ListView;
-import javafx.scene.control.ScrollPane;
 import javafx.scene.effect.ColorAdjust;
 import javafx.scene.effect.GaussianBlur;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.*;
-import javafx.scene.text.Text;
-import javafx.stage.Modality;
 import javafx.stage.Stage;
-import javafx.util.Duration;
-
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.*;
+import org.jsoup.select.*;
 
 public class episodeList implements Initializable {
     @FXML
@@ -83,8 +79,8 @@ public class episodeList implements Initializable {
             get_Ani anime = objMap.readValue(new URL("https://api.jikan.moe/v3/search/anime?q=" + mainController.malurl + "&limit=1"), get_Ani.class);
             Map<String, Object> map = objMap.readValue(objMap.writeValueAsString(anime.results.get(0)), new TypeReference<Map<String, Object>>() {
             });
-            Anime aniSummary = objMap.readValue(new URL("https://api.jikan.moe/v3/anime/" + String.valueOf(map.get("mal_id"))), Anime.class);
-            Anime_Episodes ani_ep = objMap.readValue(new URL("https://api.jikan.moe/v3/anime/" + String.valueOf(map.get("mal_id") + "/episodes/1/")), Anime_Episodes.class);
+            Anime aniSummary = objMap.readValue(new URL("https://api.jikan.moe/v3/anime/" + (map.get("mal_id"))), Anime.class);
+            Anime_Episodes ani_ep = objMap.readValue(new URL("https://api.jikan.moe/v3/anime/" + (map.get("mal_id") + "/episodes/1/")), Anime_Episodes.class);
             episodeList.getChildren().removeAll();
             animeSummary.setText(aniSummary.synopsis);
             for (int i = 0; ani_ep.episodes.size() > (i); i++) {
@@ -96,7 +92,21 @@ public class episodeList implements Initializable {
                 episodetext.setId("episodeText");
                 episodeTitleAnchor.getChildren().add(episodetext);
                 episodeTitleAnchor.setLeftAnchor(episodetext, 0.0);
-                episodeTitleAnchor.setTopAnchor(episodetext, Double.valueOf(i + 1) * 40.0);}
+                episodeTitleAnchor.setTopAnchor(episodetext, Double.valueOf(i + 1) * 40.0);
+                episodetext.setOnAction(new EventHandler<ActionEvent>(){
+                    @Override
+                    public void handle(ActionEvent e) {
+                    Thread th = new Thread(() -> {
+                        try {
+                            fetchEpisodeData();
+                        } catch (IOException e1) {
+                            e1.printStackTrace();
+                        }
+                    });
+                    th.start();
+                    }
+                });
+                }
                 else {break;}
             }
         } catch (IOException e) {
@@ -107,6 +117,24 @@ public class episodeList implements Initializable {
 
 
     }
+    public void fetchEpisodeData() throws IOException {
+        String searchUrl = "https://9anime.ru/search?keyword=" + mainController.titleS;
+        Document search_doc = Jsoup.connect(searchUrl).get();
+        Elements options = search_doc.getElementsByClass("name");
+        System.out.println(options);
+        for (Element title : options) {
+            String name = title.text();
+            if (mainController.titleS.equals(name)) {
+
+            }
+        }
+            }
+
+
+
+
+
+
 
     @JsonIgnoreProperties(ignoreUnknown = true)
     private static class Anime {
@@ -153,10 +181,14 @@ public class episodeList implements Initializable {
 
     @FXML
     private void escPress(KeyEvent e) {
-        if (e.getCode().toString() == "ESCAPE") {
+        if (e.getCode().toString().equals("ESCAPE")) {
             waitStage.close();
             Main.window.setFullScreen(true);
         }
+    }
+    private void handle(Event e){
+
+
     }
 
 
