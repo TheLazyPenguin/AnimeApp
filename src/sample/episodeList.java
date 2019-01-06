@@ -1,10 +1,8 @@
 package sample;
-
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.core.JsonParser;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
-
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.event.Event;
@@ -30,7 +28,10 @@ import org.jsoup.Jsoup;
 import org.jsoup.nodes.*;
 import org.jsoup.select.*;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class episodeList implements Initializable {
     @FXML
@@ -51,7 +52,9 @@ public class episodeList implements Initializable {
     private boolean got;
     private Stage waitStage = new Stage();
     public static Parent root;
-
+    public static String epUrl;
+    public static String finEpUrl;
+    private HashMap<String,Integer> epList = new HashMap<>();
     private void setImage() {
         if (mainController.N <= 13) {
             img = mainController.trendingiv.get(mainController.N).getImage();
@@ -91,6 +94,7 @@ public class episodeList implements Initializable {
                     });
 
                 episodetext = new Hyperlink(String.valueOf(eps.get("title")));
+                epList.put((String) eps.get("title"),(Integer) eps.get("episode_id"));
                 episodetext.setId("episodeText");
                 episodeTitleAnchor.getChildren().add(episodetext);
                 episodeTitleAnchor.setLeftAnchor(episodetext, 0.0);
@@ -100,7 +104,7 @@ public class episodeList implements Initializable {
                     public void handle(ActionEvent e) {
                     Thread th = new Thread(() -> {
                         try {
-                            fetchEpisodeData();
+                            fetchEpisodeData(e);
                         } catch (IOException e1) {
                             e1.printStackTrace();
                         }
@@ -119,7 +123,7 @@ public class episodeList implements Initializable {
 
 
     }
-    public void fetchEpisodeData() throws IOException {
+    public void fetchEpisodeData(ActionEvent e) throws IOException {
         String searchUrl = "https://9anime.ru/search?keyword=" + mainController.titleS;
         Document search_doc = Jsoup.connect(searchUrl).get();
         Elements options = search_doc.getElementsByClass("name");
@@ -127,17 +131,39 @@ public class episodeList implements Initializable {
             String name = title.text();
             if (mainController.titleS.equals(name)) {
                 mainController.driver.navigate().to(title.attr("href"));
-                WebElement ul = mainController.driver.findElement(By.xpath("//ul[@data-range-id=0]"));
+                WebElement ul = mainController.driver.findElement(By.xpath("//*[@id=\"servers-container\"]/div/div[2]/div[1]/ul[1]"));
                 List<WebElement> a  = ul.findElements(By.tagName("a"));
                 for (WebElement k : a) {
-                    if (eps.get("episode_id").equals(Integer.parseInt(k.getAttribute("data-base")))){
-                        String epUrl = k.getAttribute("href");
-                    }
+                    if (epList.get(((Hyperlink) e.getSource()).getText()).equals(Integer.parseInt(k.getAttribute("data-base")))){
+                        epUrl = k.getAttribute("href");
+                        mainController.driver.get(epUrl);
+                        WebDriverWait webwait = new WebDriverWait(mainController.driver,20);
+                        mainController.driver.findElement(By.xpath("//*[@id=\"player\"]/div[1]")).click();
+                        WebElement video  = webwait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"player\"]/iframe")));
+                        finEpUrl = video.getAttribute("src");
+                        System.out.println(finEpUrl);
+                        break;}
                 }
+                break;
 
             }
         }
+        Platform.runLater(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    root = FXMLLoader.load(getClass().getResource("Scenes/videoPlayer.fxml"));
+                    waitStage.getScene().setRoot(root);
+                } catch (IOException e1) {
+                    e1.printStackTrace();
+                }
+
             }
+        } );
+
+
+
+    }
 
 
 

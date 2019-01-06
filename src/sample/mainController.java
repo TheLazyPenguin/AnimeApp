@@ -679,7 +679,7 @@ public class mainController implements Initializable {
             String chrome = "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chromedriver.exe";
             System.setProperty("webdriver.chrome.driver",chrome);
             ChromeOptions chrome_options=new ChromeOptions();
-            chrome_options.addArguments("--headless", "--disable-gpu", "--window-size=1920,1200","--ignore-certificate-errors");
+            chrome_options.addArguments("--disable-gpu", "--window-size=1920,1200","--ignore-certificate-errors","--disable-notifications","--headless");
             driver = new ChromeDriver(chrome_options);
 
 
