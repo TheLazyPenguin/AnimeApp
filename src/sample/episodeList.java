@@ -141,7 +141,6 @@ public class episodeList implements Initializable {
                         mainController.driver.findElement(By.xpath("//*[@id=\"player\"]/div[1]")).click();
                         WebElement video  = webwait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"player\"]/iframe")));
                         finEpUrl = video.getAttribute("src");
-                        System.out.println(finEpUrl);
                         break;}
                 }
                 break;

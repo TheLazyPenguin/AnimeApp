@@ -14,7 +14,8 @@ public class videoPlayer implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
+        System.out.println("hi");
         WebEngine engine = videoView.getEngine();
-        engine.load("http://google.com/");
+        engine.load(episodeList.finEpUrl);
     }
 }
