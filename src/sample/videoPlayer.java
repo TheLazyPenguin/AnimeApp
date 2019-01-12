@@ -14,8 +14,15 @@ public class videoPlayer implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        System.out.println("hi");
         WebEngine engine = videoView.getEngine();
         engine.load(episodeList.finEpUrl);
+        engine.setCreatePopupHandler(null);
+        for (int i =0; i<10;i++){
+            System.out.println(engine.getLoadWorker());
+        }
+
+
+
+
     }
 }

@@ -166,10 +166,6 @@ public class episodeList implements Initializable {
 
 
 
-
-
-
-
     @JsonIgnoreProperties(ignoreUnknown = true)
     private static class Anime {
         private String synopsis;
