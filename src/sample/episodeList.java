@@ -14,7 +14,6 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.*;
 import java.util.concurrent.TimeUnit;
-
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Hyperlink;
@@ -25,13 +24,13 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.*;
+import javafx.stage.Modality;
 import javafx.stage.Stage;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.*;
 import org.jsoup.select.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.TimeoutException;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -59,6 +58,8 @@ public class episodeList implements Initializable {
     public static String epUrl;
     public static String finEpUrl;
     public static Scene video;
+    public static Stage window;
+
     private HashMap<String,Integer> epList = new HashMap<>();
     private void setImage() {
         if (mainController.N <= 13) {
@@ -107,6 +108,17 @@ public class episodeList implements Initializable {
                 episodetext.setOnAction(new EventHandler<ActionEvent>(){
                     @Override
                     public void handle(ActionEvent e) {
+                        try {
+                            root = FXMLLoader.load(getClass().getResource("Scenes/Load.fxml"));
+                            Scene wait = new Scene(root, 1920, 1080);
+                            videoStage.setScene(wait);
+                            videoStage.setFullScreen(true);
+                            wait.getStylesheets().add("Main.css");
+                            videoStage.show();
+                        } catch (IOException e1) {
+                            e1.printStackTrace();
+                        }
+
                     Thread th = new Thread(() -> {
                         try {
                             fetchEpisodeData(e);
@@ -144,15 +156,15 @@ public class episodeList implements Initializable {
                         if (epList.get(((Hyperlink) e.getSource()).getText()).equals(Integer.parseInt(k.getAttribute("data-base")))){
                             epUrl = k.getAttribute("href");
                             try {mainController.driver.get(epUrl);
-                                WebDriverWait webwait = new WebDriverWait(mainController.driver,5);
-                                mainController.driver.manage().timeouts().pageLoadTimeout(16, TimeUnit.SECONDS);
+                                WebDriverWait webwait = new WebDriverWait(mainController.driver,1);
+                                mainController.driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
                                 mainController.driver.findElement(By.xpath("//*[@id=\"player\"]/div[1]")).click();
                                 WebElement video  = webwait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"player\"]/iframe")));
                                 finEpUrl = video.getAttribute("src");
                                 break;}
                             catch (TimeoutException err){
-                                WebDriverWait webwait = new WebDriverWait(mainController.driver,5);
-                                mainController.driver.manage().timeouts().pageLoadTimeout(16, TimeUnit.SECONDS);
+                                WebDriverWait webwait = new WebDriverWait(mainController.driver,1);
+                                mainController.driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
                                 mainController.driver.findElement(By.xpath("//*[@id=\"player\"]/div[1]")).click();
                                 WebElement video  = webwait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"player\"]/iframe")));
                                 finEpUrl = video.getAttribute("src");
