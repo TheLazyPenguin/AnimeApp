@@ -4,13 +4,11 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.animation.*;
 import javafx.scene.layout.AnchorPane;
-import javafx.stage.Modality;
 import javafx.stage.Stage;
 import javafx.util.Duration;
 import org.openqa.selenium.WebDriver;
@@ -24,8 +22,9 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.ResourceBundle;
+import java.util.concurrent.TimeUnit;
+import java.util.concurrent.TimeoutException;
 
-import static java.lang.Thread.sleep;
 
 public class mainController implements Initializable {
     public static ArrayList<ImageView> trendingiv;
@@ -681,6 +680,9 @@ public class mainController implements Initializable {
             ChromeOptions chrome_options=new ChromeOptions();
             chrome_options.addArguments("--disable-gpu", "--window-size=1920,1200","--ignore-certificate-errors","--disable-notifications","--headless");
             driver = new ChromeDriver(chrome_options);
+            driver.manage().timeouts().pageLoadTimeout(5, TimeUnit.SECONDS);
+
+
 
 
     }
